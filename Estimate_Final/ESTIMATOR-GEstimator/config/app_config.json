@@ -1,0 +1,20 @@
+{
+  "assets_path": "Attached_Assets",
+  "enable_hot_reload": true,
+  "hot_reload_debounce_seconds": 2,
+  "max_formula_depth": 100,
+  "calculation_timeout_seconds": 30,
+  "log_level": "INFO",
+  "log_file": "logs/gestimator.log",
+  "supported_formats": [".xls", ".xlsx"],
+  "input_indicators": {
+    "fill_colors": ["FFFF00"],
+    "prefixes": ["IN_"],
+    "named_range_patterns": ["INPUT_.*"]
+  },
+  "output_indicators": {
+    "fill_colors": ["90EE90"],
+    "prefixes": ["OUT_"],
+    "named_range_patterns": ["OUTPUT_.*"]
+  }
+}

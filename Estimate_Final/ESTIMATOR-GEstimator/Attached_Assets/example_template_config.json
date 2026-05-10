@@ -1,0 +1,52 @@
+{
+  "template_name": "example_estimation_template",
+  "input_mapping": {
+    "length": "Input!B5",
+    "width": "Input!B6",
+    "height": "Input!B7",
+    "material_cost_per_unit": "Input!B10",
+    "labor_cost_per_unit": "Input!B11"
+  },
+  "output_mapping": {
+    "total_volume": "Calculation!D10",
+    "material_cost": "Calculation!D15",
+    "labor_cost": "Calculation!D16",
+    "total_cost": "Summary!F20",
+    "cost_per_unit_volume": "Summary!F21"
+  },
+  "calculation_settings": {
+    "precision": 2,
+    "currency": "INR",
+    "unit_system": "metric"
+  },
+  "validation_rules": {
+    "length": {
+      "type": "decimal",
+      "min": 0,
+      "max": 1000,
+      "required": true
+    },
+    "width": {
+      "type": "decimal",
+      "min": 0,
+      "max": 100,
+      "required": true
+    },
+    "height": {
+      "type": "decimal",
+      "min": 0,
+      "max": 50,
+      "required": true
+    },
+    "material_cost_per_unit": {
+      "type": "decimal",
+      "min": 0,
+      "required": true
+    },
+    "labor_cost_per_unit": {
+      "type": "decimal",
+      "min": 0,
+      "required": true
+    }
+  }
+}

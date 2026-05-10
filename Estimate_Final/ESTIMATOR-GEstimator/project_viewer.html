@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GEstimator Project Viewer</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background-color: #f5f5f5; 
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            color: #2c3e50; 
+            border-bottom: 2px solid #3498db; 
+            padding-bottom: 10px; 
+        }
+        h2 { 
+            color: #34495e; 
+        }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin-top: 20px; 
+            background: white; 
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+        }
+        th { 
+            background-color: #3498db; 
+            color: white; 
+            font-weight: bold; 
+        }
+        tr:nth-child(even) { 
+            background-color: #f8f9fa; 
+        }
+        tr:hover { 
+            background-color: #e3f2fd; 
+        }
+        .file-info { 
+            background-color: #e8f4f8; 
+            padding: 15px; 
+            border-radius: 5px; 
+            margin: 15px 0; 
+        }
+        .stats { 
+            display: flex; 
+            justify-content: space-around; 
+            background: #2c3e50; 
+            color: white; 
+            padding: 15px; 
+            border-radius: 5px; 
+            margin: 15px 0; 
+        }
+        .stat-box { 
+            text-align: center; 
+        }
+        .stat-number { 
+            font-size: 2em; 
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GEstimator Project Viewer</h1>
+        <h2>Demo Project Visualization</h2>
+        
+        <div class="file-info">
+            <p><strong>Project File:</strong> test_project.eproj</p>
+            <p><strong>File Size:</strong> 81,920 bytes</p>
+            <p><strong>Location:</strong> C:\Users\Rajkumar\ESTIMATOR-GEstimator-master\test_project.eproj</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-number">25</div>
+                <div>Schedule Items</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">22</div>
+                <div>With Units</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">25</div>
+                <div>With Rates</div>
+            </div>
+        </div>
+        
+        <h2>Schedule Items</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Description</th>
+                    <th>Unit</th>
+                    <th>Rate</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Earth work in excavation by machine in ordinary soil including dressing, loading and transporting to a distance not exceeding 30 m...</td>
+                    <td>Cum</td>
+                    <td>178.00</td>
+                    <td>720.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Filling available excavated earth in foundation and around pipes including watering, ramming and dressing to proper levels...</td>
+                    <td>Cum</td>
+                    <td>64.00</td>
+                    <td>526.40</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Providing and laying in position R.C.C. M-20 (1:1.5:3) including centering and shuttering, fabrication and placing of reinforcement...</td>
+                    <td>Cum</td>
+                    <td>3302.00</td>
+                    <td>22.08</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Providing and laying in position R.C.C. M-25 (1:1:2) including centering and shuttering, fabrication and placing of reinforcement...</td>
+                    <td>Cum</td>
+                    <td>5003.00</td>
+                    <td>34.80</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Centering and shuttering with wooden planks for R.C.C. work in foundation, plinth, beams, lintels, slabs etc...</td>
+                    <td>Sqm</td>
+                    <td>157.00</td>
+                    <td>69.48</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Providing and fabricating reinforcement including binding, placing and concreting in R.C.C. M-20 (1:1.5:3)...</td>
+                    <td>Kg</td>
+                    <td>77.00</td>
+                    <td>3588.00</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Brick work with F.P.S. bricks in cement mortar (1:6) in foundation and plinth, super structure etc...</td>
+                    <td>Cum</td>
+                    <td>4990.00</td>
+                    <td>59.74</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Random Rubble stone masonry for foundation in cement mortar (1:6) including rough dressing of stones...</td>
+                    <td>Cum</td>
+                    <td>2838.00</td>
+                    <td>54.00</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Plaster on new surface on walls and ceiling with cement mortar (1:6) including curing etc...</td>
+                    <td>Sqm</td>
+                    <td>190.00</td>
+                    <td>765.12</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Providing and fixing T-iron/angle iron/flat iron in door and window frames including drilling, cleaning etc...</td>
+                    <td>Kg</td>
+                    <td>83.00</td>
+                    <td>138.12</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p style="margin-top: 20px; color: #7f8c8d; font-style: italic;">
+            Note: This is a sample visualization of GEstimator project data. 
+            The actual .eproj files are SQLite databases that can only be opened with the GEstimator application.
+        </p>
+    </div>
+</body>
+</html>

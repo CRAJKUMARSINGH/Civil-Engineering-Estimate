@@ -1,0 +1,31 @@
+# GEstimator - Complete Construction Estimation Application
+# Consolidated Requirements for All Features
+
+# Core Dependencies
+openpyxl>=3.1.0              # Excel file handling (primary)
+pandas>=2.0.0                # Data manipulation and analysis
+python-Levenshtein>=0.21.0   # Fast fuzzy string matching for SSR
+
+# Optional Enhanced Features
+xlrd>=2.0.1                  # Support for older .xls format
+xlsxwriter>=3.1.0            # Alternative Excel writer with advanced formatting
+
+# Development and Testing
+pytest>=7.0.0                # Testing framework (optional)
+
+# Web Interface (Optional)
+streamlit>=1.28.0            # Web-based UI (optional)
+
+# GUI Framework (System Package)
+# GTK3 Python bindings - Install via system package manager:
+# Ubuntu/Debian: sudo apt-get install python3-gi python3-gi-cairo gir1.2-gtk-3.0
+# Fedora/RHEL: sudo dnf install python3-gobject gtk3
+# Windows: Download GTK3 Runtime from GitHub
+# macOS: brew install gtk+3 pygobject3
+
+# Database (Built-in)
+# sqlite3 - Built into Python standard library
+
+# System Requirements:
+# - Python 3.7 or higher
+# - Operating System: Windows 10+, Ubuntu 18.04+, macOS 10.14+

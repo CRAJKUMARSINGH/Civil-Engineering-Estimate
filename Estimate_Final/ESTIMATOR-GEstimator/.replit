@@ -1,0 +1,30 @@
+modules = ["python-3.11"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+packages = ["glibcLocales", "sqlite"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Conversion Info"
+
+[[workflows.workflow]]
+name = "Conversion Info"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "echo \"Excel to .eproj Conversion Tool\" && echo \"================================\" && echo \"\" && echo \"All Excel files have been converted to .eproj format.\" && echo \"\" && ls -lh Attached_Assets/PROJECTS/*.eproj 2>/dev/null && echo \"\" && echo \"To convert new files, run: python convert_attached_projects.py\" && echo \"Or on Windows: CONVERT_PROJECTS.bat\" && sleep infinity"
+
+[workflows.workflow.metadata]
+outputType = "console"
