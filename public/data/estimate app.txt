@@ -1,0 +1,78 @@
+
+PROMPT FOR SOFTWARE ENGINEER: 
+
+1. Open the sample EXCEL estimate file named "XXXX.X*" located in folder "attached_assets". Study the complete structure including all sheets: "General Abstract", "Abstract of Cost Ground Floor", "Measurement Ground Floor", "Abstract of Part XXXXX", "Measurement of Part XXXXX", and any other similar paired Abstract-Measurement sheets.
+
+2. Implement a dynamic Excel import system that loads any selected sample estimate file into the application while preserving all formulas, sheet linkages, and hierarchical summation logic.
+
+3. Ensure the following automatic linkage rules are enforced at all times:
+   - Quantities from any "Measurement [Part/Floor]" sheet must SUM dynamically into the corresponding line items in its linked "Abstract of Cost [Part/Floor]" sheet.
+   - Totals from each "Abstract of Cost [Part/Floor]" sheet must SUM dynamically into the correct category rows in the "General Abstract" sheet.
+   - All references must use structured, named ranges or table-based references to maintain integrity when rows are added/removed.
+
+4. Build an on-screen interactive interface (within Excel using VBA Forms or embedded in a custom add-in/dashboard) with the following controls:
+   - [Import Sample Estimate] button: Load any .xlsx estimate file and auto-map sheets based on naming pattern (e.g., detect "Measurement*" and "Abstract of Cost*" pairs).
+   - [Add New Item] button: Insert a new row in any selected Abstract or Measurement sheet with user-input fields for Description, Unit, Quantity, Rate (in Abstract), and auto-generate unique ID.
+   - [Delete Item] button: Remove selected row(s) from Abstract or Measurement sheet and update all dependent sums instantly.
+   - [Add New Part] button: Create a new paired set of sheets: "Abstract of Cost Part [UserName]" and "Measurement Part [UserName]", auto-link new Abstract totals to "General Abstract", and allow immediate item entry.
+   - [Delete Part] button: Permanently remove a selected Part pair (Abstract + Measurement sheets), update "General Abstract" by removing corresponding summary line, and shift remaining totals.
+
+5. Implement real-time recalculation: Any change in Measurement quantity must instantly update Abstract amount (Qty × Rate) and propagate to General Abstract without requiring manual refresh.
+
+6. Add validation:
+   - Prevent deletion of sheets that break core structure (e.g., General Abstract).
+   - Warn if deleting a Part that contains data.
+   - Auto-name new parts sequentially if user leaves blank (e.g., Part A, Part B).
+
+7. Ensure full compatibility with Excel 2016+ (Windows), support for .xlsx format, and protect formula cells from direct edit while allowing data entry in designated cells.
+
+8. Package the solution as a reusable template (.xltm) or add-in (.xlam) with a clean ribbon tab containing all controls.
+
+9. Test with the provided sample "XXXX" estimate: Add/remove items in Ground Floor, add a new Part "Roof", delete an existing Part, and verify all totals in General Abstract update correctly.
+
+10. Deliver: Complete working file, user guide (2-page), and source code (commented VBA or equivalent).``` 
+
+11. Implement [Export to PDF] feature:  
+   - Add [Export Estimate to PDF] button in the main interface.  
+   - On click, generate a single, print-ready PDF containing:  
+     a) General Abstract (full page)  
+     b) Each Abstract of Cost [Part/Floor] sheet (one per page)  
+     c) Corresponding Measurement sheet immediately following its Abstract  
+   - Apply consistent formatting: landscape/portrait auto-detect per sheet, fit to page, include headers/footers with Project Name, Date, Page X of Y.  
+   - Hide gridlines, row/column headers, and protected cells during export.  
+   - Prompt user for save location and filename (default: [ProjectName]_Estimate.pdf).  
+   - Ensure all formulas are calculated and totals are up-to-date before export.  
+   - Support export of current state even with newly added/removed parts or items.  
+
+
+11. Implement [Export Estimate] feature with multi-format support:  
+   - Add [Export Estimate] button with dropdown menu offering:  
+     → PDF  
+     → Excel (.xlsx – clean, unprotected copy with current data)  
+     → Printable HTML (single file, styled tables)  
+     → CSV Package (one CSV per sheet, zipped)  
+
+   - On selection:  
+     **PDF Export:**  
+       • Single multi-page PDF  
+       • Order: General Abstract → Each Abstract of Cost → Its Measurement  
+       • Auto page breaks, fit-to-page, landscape/portrait per sheet  
+       • Header: Project Name, Export Date | Footer: Page X of Y  
+       • Hide gridlines, comments, and formula bar artifacts  
+       • Filename: [ProjectName]_Estimate.pdf  
+
+     **Excel Export:**  
+       • Save as new .xlsx (no macros, no protection on data)  
+       • Preserve all formulas, formatting, and sheet structure  
+       • Include only visible sheets in current order  
+       • Filename: [ProjectName]_Estimate_Export.xlsx  
+
+   - Common Requirements:  
+       • Prompt user for save location and confirm format  
+       • Ensure all calculations are refreshed before export  
+       • Support dynamic structure (new/deleted parts/items fully included)  
+       • Add export log in a hidden sheet: Timestamp, Format, User, File Path  
+       • Progress indicator for large estimates  
+
+
+

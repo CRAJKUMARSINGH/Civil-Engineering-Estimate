@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.pytest_cache/
+__pycache__/
+*.xlsx
+*.xls
+*.pyc
+.vercel
+.vscode/
+.DS_Store
+package-lock.json
+public/data/*.eproj

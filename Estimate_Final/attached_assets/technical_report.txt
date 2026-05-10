@@ -1,0 +1,62 @@
+Government of Rajasthan
+PWD - Building Division, Udaipur
+
+
+
+TECHNICAL REPORT & DETAILED ESTIMATE
+
+
+Project: Construction of Commercial Complex for Panchayat Samiti, Girwa, Udaipur
+Building: G + 5 RCC Framed Structure
+Built-up Area: 2345 m²
+Estimated Cost: ₹ 4.45 Crore
+
+Administrative Sanction No.: ____________________    Date: ________________
+ 
+1. Name of Work
+Construction of Commercial Complex for Panchayat Samiti, Girwa, Udaipur.
+2. Location
+Site: Girwa, Udaipur, Rajasthan.
+3. Scope of Work
+G+5 RCC framed commercial complex including retail spaces, offices, circulation, services, and external development works.
+4. General Specifications
+- Foundation: Isolated RCC footings in M20 concrete with random rubble masonry as required.
+- Superstructure: RCC framed structure (M20 concrete) with Fe500 reinforcement; brick/stone masonry infill.
+- Flooring: Vitrified tiles/Kota stone as per finish schedule.
+- Finishes: External acrylic weather coat; internal OBD/distemper; enamel on metal/wood.
+- Sanitary: CP fittings, PVC/SWR piping as per PWD specifications.
+- Electrical: Concealed copper wiring with MCB distribution and LED fixtures.
+- Rainwater Harvesting and Solar provision as per report.
+5. Design Basis
+Design to conform to BIS codes including IS 456, IS 1893, IS 875 and NBC 2016.
+6. Detailed Abstract of Cost (Stage-wise)
+The detailed abstract below includes cost breakup for all stages of work, rounded to two decimal places (₹ in Lakhs).
+S. No.	Description of Works	Amount (₹ Lakhs)
+1	Civil Work (Ground Floor) - Structural works, etc.	64.60
+2	Civil Work (First Floor) - Structural works, etc.	52.97
+3	Civil Work (Second Floor) - Structural works, etc.	54.30
+4	Civil Work (Third Floor) - Structural works, etc.	55.65
+5	Civil Work (Fourth Floor) - Structural works, etc.	57.05
+6	Civil Work (Fifth Floor) - Structural works, etc.	58.47
+7	Sanitary Work - Internal sanitary installations	27.44
+8	Electrical Work - Internal electrification	41.16
+9	Sewerage Work - SWR/PVC piping, manholes	13.72
+10	Development Work - External paving, boundary wall	27.44
+11	Contingencies, Supervision, Quality assurance	19.14
+	Total Estimated Cost	444.51 (≈ ₹ 4.45 Crore)
+
+Note: All values are rounded to two decimal places.
+7. Drawings
+Architectural Plans, Structural Drawings, Electrical & Sanitary Layouts, and Site plan are attached as Annexures.
+8. Certificates
+I hereby certify that the estimate has been prepared as per PWD specifications and local Schedule of Rates. The design and estimate are recommended for administrative sanction.
+
+Prepared by:
+
+Assistant Engineer, PWD Sub Division – Girwa
+
+Checked by:
+
+Executive Engineer, PWD Division – Udaipur
+
+Date: 02 November 2025

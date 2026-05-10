@@ -1,0 +1,60 @@
+item_code,description,unit,rate_inr,source
+CONC_M25,Plain cement concrete M25,cum,7025,RajasthanSSR2024
+CONC_M30,Plain cement concrete M30,cum,7425,RajasthanSSR2024
+CONC_M35,Plain cement concrete M35,cum,7825,RajasthanSSR2024
+CONC_M40,Plain cement concrete M40,cum,8225,RajasthanSSR2024
+REBAR_FE500,Reinforcement steel Fe 500,kg,67,RajasthanSSR2024
+REBAR_FE550,Reinforcement steel Fe 550,kg,72,RajasthanSSR2024
+FORMWORK,Formwork average,sqm,850,RajasthanSSR2024
+FORMWORK_SLAB,Formwork for slab soffit,sqm,780,RajasthanSSR2024
+FORMWORK_BEAM,Formwork for beam sides,sqm,920,RajasthanSSR2024
+FORMWORK_COLUMN,Formwork for column,sqm,950,RajasthanSSR2024
+EXCAV_SOFT,Excavation soft soil,cum,155,RajasthanSSR2024
+EXCAV_HARD,Excavation hard soil,cum,285,RajasthanSSR2024
+EXCAV_ROCK,Excavation in rock,cum,1250,RajasthanSSR2024
+BACKFILL,Selected backfill,cum,285,RajasthanSSR2024
+BACKFILL_COMPACT,Backfill with compaction,cum,385,RajasthanSSR2024
+PAINT_STEEL,2 coats primer+paint on steel,sqm,120,RajasthanSSR2024
+BEARING_ELAST,Elastomeric bearing 200x300x49mm,each,5800,RajasthanSSR2024
+BEARING_POT,Pot bearing 500 kN capacity,each,45000,RajasthanSSR2024
+EXPANSION_JOINT,Expansion joint 80mm,m,3500,RajasthanSSR2024
+WATERPROOF_MEMBRANE,Waterproofing membrane,sqm,450,RajasthanSSR2024
+RAILING_STEEL,Steel railing,m,2800,RajasthanSSR2024
+RAILING_CONCRETE,Concrete parapet,m,1850,RajasthanSSR2024
+APPROACH_SLAB,Approach slab concrete,cum,7200,RajasthanSSR2024
+WEARING_COAT,Bituminous wearing coat 50mm,sqm,385,RajasthanSSR2024
+CRASH_BARRIER,Concrete crash barrier,m,2200,RajasthanSSR2024
+PILE_BORED,Bored cast in-situ pile 1m dia,m,8500,RajasthanSSR2024
+PILE_DRIVEN,Driven precast pile 400mm sq,m,6200,RajasthanSSR2024
+PILE_CAP,Pile cap concrete M30,cum,7600,RajasthanSSR2024
+WELL_FOUNDATION,Well foundation steining,cum,8200,RajasthanSSR2024
+DEWATERING,Dewatering per day,day,12000,RajasthanSSR2024
+SHUTTERING_OIL,Shuttering oil application,sqm,15,RajasthanSSR2024
+CURING_COMPOUND,Curing compound application,sqm,25,RajasthanSSR2024
+STEEL_GIRDER,Fabricated steel girder,tonne,95000,RajasthanSSR2024
+STEEL_TRUSS,Steel truss fabrication,tonne,105000,RajasthanSSR2024
+CABLE_STAY,Stay cable system,tonne,450000,RajasthanSSR2024
+POST_TENSION,Post-tensioning system,tonne,185000,RajasthanSSR2024
+GROUT_CABLE,Cable grouting,m,850,RajasthanSSR2024
+ANCHOR_BLOCK,Anchor block concrete,cum,8500,RajasthanSSR2024
+DIAPHRAGM,Diaphragm concrete,cum,7800,RajasthanSSR2024
+CROSS_BEAM,Cross beam concrete,cum,7650,RajasthanSSR2024
+WING_WALL,Wing wall concrete,cum,7400,RajasthanSSR2024
+RETURN_WALL,Return wall concrete,cum,7350,RajasthanSSR2024
+DIRT_WALL,Dirt wall concrete,cum,7100,RajasthanSSR2024
+WEEP_HOLE,Weep hole with filter,each,450,RajasthanSSR2024
+DRAINAGE_PIPE,Drainage pipe 150mm,m,580,RajasthanSSR2024
+SCOUR_PROTECTION,Boulder pitching for scour protection,cum,1850,RajasthanSSR2024
+RIPRAP,Riprap stone protection,cum,1650,RajasthanSSR2024
+GEOTEXTILE,Geotextile fabric,sqm,185,RajasthanSSR2024
+SOIL_NAILING,Soil nailing per nail,each,8500,RajasthanSSR2024
+ROCK_ANCHOR,Rock anchor 25mm dia,m,3500,RajasthanSSR2024
+SHOTCRETE,Shotcrete 100mm thick,sqm,1250,RajasthanSSR2024
+TESTING_CONCRETE,Concrete cube testing,each,450,RajasthanSSR2024
+TESTING_STEEL,Steel tensile testing,each,850,RajasthanSSR2024
+TESTING_PILE,Pile load test,each,125000,RajasthanSSR2024
+SURVEY_SETTING,Survey and setting out,ls,85000,RajasthanSSR2024
+TRAFFIC_MGMT,Traffic management,month,45000,RajasthanSSR2024
+SAFETY_MEASURES,Safety measures and signage,month,35000,RajasthanSSR2024
+SITE_OFFICE,Site office establishment,ls,250000,RajasthanSSR2024
+MOBILIZATION,Contractor mobilization,ls,500000,RajasthanSSR2024

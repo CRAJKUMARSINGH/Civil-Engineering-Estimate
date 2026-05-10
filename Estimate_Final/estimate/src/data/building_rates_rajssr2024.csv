@@ -1,0 +1,59 @@
+item_code,description,unit,rate_inr,source
+EXCAV_FOUND,Earth work excavation in foundation trenches,cum,155,RajasthanSSR2024
+EARTH_FILL,Filling excavated earth in layers with ramming,cum,95,RajasthanSSR2024
+ANTI_TERMITE,Anti-termite treatment Chloropyrifous 20%,sqm,45,RajasthanSSR2024
+PCC_148,PCC 1:4:8 mix for foundation,cum,5850,RajasthanSSR2024
+RCC_M20,RCC M20 grade concrete,cum,6825,RajasthanSSR2024
+RCC_M25,RCC M25 grade concrete,cum,7425,RajasthanSSR2024
+RCC_M30,RCC M30 grade concrete,cum,7825,RajasthanSSR2024
+STEEL_FE500,Steel reinforcement Fe 500,kg,67,RajasthanSSR2024
+STEEL_FE550,Steel reinforcement Fe 550,kg,72,RajasthanSSR2024
+SHUTTERING_COL,Centering shuttering for columns,sqm,950,RajasthanSSR2024
+SHUTTERING_BEAM,Centering shuttering for beams,sqm,920,RajasthanSSR2024
+SHUTTERING_SLAB,Centering shuttering for slabs,sqm,780,RajasthanSSR2024
+BRICK_230_CM16,Brick masonry 230mm in CM 1:6,cum,4850,RajasthanSSR2024
+BRICK_115_CM14,Half brick masonry 115mm in CM 1:4,sqm,485,RajasthanSSR2024
+PLASTER_20MM_CM16,Plaster 20mm thick CM 1:6,sqm,185,RajasthanSSR2024
+PLASTER_12MM_CM14,Plaster 12mm thick CM 1:4,sqm,145,RajasthanSSR2024
+FLOOR_KOTA_STONE,Polished Kota stone flooring 25mm,sqm,785,RajasthanSSR2024
+FLOOR_VITRIFIED,Vitrified tiles flooring 600x600mm,sqm,925,RajasthanSSR2024
+FLOOR_CERAMIC,Ceramic tiles flooring 300x300mm,sqm,485,RajasthanSSR2024
+WALL_TILES,White glazed wall tiles 300x450mm,sqm,685,RajasthanSSR2024
+DOOR_FRAME_STEEL,Steel door frame with T-iron,kg,85,RajasthanSSR2024
+DOOR_SHUTTER_WOOD,Wooden door shutter flush door,sqm,2850,RajasthanSSR2024
+WINDOW_STEEL,Steel window with glass 3mm,sqm,1450,RajasthanSSR2024
+WINDOW_ALUMINIUM,Aluminium window with glass,sqm,2250,RajasthanSSR2024
+WINDOW_UPVC,UPVC window with glass,sqm,2850,RajasthanSSR2024
+GRILLS_MS,MS grills for windows,kg,95,RajasthanSSR2024
+RAILING_MS,MS railing for staircase,kg,125,RajasthanSSR2024
+PAINT_PRIMER,Priming coat on wood/metal,sqm,45,RajasthanSSR2024
+PAINT_ENAMEL,Enamel paint 2 coats,sqm,125,RajasthanSSR2024
+PAINT_EMULSION,Emulsion paint 2 coats,sqm,85,RajasthanSSR2024
+WHITEWASH,White washing 2 coats,sqm,35,RajasthanSSR2024
+COLOUR_WASH,Colour washing 2 coats,sqm,45,RajasthanSSR2024
+WATERPROOF_MEMBRANE,Waterproofing membrane on roof,sqm,450,RajasthanSSR2024
+BRICK_KHARANJA,Brick kharanja on roof 75-100mm,sqm,285,RajasthanSSR2024
+BITUMEN_COAT,Hot blown bitumen coating,sqm,125,RajasthanSSR2024
+TERRAZZO_TILE,Terrazzo tile 20mm on roof,sqm,485,RajasthanSSR2024
+RWP_AC_100MM,AC rain water pipe 100mm dia,m,285,RajasthanSSR2024
+RWP_PVC_110MM,PVC rain water pipe 110mm dia,m,185,RajasthanSSR2024
+COPING_RCC,RCC coping 50mm thick,sqm,385,RajasthanSSR2024
+COLLAPSIBLE_SHUTTER,Collapsible steel shutter,sqm,1850,RajasthanSSR2024
+GLASS_BOARD,Glass board/marker board,nos,2500,RajasthanSSR2024
+SANITARY_WC,Sanitary WC with fittings,nos,8500,RajasthanSSR2024
+SANITARY_WASHBASIN,Wash basin with CP fittings,nos,4500,RajasthanSSR2024
+SANITARY_URINAL,Urinal with CP fittings,nos,5500,RajasthanSSR2024
+PLUMB_PVC_110MM,PVC pipe 110mm for drainage,m,285,RajasthanSSR2024
+PLUMB_PVC_75MM,PVC pipe 75mm for drainage,m,185,RajasthanSSR2024
+PLUMB_CPVC_20MM,CPVC pipe 20mm for water supply,m,125,RajasthanSSR2024
+ELEC_WIRING_2_5SQ,Electrical wiring 2.5 sq mm,m,45,RajasthanSSR2024
+ELEC_WIRING_4SQ,Electrical wiring 4 sq mm,m,65,RajasthanSSR2024
+ELEC_MCB_DB,MCB distribution board,nos,4500,RajasthanSSR2024
+ELEC_SWITCH_SOCKET,Modular switch/socket,nos,285,RajasthanSSR2024
+ELEC_LED_LIGHT,LED light fixture,nos,850,RajasthanSSR2024
+ELEC_FAN,Ceiling fan with regulator,nos,2250,RajasthanSSR2024
+LIFT_PASSENGER_6P,Passenger lift 6 person capacity,nos,1850000,RajasthanSSR2024
+STAIRCASE_RAILING,Staircase railing MS,kg,125,RajasthanSSR2024
+SEPTIC_TANK,Septic tank construction,nos,85000,RajasthanSSR2024
+SOAK_PIT,Soak pit construction,nos,25000,RajasthanSSR2024
+MANHOLE_RCC,RCC manhole 600x600mm,nos,8500,RajasthanSSR2024

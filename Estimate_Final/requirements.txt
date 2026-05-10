@@ -1,0 +1,27 @@
+# ---------- CORE (never remove) ----------
+streamlit==1.40.1          # newest stable
+pandas==2.2.3              # 2024-11 security release
+numpy==1.26.4              # last 3.8-compatible
+openpyxl==3.1.5            # Excel read/write
+xlsxwriter==3.2.0          # Excel export
+plotly==5.24.1             # interactive charts
+
+# ---------- TEXT MATCHING ----------
+# rapidfuzz is MIT-licensed and 5-10× faster than fuzzywuzzy
+rapidfuzz==3.9.7           # drop-in replacement for fuzzywuzzy
+
+# ---------- PDF EXPORT ----------
+reportlab==4.2.5
+
+# ---------- DATABASE (implied by "zero data loss") ----------
+sqlalchemy==2.0.36         # ORM + migrations
+alembic==1.14.0            # schema migrations
+
+# ---------- UTILS ----------
+python-dateutil==2.9.0     # already pulled by pandas, but explicit is better
+
+# ---------- OPTIONAL (only if you *really* import them) ----------
+matplotlib==3.9.2          # for st.pyplot()
+seaborn==0.13.2            # for advanced visualizations
+Pillow==10.4.0             # for image processing
+requests==2.32.3           # for external APIs

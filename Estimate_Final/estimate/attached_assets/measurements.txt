@@ -1,0 +1,527 @@
+NAME OF WORK :- CONSTRUCTION OF COMMERCIAL COMPLEX FOR PANCHAYAT SAMITI GIRWA, UDAIPUR											
+											
+PART 'A'  CIVIL WORK FIRST  FLOOR 											
+DETAILS OF MEASUREMENTS											
+S.N.	Particulars	Nos.		Length		Breadth 		Height		Qty.	Units
+	Center to center distances										
+	Ground Floor 										
+	 Main walls 230 mm th. in x and Y Direction										
+	Back Side	1	x	3.58					=	3.58	RM
+		1	x	6.40					=	6.40	RM
+		1	x	3.20					=	3.20	RM
+		1	x	3.20					=	3.20	RM
+		1	x	5.33					=	5.33	RM
+	Left Side	1	x	7.62					=	7.62	RM
+		1	x	4.27					=	4.27	RM
+		1	x	7.62					=	7.62	RM
+	Front Side	1	x	3.58					=	3.58	RM
+		1	x	3.20					=	3.20	RM
+	Right Side	1	x	25.60					=	25.60	RM
+	Staircase	2	x	3.35					=	6.70	RM
+	Lobby/ Shop	1	x	5.49					=	5.49	RM
+								TOTAL	=	85.79	RM
+											
+	PARAPET WALL 230 MM										
+	Back Side	1	x	3.58					=	3.58	RM
+		1	x	6.40					=	6.40	RM
+		1	x	3.20					=	3.20	RM
+		1	x	3.20					=	3.20	RM
+		1	x	5.33					=	5.33	RM
+	Left Side	1	x	7.62					=	7.62	RM
+		1	x	4.27					=	4.27	RM
+		1	x	7.62					=	7.62	RM
+	Front Side	1	x	3.58					=	3.58	RM
+		1	x	3.20					=	3.20	RM
+	Right Side	1	x	25.60					=	25.60	RM
+								TOTAL	=	73.60	RM
+	 Brick Partition walls in X and Y Direction										
+	Shops 2,3	3	x	7.39					=	22.17	RM
+	Shops 6,7 in Y Direction	2	x	5.49					=	10.98	RM
+	Shops 6,1 in X Direction	2	x	3.35					=	6.70	RM
+	Shop 7 in X Direction	1	x	3.05					=	3.05	RM
+	Shop 4 in X Direction	1	x	5.26					=	5.26	RM
+	Shop 5 in X Direction	1	x	3.66					=	3.66	RM
+	Shop 8 in Y Direction	1	x	5.49					=	5.49	RM
+	Toilets in Y Direction	2	x	2.13					=	4.26	RM
+								TOTAL	=	61.57	RM
+											
+1	Earth work in excavation in foundation trenches or drains including dressing of sides and ramming of bottoms, lift up to 1.5 Mtr. including taking out the excavated soil and depositing and refilling of jhiri with watering & ramming and disposal of surplus excavated soil as directed within a lead of 50 meter.  All kinds of soil.										
+	Average Width (49.83+18.44)/2=34.14	1	x	34.14	x	37.80	x	1.20	=	1548.59	Cum
+											
+						Total 				1548.59	Cum
+2	Filling available excavated earth (excluding rock) in trenches, plinth side of foundation etc. in layers not exceeding 20 cm. in depth , consolidating  each deposited layer by ramming and watering including lead upto 50Mtr. and lift upto 1.5Mtr.							0			
+	Average Width (49.83+18.44)/2=34.14										
+	Area of Open Excavation 	1	x	34.14	x	37.80			=	1290.49	Sqm
+	Deductions										
+	Footing Area										
+	C1	1	x	2.00	x	2.30			=	4.60	Sqm
+	C2	1	x	2.40	x	2.70			=	6.48	Sqm
+	C3	1	x	2.90	x	3.10			=	8.99	Sqm
+	C4	1	x	2.10	x	2.30			=	4.83	Sqm
+	C5	1	x	2.90	x	3.10			=	8.99	Sqm
+	C6	1	x	2.70	x	2.90			=	7.83	Sqm
+	C7	1	x	2.70	x	2.90			=	7.83	Sqm
+	C8	1	x	2.10	x	2.30			=	4.83	Sqm
+	C9	1	x	2.90	x	3.10			=	8.99	Sqm
+	C10	1	x	2.90	x	3.10			=	8.99	Sqm
+	C11	1	x	2.40	x	2.60			=	6.24	Sqm
+	C12	1	x	3.00	x	3.20			=	9.60	Sqm
+	C13	1	x	1.80	x	2.00			=	3.60	Sqm
+	C14	1	x	2.60	x	2.80			=	7.28	Sqm
+	C15	1	x	2.50	x	2.70			=	6.75	Sqm
+	C16	1	x	2.10	x	2.30			=	4.83	Sqm
+	C17	1	x	2.20	x	2.50			=	5.50	Sqm
+	C18	1	x	2.30	x	2.50			=	5.75	Sqm
+						Total Deductions			-	121.91	Sqm
+											
+	Net earth Filling Area			1290.49	-	121.91			=	1168.58	Sqm
+											
+	Qty. in Filling			1168.58	x	1.00			=	1168.58	Cum
+						Total 				1168.58	Cum
+3	Providing and injection Chloropyrifous Emulsifiable  concentrate 20 % with 1 % concentration for PRE-CONSGTRUCTIONAL Anti termite treatment as per IS 6313 part III and amended from time to time and creating a continous chemical barrier under and around the column pits, wall trenches, basement excavation, top surface of plinth filling, junction of wall and floor along the external perimeter of building expansion joints, over the top surface of consolidated earth of which aproch is to be laid surrounding of pipes and conduits etc. complete as per specification (Plinth floor area only shall be measured for payment.)										
+	Average Width (49.83+18.44)/2=34.14										
+	Area of Open Excavation 	1	x	34.14	x	37.80			=	1290.49	Sqm
+						Total 				1290.49	Sqm
+4	Providing and laying in position cement concrete including curing compaction etc. of specified grade excluding the cost of centering and shuttering =All up to plinth leve 1:4:8 (1Cement :4 Coarse  Sand :8 Graded stone aggregate 40 mm nominal size										
+	FOOTING										
+	F1	1	x	2.00	x	2.30	x	0.30	=	1.38	Cum
+	F2	1	x	2.40	x	2.70	x	0.30	=	1.94	Cum
+	F3	1	x	2.90	x	3.10	x	0.30	=	2.70	Cum
+	F4	1	x	2.10	x	2.30	x	0.30	=	1.45	Cum
+	F5	1	x	2.90	x	3.10	x	0.30	=	2.70	Cum
+	F6	1	x	2.70	x	2.90	x	0.30	=	2.35	Cum
+	F7	1	x	2.70	x	2.90	x	0.30	=	2.35	Cum
+	F8	1	x	2.10	x	2.30	x	0.30	=	1.45	Cum
+	F9	1	x	2.90	x	3.10	x	0.30	=	2.70	Cum
+	F10	1	x	2.90	x	3.10	x	0.30	=	2.70	Cum
+	F11	1	x	2.40	x	2.60	x	0.30	=	1.87	Cum
+	F12	1	x	3.00	x	3.20	x	0.30	=	2.88	Cum
+	F13	1	x	1.80	x	2.00	x	0.30	=	1.08	Cum
+	F14	1	x	2.60	x	2.80	x	0.30	=	2.18	Cum
+	F15	1	x	2.50	x	2.70	x	0.30	=	2.03	Cum
+	F16	1	x	2.10	x	2.30	x	0.30	=	1.45	Cum
+	F17	1	x	2.20	x	2.50	x	0.30	=	1.65	Cum
+	F18	1	x	2.30	x	2.50	x	0.30	=	1.73	Cum
+	Basement Wall and Raft AREA	1	x	1168.58	x	1.00	x	0.15	=	175.29	Cum
+											
+						Total Qty.				211.86	Cum
+5	Providing and laying in position specified grade of reinforcement cement concrete all RCC structural elements upto plinth level  including curing compaction finishing with rendering in cement sand mortar 1:3 ( 1 cement : 3 coarse sand) and making good the joints excluding the cost of centering shuttering and reinforcementlevel. M25 grade Design mix										
+	FOOTING										
+	F1	1	x	1.70	x	2.00	x	0.60	=	2.04	Cum
+	F2	1	x	2.10	x	2.40	x	0.75	=	3.78	Cum
+	F3	1	x	2.60	x	2.80	x	0.80	=	5.82	Cum
+	F4	1	x	1.80	x	2.00	x	0.60	=	2.16	Cum
+	F5	1	x	2.60	x	2.80	x	0.90	=	6.55	Cum
+	F6	1	x	2.40	x	2.60	x	0.75	=	4.68	Cum
+	F7	1	x	2.40	x	2.60	x	0.75	=	4.68	Cum
+	F8	1	x	1.80	x	2.00	x	0.60	=	2.16	Cum
+	F9	1	x	2.60	x	2.80	x	0.75	=	5.46	Cum
+	F10	1	x	2.60	x	2.80	x	0.90	=	6.55	Cum
+	F11	1	x	2.10	x	2.30	x	0.75	=	3.62	Cum
+	F12	1	x	2.70	x	2.90	x	0.80	=	6.26	Cum
+	F13	1	x	1.50	x	1.70	x	0.75	=	1.91	Cum
+	F14	1	x	2.30	x	2.50	x	0.75	=	4.31	Cum
+	F15	1	x	2.20	x	2.40	x	0.65	=	3.43	Cum
+	F16	1	x	1.80	x	2.00	x	0.60	=	2.16	Cum
+	F17	1	x	1.90	x	2.20	x	0.75	=	3.14	Cum
+	F18	1	x	2.00	x	2.20	x	0.75	=	3.30	Cum
+	TOTAL QTY IN FOOTING 	72.03		Cum							
+	BASEMENT WALL										
+	Base Left Side	1	x	35.05	x	3.50	x	0.30	=	36.80	Cum
+	Back Side	1	x	46.79	x	3.50	x	0.30	=	49.13	Cum
+	Right Side	1	x	48.46	x	3.50	x	0.30	=	50.88	Cum
+	Front Side	1	x	15.70	x	3.50	x	0.30	=	16.49	Cum
+	Wall Left Side av width (250+350)/2= 300 mm	1	x	35.05	x	0.30	x	3.50	=	36.80	Cum
+	Back Side	1	x	46.79	x	0.30	x	3.50	=	49.13	Cum
+	Right Side	1	x	48.46	x	0.30	x	3.50	=	50.88	Cum
+	Front Side	1	x	15.70	x	0.30	x	3.50	=	16.49	Cum
+	TOTAL QTY IN BASEMENT WALL	306.60		Cum							
+	COLUMNS										
+	C1	1	x	0.30	x	0.60	x	3.25	=	0.59	Cum
+	C2	1	x	0.30	x	0.60	x	3.25	=	0.59	Cum
+	C3	1	x	0.45	x	0.68	x	3.25	=	0.99	Cum
+	C4	1	x	0.30	x	0.53	x	3.25	=	0.51	Cum
+	C5	1	x	0.38	x	0.60	x	3.25	=	0.74	Cum
+	C6	1	x	0.38	x	0.60	x	3.25	=	0.74	Cum
+	C7	1	x	0.38	x	0.60	x	3.25	=	0.74	Cum
+	C8	1	x	0.30	x	0.53	x	3.25	=	0.51	Cum
+	C9	1	x	0.45	x	0.68	x	3.25	=	0.99	Cum
+	C10	1	x	0.30	x	0.53	x	3.25	=	0.51	Cum
+	C11	1	x	0.45	x	0.68	x	3.25	=	0.99	Cum
+	C12	1	x	0.38	x	0.60	x	3.25	=	0.74	Cum
+	C13	1	x	0.30	x	0.53	x	3.25	=	0.51	Cum
+	C14	1	x	0.38	x	0.60	x	3.25	=	0.74	Cum
+	C15	1	x	0.38	x	0.60	x	3.25	=	0.74	Cum
+	C16	1	x	0.30	x	0.53	x	3.25	=	0.51	Cum
+	C17	1	x	0.30	x	0.53	x	3.25	=	0.51	Cum
+	C18	1	x	0.30	x	0.53	x	3.25	=	0.51	Cum
+	TOTAL QTY IN COLUMNS IN BASEMENT	12.16		Cum							
+	Lift	4	x	1.75	x	0.23	x	3.20	=	5.15	Cum
+		-1	x	1.20	x	0.23	x	3.20	=	-0.88	Cum
+	Stair Case Base Beam	1	x	1.68	x	0.30	x	0.60	=	0.30	Cum
+	Stair slab	2	x	3.70	x	1.60	x	0.25	=	2.96	Cum
+		1	x	2.10	x	1.60	x	0.25	=	0.84	Cum
+	Beam	2	x	4.20	x	0.23	x	0.45	=	0.87	Cum
+	Beam	2	x	3.30	x	0.23	x	0.45	=	0.68	Cum
+	Qty of Lift and Staircase in Basement	9.92		Cum							
+	BEAMS										
+	B1	1	x	3.58	x	0.23	x	0.45	=	0.37	Cum
+	B2	1	x	3.58	x	0.23	x	0.45	=	0.37	Cum
+	B3	1	x	3.58	x	0.23	x	0.45	=	0.37	Cum
+	B4	1	x	3.58	x	0.23	x	0.45	=	0.37	Cum
+	B5	1	x	1.80	x	0.23	x	0.45	=	0.19	Cum
+	B6	1	x	3.58	x	0.23	x	0.45	=	0.37	Cum
+	B7	1	x	3.58	x	0.23	x	0.45	=	0.37	Cum
+	B8	1	x	2.85	x	0.23	x	0.45	=	0.29	Cum
+	B9	1	x	2.91	x	0.23	x	0.45	=	0.30	Cum
+	B10	1	x	1.80	x	0.23	x	0.45	=	0.19	Cum
+	B11	1	x	3.58	x	0.23	x	0.45	=	0.37	Cum
+	B12	1	x	6.43	x	0.23	x	0.45	=	0.67	Cum
+	B13	1	x	2.91	x	0.23	x	0.45	=	0.30	Cum
+	B14	1	x	0.29	x	0.23	x	0.45	=	0.03	Cum
+	B15	1	x	3.20	x	0.23	x	0.45	=	0.33	Cum
+	B16	1	x	1.80	x	0.23	x	0.45	=	0.19	Cum
+	B17	1	x	6.43	x	0.23	x	0.45	=	0.67	Cum
+	B18	1	x	3.58	x	0.23	x	0.45	=	0.37	Cum
+	B19	1	x	6.43	x	0.23	x	0.45	=	0.67	Cum
+	B20	1	x	3.20	x	0.23	x	0.45	=	0.33	Cum
+	B21	1	x	3.20	x	0.23	x	0.45	=	0.33	Cum
+	B22	1	x	5.33	x	0.23	x	0.45	=	0.55	Cum
+	B23	1	x	1.80	x	0.23	x	0.45	=	0.19	Cum
+	B24	1	x	1.50	x	0.23	x	0.45	=	0.16	Cum
+	B25	1	x	7.62	x	0.23	x	0.45	=	0.79	Cum
+	B26	1	x	4.57	x	0.23	x	0.45	=	0.47	Cum
+	B27	1	x	7.62	x	0.23	x	0.45	=	0.79	Cum
+	B28	1	x	1.50	x	0.23	x	0.45	=	0.16	Cum
+	B29	1	x	7.62	x	0.23	x	0.45	=	0.79	Cum
+	B30	1	x	4.57	x	0.23	x	0.45	=	0.47	Cum
+	B31	1	x	7.62	x	0.23	x	0.45	=	0.79	Cum
+	B32	1	x	1.50	x	0.23	x	0.45	=	0.16	Cum
+	B33	1	x	7.62	x	0.23	x	0.45	=	0.79	Cum
+	B34	1	x	4.57	x	0.23	x	0.45	=	0.47	Cum
+	B35	1	x	4.57	x	0.23	x	0.45	=	0.47	Cum
+	B36	1	x	7.62	x	0.23	x	0.45	=	0.79	Cum
+	B37	1	x	4.57	x	0.23	x	0.45	=	0.47	Cum
+	B38	1	x	7.62	x	0.23	x	0.45	=	0.79	Cum
+	B39	1	x	7.62	x	0.23	x	0.45	=	0.79	Cum
+	B40	1	x	2.34	x	0.23	x	0.45	=	0.24	Cum
+	B41	1	x	9.55	x	0.23	x	0.45	=	0.99	Cum
+	B42	1	x	9.55	x	0.23	x	0.45	=	0.99	Cum
+	B43	1	x	5.75	x	0.23	x	0.45	=	0.60	Cum
+	B44	1	x	5.75	x	0.23	x	0.45	=	0.60	Cum
+	B45	1	x	9.30	x	0.23	x	0.45	=	0.96	Cum
+	B46	1	x	9.30	x	0.23	x	0.45	=	0.96	Cum
+	TOTAL QTY IN BEAMS IN BASEMENT	22.65		Cum							
+	Roof Slab										
+	Average Width (21.72+6.40)/2=14.06										
+	Qty. in Slab	1	x	14.06	x	21.03	x	0.15	=	44.35	Cum
+	TOTAL QTY IN SLABS IN BASEMENT	44.35		Cum							
+						Total Qty.				467.72	Cum
+6	Providing and layin in position specified grade of cement concrete for RCC Structure elements unto floor three level including curing, compaction, finishing with rendering in cement sand mortar 1:3 (1 cement ; 3 coarse sand) and making good the joints excluding the cost of centering shuttering and reinforcement forshuttering and reinforcement : M25 grade Design mix 										
+	TOTAL QTY IN COLUMNS IN GROUND FLOOR									12.16	Cum
+	TOTAL QTY IN COLUMNS IN FIRST FLOOR									12.16	Cum
+	Qty of Lift and Staircase in Ground Floor									9.92	Cum
+	Qty of Lift and Staircase in First Floor									9.92	Cum
+	Qty of Lift and Staircase in MUMTY									9.92	Cum
+	TOTAL QTY IN BEAMS IN GROUND FLOOR									22.65	Cum
+	TOTAL QTY IN BEAMS IN FIRST FLOOR									22.65	Cum
+	TOTAL QTY IN SLABS IN GROUND FLOOR									44.35	Cum
+	TOTAL QTY IN SLABS IN FIRST FLOOR									44.35	Cum
+						Total Qty.				188.10	Cum
+3	Centering & shuttering with plywood or steel sheets including strutting propping, bracing both ways with wooden members and removal of form work for superstructure upto 4.5 Mtr. height above plinth level (A) For Columns, Pillars, Posts and Struts etc.										
+	Columns C1	245	x	1.80	x	3.00			=	1323.00	Sqm
+	Columns C2	97	x	1.20	x	3.30			=	384.12	Sqm
+						Total 				1707.12	Sqm
+1	Providing and fabrication steel reinforcement for R.C.C. work including cutting, bending, placing in  position and binding complete including cost of binding wire in foundations, Raft footing step Beams base of column etc. upto plinth level. Hot rolled deformed (IS : 1139) cold twisted (IS : 1786) bars. 										
+	Footings	72.03		Cum @		25	Kg/Cum		=	1801	Kg
+	Basement Wall	306.60		Cum @		150	Kg/Cum		=	45990	Kg
+	Beams	22.65		Cum @		250	Kg/Cum		=	5663	Kg
+	Slabs	44.35		Cum @		35	Kg/Cum		=	1552	Kg
+	Columns	12.16		Cum @		400	Kg/Cum		=	4864	Kg
+	Beams IN GF	22.65		Cum @		250	Kg/Cum		=	5663	Kg
+	Slabs IN GF	44.35		Cum @		35	Kg/Cum		=	1552	Kg
+	Columns IN GF	12.16		Cum @		400	Kg/Cum		=	4864	Kg
+	Beams IN FF	22.65		Cum @		250	Kg/Cum		=	5663	Kg
+	Slabs IN FF	44.35		Cum @		35	Kg/Cum		=	1552	Kg
+	Columns IN FF	12.16		Cum @		400	Kg/Cum		=	4864	Kg
+						Total				84030	Kg
+											
+1	Brick work in superstructure upto 4.5 metre height  above plinth level Cement Mortar 1:6 with bricks are class designation 75.										
+	Walls in X direction	1	x	85.79	x	0.23	x	3.60	=	71.03	Cum
+	Walls in Y direction	1	x	85.79	x	0.23	x	3.60	=	71.03	Cum
+	Parapet	1	x	73.60	x	0.23	x	0.75	=	12.70	Cum
+						Gross Qty.			+	154.76	Cum
+	Deductions										
+	D1	63	x	1.20	x	0.23	x	2.10	=	36.51	Cum
+	D3	3	x	3.00	x	0.23	x	2.10	=	4.35	Cum
+	W1	222	x	1.80	x	0.23	x	1.20	=	110.29	Cum
+	V1	9	x	1.20	x	0.23	x	0.60	=	1.49	Cum
+	V2	295	x	0.90	x	0.23	x	0.60	=	36.64	Cum
+	0.00	1	x	3.20	x	0.23	x	1.70	=	1.25	Cum
+	0.00	1	x	3.20	x	0.23	x	1.70	=	1.25	Cum
+	#REF!	1	x	#REF!	x	0.23	x	1.70	=	#REF!	Cum
+	#REF!	1	x	#REF!	x	0.23	x	1.70	=	#REF!	Cum
+	 C.C. jali Staircase	2	x	2.40	x	0.23	x	2.40	=	2.65	Cum
+	Lintels 	1	x	171.58	x	0.23	x	0.23	=	9.08	Cum
+						Total Deductions			-	#REF!	Cum
+	Net qty. in First floor		154.76		-	#REF!			=	#REF!	Cum
+											
+											
+2	Half brick masonry in super structure using bricks of class designation 75 in  Cement Mortar 1:4  ( 1 cement : 4 coarse sand)										
+	Wall03	1	x	61.57	x	3.60			=	221.65	Sqm
+						Gross Qty.			+	221.65	Sqm
+	Deductions										
+	D2	10	x	0.75	x	2.10			=	15.75	Sqm
+	Lintels      	1	x	61.57	x	0.15			=	9.24	Sqm
+						Total Deductions			-	24.99	Sqm
+	Net qty. in Ground floor		221.65		-	24.99			=	196.67	Sqm
+	Total qty. of brick masonry									196.67	Sqm
+											
+3	Centering & shuttering with plywood or steel sheets including strutting propping, bracing both ways with wooden members and removal of form work for superstructure upto 4.5 Mtr. height above plinth level (A) For Columns, Pillars, Posts and Struts etc.										
+	Columns C1	245	x	1.80	x	3.00			=	1323.00	Sqm
+	Columns C2	97	x	1.20	x	3.30			=	384.12	Sqm
+						Total 				1707.12	Sqm
+	(B) For suspended floors, roofs, landing staircases, landing balconies, girders, cantilevers, bands, copings, bed plates, anchor blocks, sills, chajjas etc.										
+	Lintels 										
+	Walls in X direction Except Verandah Walls	2	x	79.39	x	0.23			=	36.52	Sqm
+	Walls in Y direction Except Verandah Walls	2	x	#REF!	x	0.23			=	#REF!	Sqm
+	Wall03	2	x	61.57	x	0.15			=	18.47	Sqm
+	soffits										
+	D1	63	x	1.20	x	0.23			=	17.39	Sqm
+	D2	3	x	3.00	x	0.23			=	2.07	Sqm
+	D3	10	x	0.90	x	0.11			=	0.99	Sqm
+	C.C. jali	2	x	1.80	x	0.23			=	0.83	Sqm
+	Sunshades										
+	W1	222	x	1.80	x	0.83			=	331.67	Sqm
+	V1	9	x	1.20	x	0.83			=	8.96	Sqm
+	V2	295	x	0.90	x	0.83			=	220.37	Sqm
+	Porch	1	x	3.90	x	1.28			=	4.99	Sqm
+	Porch	2	x	4.50	x	1.28			=	11.52	Sqm
+	Total Shuttering of sunshades in FF	577.51				Sqm					
+	Beams										
+	Walls in X direction	2	x	85.79	x	0.30			=	51.47	Sqm
+		1	x	85.79	x	0.30			=	25.74	Sqm
+	Walls in Y direction	2	x	85.79	x	0.30			=	51.47	Sqm
+		1	x	85.79	x	0.30			=	25.74	Sqm
+	In Rooms	26	x	9.22	x	0.30			=	71.92	Sqm
+		52	x	9.22	x	0.75			=	359.59	Sqm
+	In Rooms	45	x	9.45	x	0.30			=	127.56	Sqm
+		90	x	9.45	x	0.75			=	637.79	Sqm
+	In Rooms	22	x	8.08	x	0.30			=	53.31	Sqm
+		44	x	8.08	x	0.60			=	213.24	Sqm
+	0.00	2	x	3.20	x	0.45			=	2.88	Sqm
+		1	x	3.20	x	0.30			=	0.96	Sqm
+	0.00	2	x	3.20	x	0.45			=	2.88	Sqm
+		1	x	3.20	x	0.30			=	0.96	Sqm
+	#REF!	2	x	#REF!	x	0.45			=	#REF!	Sqm
+		1	x	#REF!	x	0.30			=	#REF!	Sqm
+	#REF!	2	x	#REF!	x	0.45			=	#REF!	Sqm
+		1	x	#REF!	x	0.30			=	#REF!	Sqm
+	Staircase	4	x	4.80	x	0.45			=	8.64	Sqm
+		2	x	4.80	x	0.30			=	2.88	Sqm
+	Ent Hall	4	x	3.50	x	0.60			=	8.40	Sqm
+		1	x	3.50	x	0.30			=	1.05	Sqm
+	Slabs										
+	Roof Area (103.10x100.20-85.88x79.71)	1	x	3485.13	x	1.00			=	3485.13	Sqm
+	Staircase 	2	x	7.20	x	5.00			=	72.00	Sqm
+	Staircase flights	4	x	4.25	x	1.80			=	30.60	Sqm
+	Staircase landing	2	x	3.50	x	1.80			=	12.60	Sqm
+	Porch	1	x	3.60	x	5.00			=	18.00	Sqm
+	Area Of Shuttering For Slab in FF	3618.33			Sqm						
+						Total FF				#REF!	Sqm
+											
+4	Providing and laying cement concrete and RCC work  including curing, compaction, finishing with rendering in cement sand mortar 1:3 (1 cement , 3 : coarse sand) and making good the joints excluding cost of centering and shuttering and reinforcement. 'M-15 grade mix 1:2:4(1:cement, :2- coarse Sand: 4- graded stone aggregate 20 mm nominal size). (A) In suspended floors, roofs, girders, cantilevers,  staircases, landings,  balconies,   bands, copings, bed plates, anchor blocks, sill, and beams etc. upto 4.5 m height above plinth level.										
+	Beams										
+	Walls in X direction	1	x	713.00	x	0.30	x	0.30	=	64.17	Cum
+	Walls in Y direction	1	x	697.15	x	0.30	x	0.30	=	62.74	Cum
+	In Rooms	26	x	9.22	x	0.30	x	0.75	=	53.94	Cum
+	In Rooms	45	x	9.45	x	0.30	x	0.75	=	95.67	Cum
+	In Rooms	22	x	8.08	x	0.30	x	0.60	=	31.99	Cum
+	Verandah Wall of Left Wing	1	x	85.88	x	0.45	x	0.30	=	11.59	Cum
+	Verandah Wall of Right Wing	1	x	85.88	x	0.45	x	0.30	=	11.59	Cum
+	Verandah Wall of Back Wing	1	x	79.71	x	0.45	x	0.30	=	10.76	Cum
+	Verandah Wall of Front Wing	1	x	79.71	x	0.45	x	0.30	=	10.76	Cum
+	Staircase	2	x	4.80	x	0.45	x	0.30	=	1.30	Cum
+	Ent Hall	2	x	3.50	x	0.60	x	0.30	=	1.26	Cum
+	Roof Area (103.10x100.20-85.88x79.71)	1	x	3485.13	x	1.00	x	0.13	=	453.07	Cum
+	Staircase 	2	x	7.20	x	5.00	x	0.13	=	9.36	Cum
+	Staircase flights	4	x	4.25	x	1.80	x	0.25	=	7.65	Cum
+	Staircase landing	2	x	3.50	x	1.80	x	0.25	=	3.15	Cum
+	Porch	1	x	3.60	x	5.00	x	0.15	=	2.70	Cum
+											
+						Total in FF				831.70	Cum
+											
+	(B) In Lintels,  chajjas, Shelves, vertical and horizontal individually or forming  box louvers, bands and facias and fins etc.. upto 4.5 m height above plinth level										
+	Lintels 										
+	Walls in X direction Except Verandah Walls	2	x	79.39	x	0.23	x	0.23	=	8.40	Cum
+	Walls in Y direction Except Verandah Walls	2	x	#REF!	x	0.23	x	0.23	=	#REF!	Cum
+	Wall03	2	x	61.57	x	0.23	x	0.23	=	6.51	Cum
+	Sunshades										
+	W1	222	x	1.80	x	0.83	x	0.10	=	33.17	Cum
+	V1	9	x	1.20	x	0.83	x	0.10	=	0.90	Cum
+	V2	295	x	0.90	x	0.83	x	0.10	=	22.04	Cum
+	Porch	1	x	3.90	x	1.28	x	0.10	=	0.50	Cum
+	Porch	2	x	4.50	x	1.28	x	0.10	=	1.15	Cum
+						Total in FF			=	#REF!	Cum
+											
+	(C) In Pillars and Columns in First floor										
+	Columns C1	245	x	0.60	x	0.30	x	3.00	=	132.30	Cum
+	Columns C2	97	x	0.30	x	0.30	x	3.30	=	28.81	Cum
+						Total in FF			=	161.11	Cum
+5	Providing and fabrication steel reinforcement for R.C.C. work including cutting, bending, placing in  position and binding complete including cost of binding wire in foundations, Raft footing step Beams base of column etc. upto plinth level. Hot rolled deformed (IS : 1139) cold twisted (IS : 1786) bars. 										
+	Lintels	#REF!		Cum @		75	Kg/Cum		=	#REF!	Kg
+	Slabs & Beams	831.70		Cum @		100	Kg/Cum		=	83170	Kg
+	Columns	161.11		Cum @		125	Kg/Cum		=	20139	Kg
+						Total				#REF!	Kg
+6	Plaster on new surface on walls in cement sand mortar 1:6 including raking of joints etc. complete fine finished : 20 mm thick.										
+	GROUND FLOOR  INSIDE PLASTER										
+	Main Walls	2	x	#REF!	x	3.60			=	#REF!	Sqm
+	Partition Walls	2	x	196.67	x	1.00			=	393.33	Sqm
+						Gross Qty.			+	#REF!	Sqm
+	Deductions										
+	D1	63	x	1.20	x	2.10			=	158.76	Sqm
+	D2	3	x	3.00	x	2.10			=	18.90	Sqm
+	D3	10	x	0.90	x	2.10			=	18.90	Sqm
+	W1	222	x	1.80	x	1.20			=	479.52	Sqm
+	External plaster	1	x	#REF!	x	1.00			=	#REF!	Sqm
+						Total Deductions			-	#REF!	Sqm
+	Net qty. of Internal Plaster in FF		#REF!		-	#REF!			=	#REF!	Sqm
+	Second FLOOR  INSIDE PLASTER										
+	Staircase	4	x	8.40	x	3.00			=	100.80	Sqm
+	Parapet	2	x	73.60	x	0.75			=	110.40	Sqm
+						Gross Qty.			+	211.20	Sqm
+	Deductions										
+	Staircase	2	x	1.20	x	2.10			=	5.04	Sqm
+	Jali	2	x	1.80	x	2.40			=	8.64	Sqm
+						Total Deductions			-	13.68	Sqm
+	Net qty. of Internal Plaster in FF		211.20		-	13.68			=	197.52	Sqm
+											
+	Net qty. of Internal Plaster in All floors			#REF!	+	197.52			=	#REF!	Sqm
+											
+	External plaster										
+		2	x	103.10	x	4.35			=	896.97	Sqm
+		2	x	100.20	x	4.35			=	871.74	Sqm
+		2	x	79.71	x	4.35			=	693.48	Sqm
+		2	x	85.88	x	4.35			=	747.16	Sqm
+					Gross qty. of External Plaster (+)				= +	3209.34	Sqm
+	Deductions										
+	Verandah Sum of all walls	1	x	#REF!	x	1.70			=	#REF!	Sqm
+						Total Deductions			-	#REF!	Sqm
+	Net qty. of External Plaster in FF		3209.34		-	#REF!			=	#REF!	Sqm
+											
+	Total qty. of  Plaster		#REF!		+	#REF!			=	#REF!	Sqm
+											
+7	Providing and fixing T-iron/angle iron frames for doors windows and ventilators of mild steel tee or angle sections joints mitered and welded with 15 x 3 mm lugs, 10 cm. long embedded in cement concrete blocks 15x15x10 cm. size of 1:3:6 (1 cement : 3 coarse sand : 6 graded stone aggregate 20 mm nominal size) or with wooden plugs and screws or rawl plugs and screws or with fixing clips and screws or with bolt and nuts as required including fixing of necessary butt hinges and screws and applying a priming coat of approved steel primer.										
+	D1	63	x(	1.50	+	2.15	+	2.15	)=	436.83	RM
+	D2	10	x(	1.20	+	2.15	+	2.15	)=	55.47	RM
+						Total				492.30	RM
+				492.30	RM		@ 4.15 Kg/m			2043.03	Kg
+											
+8	Providing and fixing steel glazed doors windows and ventilator shutters of standard rolled steel section joints mitered and welded with steel lugs 13x3 mm, 10 cm long embedded in cement concrete block 15x10x10 cm. of 1:3:6 (1 cement : 3 coarse sand : 6 graded stone aggregate 20 mm nominal size) or with wooden plugs and screws or  with fixing clips and screws or with bolt and nuts as required including providing &  fixing of plain glass panes 3 mm thick with glazing clips and special metals sash putty of approved make or metal beading with screws complete including priming coat of approved steel primer excluding cost of metal beading and other fixing except necessary hinges of pivots steel handles peg stay etc. as required (Partly Fixed Partly Openable)										
+	W1	222	x	1.80	x	1.20			=	479.52	Sqm
+	V1	9	x	1.20	x	0.60			=	6.48	Sqm
+	V2	295	x	0.90	x	0.60			=	159.30	Sqm
+						Total				645.30	Sqm
+											
+9	Providing and fixing square bars or other flat welded to window, ventilators etc.										
+	W1	222	x	1.80	x	10	@ 1.13 Kg/m	1.13	=	4515.48	Kg
+	V1	9	x	1.20	x	4	@ 1.13 Kg/m	1.13	=	48.82	Kg
+	V2	295	x	0.90	x	4	@ 1.13 Kg/m	1.13	=	1200.06	Kg
+						Total				5764.36	Kg
+											
+10	Supplying and fixing wire gauge of 14 mesh x 24 gauge to the metal frame of rolled section by metal beading 20 x 3 mm with suitable screw at not exceeding 150 mm distance.										
+	Qty.  10% of total windows area	645.30			x	0.10				64.53	Sqm
+											
+11	Supplying and fixing in cement mortar welded hand railing made out of MS round or square bars flats. etc. for staircase or verandah as per design complete in all respect (wooden or PVC hand railing to be paid extra) with priming coat of red oxide.										
+	20 mm Square bar	72	x	1.20	@ 	3.14			=	271.30	Kg
+		72	x	0.05	@ 	3.14			=	11.30	Kg
+	Flat 50x5 mm	3	x	9.45	@ 	1.96			=	55.64	Kg
+						Total				338.24	Kg
+											
+12	Polished Blue Kota stone flooring skirting laid over 20 mm thick base CM 1:4 and jointed with Grey cement slurry to match the shade of the slab including rubbing and polishing complete 										
+	Floor Area (103.10x100.20-85.88x79.71)	1.00	x	3485.13	x	1.00			=	3485.13	Sqm
+	Staircase 	2.00	x	7.20	x	5.00			=	72.00	Sqm
+	Staircase flights	4	x	4.25	x	1.80			=	30.60	Sqm
+	Staircase landing	2	x	3.50	x	1.80			=	12.60	Sqm
+	Porch	1	x	3.60	x	5.00			=	18.00	Sqm
+	Steps	14	x	3.00	x	0.30			=	12.60	Sqm
+						Total				3630.93	Sqm
+											
+	(b) for area of each slab from 2001  to 5000 sq. cm 25 mm thick  slab.										
+	Staircase flights	4	x	4.25	x	1.80			=	30.60	Sqm
+	Staircase landing	2	x	3.50	x	1.80			=	12.60	Sqm
+	Porch	1	x	3.60	x	5.00			=	18.00	Sqm
+	Steps	14	x	3.00	x	0.30			=	12.60	Sqm
+						Total				73.80	Sqm
+											
+13	Providing and fixing fully panelled double   leaf shutter for doors as per approved design and drawings with approved ordinary C.P./oxidised steel fittings as per Annexure `A’ and width of styles & top rails of 100 mm and bottom & lock rails width of 150 mm and intermediate styles including teak wood mouldings and beading to 25x5 mm size on both face complete . Assam teak wood grade I 35 mm thick . 12 mm thick shuttering ply (Kit ply make) both faces panels.										
+	D1	63	x	1.20	x	2.10			=	158.76	Sqm
+						Total				158.76	Sqm
+14	Providing and fixing fully panelled Single   leaf shutter for doors as per approved design and drawings with approved ordinary C.P./oxidised steel fittings as per Annexure `A’ and width of styles & top rails of 100 mm and bottom & lock rails width of 150 mm and intermediate styles including teak wood mouldings and beading to 25x5 mm size on both face complete . Assam teak wood grade I 35 mm thick . 12 mm thick shuttering ply (Kit ply make) both faces panels.										
+	D2	10	x	0.90	x	2.10			=	18.90	Sqm
+						Total				18.90	Sqm
+											
+											
+15	White washing with lime to give an even shade including all scaffolding: New work (two or more coats).										
+	Qty. of Internal Plaster								=	#REF!	Sqm
+	Qty. of Sunshade shuttering	2	x	577.51					=	1155.02	Sqm
+	Qty. of Slab shuttering								=	3618.33	Sqm
+						Total				#REF!	Sqm
+											
+16	Colour  washing of all shades to give an even shade including all scaffolding: New work (two or more coats) with a base coat of white washing with lime.										
+	Qty. of External Plaster	1	x	3209.34					=	3209.34	Sqm
+						Total				3209.34	Sqm
+											
+17	Applying priming coat with ready mix pink or Grey primer of approved brand and manufacture on wood work hard and soft wood.										
+	Double Leaf door shutters	158.76			Sqm		@	2.25	=	357.21	Sqm
+	Single Leaf door shutters	18.90			Sqm		@	2.25	=	42.53	Sqm
+	Windows	645.30			Sqm		@	2.60	=	1677.78	Sqm
+	Collapsible shutters	3	x	3.00	x	2.40	@	2.00	=	43.20	Sqm
+	Railing	3	x	9.45	x	1.00	@	1.00	=	28.35	Sqm
+								Total	=	2149.07	Sqm
+											
+18	Painting with enamel paint of approved brand and manufacture to give an even shade two or more coats on new work.										
+	Qty. of priming 									2149.07	Sqm
+											
+19	Providing and fixing in position Collapsible steel shutters with vertical M.S. channels 20 x 10 x 2 mm and bracket with flat iron diagonals 20 x 5 mm size with top and bottom rail of T-iron 40 x 40 x 6 mm  with 40 mm Dai steel pulleys/ball bearing complete with bolts, nuts locking arrangements inside and outside stoppers, handles etc. as per specifications including applying of a priming coat of approved steel primer.( To be measured and paid as per outer dimension). With 75 mm opening when closed.										
+	Collapsible shutters	3	x	3.00	x	2.40			=	21.60	Sqm
+								Total	=	21.60	Sqm
+											
+20	Providing brick kharanja in cement sand mortar 1 : 4 in square pattern over roof of ground  floor  75 to 100 mm thick average. 										
+	Floor Area (103.10x100.20-85.88x79.71)	1.00	x	3485.13	x	1.00			=	3485.13	Sqm
+	Staircase 	2.00	x	7.20	x	5.00			=	72.00	Sqm
+	Porch	1	x	3.60	x	5.00			=	18.00	Sqm
+						Total				3575.13	Sqm
+											
+21	Spreading of hot blown bitumen (IS grade 85/25, 90/25 industrial grade) applied at 175 to 180 C @ rate of 1.75 Kg. per Sqm. complete.			Qty. same as Brick Kharanja					=	3575.13	Sqm
+											
+22	Providing batta (gola) 75 mm x 75 mm in cement concrete (1 :2 :4) including finishing with cement mortar 1 : 3 as per standard design.										
+	@' 0.25 M per Sqm of Kharanja			3575.13	@' 0.25 M per Sqm 				=	 893.78 	Sqm
+											
+23	Finishing with  25 mm thick cement plaster on roofs in cement sand mortar 1:4 mix including water proofing compound @ 2% of cement used with neat cement finishing, curing etc. complete in all respects. 			Qty. same as Brick Kharanja					=	3575.13	Sqm
+											
+24	Providing  and fixing 20 mm thick terrazzo tile over roofing fixed in cement       mortar 1 : 4.			Qty. same as Brick Kharanja					=	3575.13	Sqm
+											
+25	P&F 1st quality white glazed tiles of approved make and size (Somani, Johnson etc.) 5 mm thick in wall, floors, steps, pillars etc. laid on bed of neat cement slurry finished with flush pointing in white cement (excluding the cost of cement plaster).										
+	Laboratory 11 x 5	55	x	18.00	x	1.80			=	1782.00	Sqm
+	Toilets	3	x	2.70	x	1.50			=	12.15	Sqm
+	Urinal Floor	4	x	1.20	x	0.75			=	3.60	Sqm
+	Toilet 	2	x	5.25	x	0.90			=	9.45	Sqm
+								Total	=	1807.20	Sqm
+											
+26	Providing and fixing on wall face Asbestos Cement rain water pipe including jointing with spun yarn soaked in Bitumen and Cement Mortar 1 : 2 ( 1 Cement : 2 Coarse Sand) complete including MS clamp:  100 mm dia.	360	x	0.60					=	216.00	RM
+								Total	=	216.00	RM
+											
+27	Providing and fixing precast cement concrete coping 1:2:4 mix 50 mm thick complete as per specification 50 mm thick.										
+	Coping FF Parapet  	1	x	#REF!	x	0.32			=	#REF!	Sqm
+								Total	=	#REF!	Sqm
+28	Dismantling stone rubble masonry including stacking of serviceable material and disposal of unserviceable material within 50 m lead; In lime mortar										
+	For Columns 2x(245+97)	684	x	0.30	x	0.23		0.75	=	35.40	Cum
+							Total			35.40	Cum
+29	Providing, laying and fixing in position RCC Spun or Hume pipe ISI marked with proper joints in required slope, packed in the gasket of hume pipe or spun yarn and neatly finished with rich grout of  cement mortar 1 : 3 ( 1 cement : 3  sand )  and made perfectly air and water tight including testing of joints, for 150 mm Dia. NP3 pipe	2	x	15.00					=	30.00	RM
+	NON BSR ITEM										
+30	P & F glass boards	1	x	27.00					=	27.00	Nos.
+											
+											
+						CHARTERED   ENGINEER,					
+						TEJHANS INVESTMENTS, UDAIPUR					

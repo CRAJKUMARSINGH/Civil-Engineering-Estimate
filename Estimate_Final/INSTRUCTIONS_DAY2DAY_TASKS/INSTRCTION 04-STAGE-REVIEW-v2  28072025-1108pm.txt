@@ -1,0 +1,13 @@
+Expert Stage Review – Tender_Kimi (post FastAPI POC)
+Stage	Status	Evidence / Gap
+Week-01 Backend POC	✅ COMPLETE	• `/api/v1/upload`, `/download/{template}`, `/health` live on Render<br>• All CI checks green, Docker multi-stage build passing
+Code Quality	⚠️ Minor debt	• Async blocking `pandas.read_excel` → needs `asyncio.to_thread`<br>• Missing rate-limit & structured logging
+Security & Ops	⚠️ Open items	• `.env` not in `.gitignore`<br>• No `slowapi` or security headers yet
+Frontend Kick-off	🚧 NOT STARTED	No React-Vite scaffold, no branch `week02-frontend`
+Dev Workflow	✅ Ready	`docker compose up --build` spins backend on `localhost:8000`; CORS already allows `localhost:5173`
+🔥 Immediate Next Actions
+1.  Fix async blocking (≤ 1 h).
+2.  Add rate-limit + .gitignore fix (≤ 1 h).
+3.  Merge PR → tag v0.2.0.
+4.  Create week02-frontend branch & scaffold React-Vite (npm create vite@latest tender-frontend --template react-ts).
+Once 1–3 are merged, Stage-01 is locked and Stage-02 (frontend) officially begins.

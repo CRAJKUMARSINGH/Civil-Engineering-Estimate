@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Priyanka_TenderV03 – Today’s Add-ons</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <h1 class="mb-4">Add-ons Applied Today</h1>
+
+    <!-- 1. Downloadable Templates -->
+    <section class="card mb-3">
+      <div class="card-header">📄 Downloadable Excel Templates</div>
+      <div class="card-body">
+        <a href="/download/single_work_nit.xlsx" class="btn btn-primary btn-sm me-2">Single-Work NIT</a>
+        <a href="/download/multi_work_nit.xlsx"  class="btn btn-primary btn-sm">Multi-Work NIT (2-15)</a>
+      </div>
+    </section>
+
+    <!-- 2. Office Profile (Office O-1 pre-seeded) -->
+    <section class="card mb-3">
+      <div class="card-header">🏢 User-specific Office Profile</div>
+      <div class="card-body">
+        <dl class="row mb-0">
+          <dt class="col-sm-3">Office Name</dt><dd class="col-sm-9">Office O-1</dd>
+          <dt class="col-sm-3">Address</dt><dd class="col-sm-9">123 Secretariat Avenue, Capital City – 110001</dd>
+          <dt class="col-sm-3">Seal</dt><dd class="col-sm-9"><code>static/seals/o1_seal.png</code></dd>
+          <dt class="col-sm-3">Letter-head</dt><dd class="col-sm-9"><code>static/letterheads/o1_letterhead.png</code></dd>
+        </dl>
+        <p class="mt-2 mb-0">All generated PDFs now pull header, footer, seal & letter-head from this profile. Users can edit it under <code>/profile</code>.</p>
+      </div>
+    </section>
+
+    <!-- 3. Schema Snippet -->
+    <section class="card">
+      <div class="card-header">🗃️ SQL Delta (run once)</div>
+      <div class="card-body">
+<pre><code class="sql">CREATE TABLE office_profiles (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER UNIQUE,
+  office_name TEXT, address TEXT,
+  seal_path TEXT, letterhead_path TEXT,
+  nit_header TEXT, nit_footer TEXT
+);
+INSERT OR IGNORE INTO office_profiles
+  (user_id, office_name, address, seal_path, letterhead_path, nit_header, nit_footer)
+VALUES
+  (1, 'Office O-1', '123 Secretariat Avenue, Capital City – 110001',
+   'static/seals/o1_seal.png', 'static/letterheads/o1_letterhead.png',
+   'GOVERNMENT OF …<br>Office of the Executive Engineer (O-1)<br>NIT No. ______ / EE / 2025-26',
+   'For and on behalf of the Governor,<br>(Signature & Seal)<br>Executive Engineer (O-1)');
+</code></pre>
+      </div>
+    </section>
+
+    <footer class="text-center mt-4 text-muted">
+      <small>Happy bug-free tendering! 🚀</small>
+    </footer>
+  </div>
+</body>
+</html>

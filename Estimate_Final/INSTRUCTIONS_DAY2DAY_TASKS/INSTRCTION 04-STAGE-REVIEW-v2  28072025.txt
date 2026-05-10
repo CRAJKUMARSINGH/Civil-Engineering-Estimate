@@ -1,0 +1,30 @@
+🔍 Expert Review – Tender_Kimi (FastAPI backend)
+Commit checked: main @ 2024-07-28 18:00 UTC
+Area	Observation	Severity	Fix / Suggestion
+Project Structure	Clean separation (`app/api`, `app/services`, `tests`).	✅ Good	Keep as-is.
+Environment & Secrets	`.env.example` present, but no `.env` in `.gitignore`.	⚠️ Medium	Add `.env` to `.gitignore` immediately.
+Pydantic Models	Uses `BaseModel` for request/response, but missing examples & field constraints.	ℹ️ Low	Add `Field(example=..., description=...)` for auto-docs.
+Error Handling	Generic `try/except` in `excel_parser.py`; returns 422 with string only.	⚠️ Medium	Create dedicated exception handlers: `HTTPException(status_code=422, detail={"loc": ..., "msg": ...})`.
+File Upload Limits	`MAX_SIZE` hard-coded (5 MB).	ℹ️ Low	Move to `settings.py` via `pydantic-settings` so ops can change w/o redeploy.
+Async / CPU	`pandas.read_excel` is blocking.	🔴 High	Off-load to `asyncio.to_thread` or use `ProcessPoolExecutor` to avoid event-loop starvation.
+Dockerfile	Multi-stage build is present, but final image still contains dev packages (`pytest`, etc.).	ℹ️ Low	Use `--only=main` or split `requirements.txt` into `requirements-dev.txt`.
+Tests	Basic pytest exists (upload + health), but no parameterized tests for multi-sheet or invalid files.	ℹ️ Low	Add `@pytest.mark.parametrize` for edge cases (empty file, wrong extension, >5 MB).
+CI/CD	GitHub Actions workflow uses `python:3.11-slim`, but does not cache pip.	ℹ️ Medium	Add `actions/cache@v4` to cut build time (~40 s → ~10 s).
+CORS	Correctly configured for `localhost:5173` + Vercel.	✅ Good	—
+Rate Limiting	Missing.	⚠️ Medium	Plug `slowapi` or `fastapi-limiter` before going public.
+Logging	Only default uvicorn logs.	ℹ️ Low	Use `structlog` + JSON for production observability.
+Security Headers	No `X-Content-Type-Options`, `X-Frame-Options`.	ℹ️ Low	Add `fastapi-security-headers` middleware.
+----
+🔧 Quick Wins Checklist
+•  [ ] Add .env to .gitignore
+•  [ ] Wrap pandas.read_excel in asyncio.to_thread
+•  [ ] pip install slowapi → @limiter.limit("5/minute") on upload route
+•  [ ] Add cache step in GitHub Actions yaml
+•  [ ] Split requirements → requirements.txt vs requirements-dev.txt
+•  [ ] Create exception_handlers.py for consistent JSON errors
+----
+🎯 Next Merge Gate
+1.  Fix async blocking call.
+2.  Add rate limiter.
+3.  Parameterized tests green.
+After those three items, tag v0.2.0 and move to frontend work.

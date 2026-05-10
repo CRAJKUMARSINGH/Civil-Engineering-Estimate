@@ -1,0 +1,88 @@
+{
+  "timestamp": "2025-08-26T11:43:38.376160",
+  "total_files": 10,
+  "total_size_mb": 23.78,
+  "critical_files_present": true,
+  "file_types": {
+    ".md": {
+      "count": 3,
+      "size_mb": 0.01
+    },
+    ".py": {
+      "count": 1,
+      "size_mb": 0.01
+    },
+    ".xls": {
+      "count": 3,
+      "size_mb": 10.09
+    },
+    ".pdf": {
+      "count": 1,
+      "size_mb": 13.56
+    },
+    ".txt": {
+      "count": 1,
+      "size_mb": 0.09
+    },
+    ".doc": {
+      "count": 1,
+      "size_mb": 0.02
+    }
+  },
+  "critical_files": [
+    {
+      "name": "ACTION_PLAN.md",
+      "path": "ACTION_PLAN.md",
+      "size_mb": 0.01,
+      "description": "Comprehensive action plan for project implementation"
+    },
+    {
+      "name": "BAR WING PP WING.xls",
+      "path": "BAR WING PP WING.xls",
+      "size_mb": 2.13,
+      "description": "Building rate analysis - Bar and Wing construction data"
+    },
+    {
+      "name": "Building_BSR_2022_FINAL_30.9.2022.pdf",
+      "path": "Building_BSR_2022_FINAL_30.9.2022.pdf",
+      "size_mb": 13.56,
+      "description": "Building Standard Rates 2022 - Official rate schedule"
+    },
+    {
+      "name": "CHTGPT_GUIDANCE.txt",
+      "path": "CHTGPT_GUIDANCE.txt",
+      "size_mb": 0.09,
+      "description": "ChatGPT guidance and instructions for development"
+    },
+    {
+      "name": "COURT BLDG NTD.xls",
+      "path": "COURT BLDG NTD.xls",
+      "size_mb": 6.01,
+      "description": "Court building estimation data and rates"
+    },
+    {
+      "name": "Noteworthy GitHub Repositories.md",
+      "path": "Noteworthy GitHub Repositories.md",
+      "size_mb": 0.0,
+      "description": "List of relevant GitHub repositories including GEstimator"
+    },
+    {
+      "name": "Raj_estimator.md",
+      "path": "Raj_estimator.md",
+      "size_mb": 0.0,
+      "description": "Project requirements and deliberation document"
+    }
+  ],
+  "all_files": [
+    "ACTION_PLAN.md",
+    "ASSET_PRESERVATION.py",
+    "BAR WING PP WING.xls",
+    "Building_BSR_2022_FINAL_30.9.2022.pdf",
+    "CHTGPT_GUIDANCE.txt",
+    "COURT BLDG NTD.xls",
+    "cover page court.doc",
+    "DJ QUARTER.xls",
+    "Noteworthy GitHub Repositories.md",
+    "Raj_estimator.md"
+  ]
+}

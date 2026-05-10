@@ -1,0 +1,2508 @@
+Perfect 👍
+Since you already have your formulas in **Excel** and Struds tables, the fastest way is to wrap your questionnaire in **Excel VBA UserForm**. That way:
+
+* Your **existing formulas** stay intact.
+* The **user just fills a form** (Yes/No, numbers, dimensions).
+* The app writes values to hidden input cells, and your design formulas calculate automatically.
+* You can later export the filled values into reports or Struds-compatible files.
+
+---
+
+### 🔹 Step 1: Insert a UserForm in Excel
+
+1. Open your Excel file.
+2. Press `Alt + F11` → VBA Editor.
+3. `Insert → UserForm`.
+4. Add controls (CheckBox, TextBox, ComboBox, ListBox) as per the questionnaire.
+
+---
+
+### 🔹 Step 2: Sample VBA Form Layout Code
+
+Here’s a **starting VBA code** (simplified for your sections):
+
+```vba
+Private Sub UserForm_Initialize()
+    ' Default values
+    txtSkirting.Value = 0.1
+    txtDado.Value = 2.1
+    txtFootingSteps.Value = 3
+End Sub
+
+Private Sub btnSubmit_Click()
+    ' Main Wall
+    Sheets("Inputs").Range("B2").Value = chkMainWall.Value
+    Sheets("Inputs").Range("B3").Value = txtPCCWidth.Value
+    Sheets("Inputs").Range("B4").Value = txtPCCThk.Value
+    Sheets("Inputs").Range("B5").Value = txtFootingSteps.Value
+    
+    ' Superstructure
+    Sheets("Inputs").Range("B6").Value = txtSSWidth.Value
+    Sheets("Inputs").Range("B7").Value = txtSSHeight.Value
+    
+    ' Partition Wall
+    Sheets("Inputs").Range("B8").Value = chkPartitionWall.Value
+    Sheets("Inputs").Range("B9").Value = txtPWWidth.Value
+    Sheets("Inputs").Range("B10").Value = txtPWHeight.Value
+    
+    ' Plinth Beam
+    Sheets("Inputs").Range("B11").Value = txtPlinthBeam.Value
+    
+    ' Rooms (loop for N rooms)
+    Dim i As Integer
+    For i = 1 To CInt(txtRoomCount.Value)
+        Sheets("Inputs").Cells(20 + i, 2).Value = Me.Controls("txtRoomName" & i).Value
+        Sheets("Inputs").Cells(20 + i, 3).Value = Me.Controls("txtRoomLen" & i).Value
+        Sheets("Inputs").Cells(20 + i, 4).Value = Me.Controls("txtRoomWid" & i).Value
+    Next i
+    
+    ' Flooring
+    Sheets("Inputs").Range("B50").Value = txtKharanja.Value
+    Sheets("Inputs").Range("B51").Value = txtFloorPCC.Value
+    Sheets("Inputs").Range("B52").Value = cboFlooring.Value
+    Sheets("Inputs").Range("B53").Value = txtSkirting.Value
+    Sheets("Inputs").Range("B54").Value = txtDado.Value
+    
+    ' Doors
+    Sheets("Inputs").Range("B60").Value = txtDoorCount.Value
+    
+    ' Windows
+    Sheets("Inputs").Range("B70").Value = txtWindowCount.Value
+    
+    ' Structural
+    Sheets("Inputs").Range("B80").Value = txtLintel.Value
+    
+    MsgBox "Data submitted successfully!"
+    Unload Me
+End Sub
+```
+
+---
+
+### 🔹 Step 3: Dynamic Tables
+
+* For **doors/windows**, you can dynamically generate rows depending on count (like 6 doors → 6 rows appear).
+* This can be done with a **multi-page control** or dynamically adding textboxes in the form.
+
+---
+
+### 🔹 Step 4: Link to Struds
+
+* After data entry, the VBA writes values into your **Excel "Inputs" sheet**.
+* From there, your **formulas compute design**.
+* You can then export schedules to **Struds-readable format** (CSV or \*.bld).
+
+---
+
+👉 Would you like me to **draft the full Excel VBA form file** (with placeholders for all the sections you listed), so you just open and run it? I can generate the `.xlsm` with form controls ready.
+
+Perfect 👍
+Since you already have your formulas in **Excel** and Struds tables, the fastest way is to wrap your questionnaire in **Excel VBA UserForm**. That way:
+
+* Your **existing formulas** stay intact.
+* The **user just fills a form** (Yes/No, numbers, dimensions).
+* The app writes values to hidden input cells, and your design formulas calculate automatically.
+* You can later export the filled values into reports or Struds-compatible files.
+
+---
+
+### 🔹 Step 1: Insert a UserForm in Excel
+
+1. Open your Excel file.
+2. Press `Alt + F11` → VBA Editor.
+3. `Insert → UserForm`.
+4. Add controls (CheckBox, TextBox, ComboBox, ListBox) as per the questionnaire.
+
+---
+
+### 🔹 Step 2: Sample VBA Form Layout Code
+
+Here’s a **starting VBA code** (simplified for your sections):
+
+```vba
+Private Sub UserForm_Initialize()
+    ' Default values
+    txtSkirting.Value = 0.1
+    txtDado.Value = 2.1
+    txtFootingSteps.Value = 3
+End Sub
+
+Private Sub btnSubmit_Click()
+    ' Main Wall
+    Sheets("Inputs").Range("B2").Value = chkMainWall.Value
+    Sheets("Inputs").Range("B3").Value = txtPCCWidth.Value
+    Sheets("Inputs").Range("B4").Value = txtPCCThk.Value
+    Sheets("Inputs").Range("B5").Value = txtFootingSteps.Value
+    
+    ' Superstructure
+    Sheets("Inputs").Range("B6").Value = txtSSWidth.Value
+    Sheets("Inputs").Range("B7").Value = txtSSHeight.Value
+    
+    ' Partition Wall
+    Sheets("Inputs").Range("B8").Value = chkPartitionWall.Value
+    Sheets("Inputs").Range("B9").Value = txtPWWidth.Value
+    Sheets("Inputs").Range("B10").Value = txtPWHeight.Value
+    
+    ' Plinth Beam
+    Sheets("Inputs").Range("B11").Value = txtPlinthBeam.Value
+    
+    ' Rooms (loop for N rooms)
+    Dim i As Integer
+    For i = 1 To CInt(txtRoomCount.Value)
+        Sheets("Inputs").Cells(20 + i, 2).Value = Me.Controls("txtRoomName" & i).Value
+        Sheets("Inputs").Cells(20 + i, 3).Value = Me.Controls("txtRoomLen" & i).Value
+        Sheets("Inputs").Cells(20 + i, 4).Value = Me.Controls("txtRoomWid" & i).Value
+    Next i
+    
+    ' Flooring
+    Sheets("Inputs").Range("B50").Value = txtKharanja.Value
+    Sheets("Inputs").Range("B51").Value = txtFloorPCC.Value
+    Sheets("Inputs").Range("B52").Value = cboFlooring.Value
+    Sheets("Inputs").Range("B53").Value = txtSkirting.Value
+    Sheets("Inputs").Range("B54").Value = txtDado.Value
+    
+    ' Doors
+    Sheets("Inputs").Range("B60").Value = txtDoorCount.Value
+    
+    ' Windows
+    Sheets("Inputs").Range("B70").Value = txtWindowCount.Value
+    
+    ' Structural
+    Sheets("Inputs").Range("B80").Value = txtLintel.Value
+    
+    MsgBox "Data submitted successfully!"
+    Unload Me
+End Sub
+```
+
+---
+
+### 🔹 Step 3: Dynamic Tables
+
+* For **doors/windows**, you can dynamically generate rows depending on count (like 6 doors → 6 rows appear).
+* This can be done with a **multi-page control** or dynamically adding textboxes in the form.
+
+---
+
+### 🔹 Step 4: Link to Struds
+
+* After data entry, the VBA writes values into your **Excel "Inputs" sheet**.
+* From there, your **formulas compute design**.
+* You can then export schedules to **Struds-readable format** (CSV or \*.bld).
+
+---
+
+👉 Would you like me to **draft the full Excel VBA form file** (with placeholders for all the sections you listed), so you just open and run it? I can generate the `.xlsm` with form controls ready.
+
+I’ve prepared a **base Excel file** with all your questionnaire sections and placeholder fields.
+You can download it here:
+
+📂 [Building\_Questionnaire\_Template.xlsx](sandbox:/mnt/data/Building_Questionnaire_Template.xlsx)
+
+---
+
+### Next Steps
+
+1. Open this file in Excel.
+2. Press `Alt + F11` → Insert a **UserForm** in VBA.
+3. Paste the **form code I shared earlier** (expand it to include all fields).
+4. Link each field in the form to the corresponding cell in the `Inputs` sheet.
+5. Save as **.xlsm (macro-enabled workbook)**.
+
+---
+
+Would you like me to also **generate the ready VBA code for all fields** (matching exactly the template file), so you can just paste it into the VBA editor without manually mapping each one?
+
+Great ✅
+I’ll prepare a **ready-to-paste VBA form code** that matches the fields in your `Inputs` sheet (from the Excel template I gave). Once you paste this code in `VBA Editor → UserForm`, the form will open, take all inputs, and write them into the correct cells.
+
+---
+
+## 🔹 Step 1: Create the UserForm
+
+1. Open your `Building_Questionnaire_Template.xlsx` in Excel.
+2. Press `Alt + F11` → VBA Editor.
+3. `Insert → UserForm`.
+4. Add controls:
+
+   * **TextBox** for numeric/text inputs (e.g., `txtPCCWidth`)
+   * **CheckBox** for Yes/No inputs (e.g., `chkMainWall`)
+   * **ComboBox** for flooring options
+   * **CommandButton** named `btnSubmit`
+
+---
+
+## 🔹 Step 2: Paste This VBA Code
+
+```vba
+Private Sub UserForm_Initialize()
+    ' Default values
+    txtSkirting.Value = 0.1
+    txtDado.Value = 2.1
+    txtFootingSteps.Value = 3
+End Sub
+
+Private Sub btnSubmit_Click()
+    Dim ws As Worksheet
+    Set ws = ThisWorkbook.Sheets("Inputs")
+    
+    ' --- Main Wall ---
+    ws.Range("B2").Value = chkMainWall.Value
+    ws.Range("B3").Value = txtPCCWidth.Value
+    ws.Range("B4").Value = txtPCCThk.Value
+    ws.Range("B5").Value = txtFootingSteps.Value
+    ws.Range("B6").Value = txtSSWidth.Value
+    ws.Range("B7").Value = txtSSHeight.Value
+    
+    ' --- Partition Wall ---
+    ws.Range("B9").Value = chkPartitionWall.Value
+    ws.Range("B10").Value = txtPWWidth.Value
+    ws.Range("B11").Value = txtPWHeight.Value
+    
+    ' --- Plinth Beam ---
+    ws.Range("B13").Value = txtPlinthBeam.Value
+    
+    ' --- Rooms ---
+    ws.Range("B15").Value = txtRoomCount.Value
+    
+    ' --- Flooring ---
+    ws.Range("B17").Value = txtKharanja.Value
+    ws.Range("B18").Value = txtFloorPCC.Value
+    ws.Range("B19").Value = cboFlooring.Value
+    ws.Range("B20").Value = txtSkirting.Value
+    ws.Range("B21").Value = txtDado.Value
+    
+    ' --- Doors ---
+    ws.Range("B23").Value = txtDoorCount.Value
+    
+    ' --- Windows ---
+    ws.Range("B25").Value = txtWindowCount.Value
+    
+    ' --- Materials ---
+    ws.Range("B27").Value = chkSteel.Value
+    ws.Range("B28").Value = chkAluminium.Value
+    ws.Range("B29").Value = chkCollapsible.Value
+    ws.Range("B30").Value = chkSteelDoor.Value
+    ws.Range("B31").Value = txtDoorFrame.Value
+    
+    ' --- Structural ---
+    ws.Range("B33").Value = txtLintel.Value
+    
+    MsgBox "All inputs saved successfully!", vbInformation
+    Unload Me
+End Sub
+```
+
+---
+
+## 🔹 Step 3: Control Naming Convention
+
+When you create controls on the UserForm, name them like this so code works directly:
+
+* **Main Wall**
+
+  * `chkMainWall`, `txtPCCWidth`, `txtPCCThk`, `txtFootingSteps`, `txtSSWidth`, `txtSSHeight`
+* **Partition Wall**
+
+  * `chkPartitionWall`, `txtPWWidth`, `txtPWHeight`
+* **Plinth Beam**
+
+  * `txtPlinthBeam`
+* **Rooms**
+
+  * `txtRoomCount`
+* **Flooring**
+
+  * `txtKharanja`, `txtFloorPCC`, `cboFlooring`, `txtSkirting`, `txtDado`
+* **Doors**
+
+  * `txtDoorCount`
+* **Windows**
+
+  * `txtWindowCount`
+* **Materials**
+
+  * `chkSteel`, `chkAluminium`, `chkCollapsible`, `chkSteelDoor`, `txtDoorFrame`
+* **Structural**
+
+  * `txtLintel`
+
+---
+
+✅ Once controls are named correctly, the form will write all answers into the `Inputs` sheet automatically.
+
+---
+
+Do you also want me to **extend this VBA code** so that when the user enters **number of rooms/doors/windows**, it auto-opens a table for filling their details (length, width, height) inside Excel?
+
+Perfect 👌 — let’s add **Door/Window sill & jamb granite** into your BOQ logic.
+
+---
+
+## 🔹 Door & Window Granite (Sill + Jamb)
+
+### 1. **User Input**
+
+* Tick box → *Granite fixing (Yes/No)* (`chkGranite`)
+* Thickness of granite (default 20 mm or as per choice)
+
+---
+
+### 2. **Auto Calculation Logic**
+
+* **Sill (bottom)** → width of door/window
+* **Jambs (sides)** → 2 × height of door/window
+* **Head (top lintel, optional)** → width of opening
+
+So, for **each door/window**:
+
+$$
+\text{Perimeter (Sill + Jambs)} = (2 \times \text{Height}) + (1 \times \text{Width})
+$$
+
+$$
+\text{Granite Area} = \text{Perimeter} \times \text{Thickness}
+$$
+
+---
+
+### 3. **Excel Table Layout**
+
+For **doors** (at row 180 onwards):
+
+| Door | Width | Height | Perimeter | Granite Area (Perimeter × thickness) |
+| ---- | ----- | ------ | --------- | ------------------------------------ |
+
+For **windows** (at row 200 onwards):
+
+\| Window | Width | Height | Perimeter | Granite Area |
+
+---
+
+### 4. **VBA Additions**
+
+In `btnSubmit_Click`, extend after windows section:
+
+```vba
+' --- Door Granite ---
+startRow = 180
+ws.Cells(startRow, 1).Value = "Door Granite Table"
+ws.Cells(startRow, 2).Value = "Width"
+ws.Cells(startRow, 3).Value = "Height"
+ws.Cells(startRow, 4).Value = "Perimeter"
+ws.Cells(startRow, 5).Value = "Granite Area"
+
+For i = 1 To CLng(txtDoorCount.Value)
+    ws.Cells(startRow + i, 1).Value = "Door " & i
+    ws.Cells(startRow + i, 2).Value = ws.Cells(70 + i, 2).Value ' Width from door table
+    ws.Cells(startRow + i, 3).Value = ws.Cells(70 + i, 3).Value ' Height from door table
+    ws.Cells(startRow + i, 4).Formula = "=" & "C" & (startRow + i) & "*2 + B" & (startRow + i)
+    ws.Cells(startRow + i, 5).Formula = "=" & "D" & (startRow + i) & "*Inputs!B170" ' Granite thickness
+Next i
+
+' --- Window Granite ---
+startRow = 200
+ws.Cells(startRow, 1).Value = "Window Granite Table"
+ws.Cells(startRow, 2).Value = "Width"
+ws.Cells(startRow, 3).Value = "Height"
+ws.Cells(startRow, 4).Value = "Perimeter"
+ws.Cells(startRow, 5).Value = "Granite Area"
+
+For i = 1 To CLng(txtWindowCount.Value)
+    ws.Cells(startRow + i, 1).Value = "Window " & i
+    ws.Cells(startRow + i, 2).Value = ws.Cells(100 + i, 2).Value ' Width from window table
+    ws.Cells(startRow + i, 3).Value = ws.Cells(100 + i, 3).Value ' Height from window table
+    ws.Cells(startRow + i, 4).Formula = "=" & "C" & (startRow + i) & "*2 + B" & (startRow + i)
+    ws.Cells(startRow + i, 5).Formula = "=" & "D" & (startRow + i) & "*Inputs!B170"
+Next i
+```
+
+---
+
+### 5. **Supporting Input Cell**
+
+* In `Inputs` sheet → `B170` → “Granite thickness” (default 0.02 m i.e., 20 mm).
+* Tickbox `chkGranite` to enable/disable.
+
+---
+
+✅ This way, every **door & window** gets its sill + jamb granite quantity computed automatically (perimeter × thickness).
+
+---
+
+👉 Do you want me to **regenerate your Excel template** with all these plaster + terrace + plinth + granite extensions included, so you get a ready `.xlsx` with placeholders, and only need to paste VBA form code?
+
+Perfect 👌 — let’s add **Door/Window sill & jamb granite** into your BOQ logic.
+
+---
+
+## 🔹 Door & Window Granite (Sill + Jamb)
+
+### 1. **User Input**
+
+* Tick box → *Granite fixing (Yes/No)* (`chkGranite`)
+* Thickness of granite (default 20 mm or as per choice)
+
+---
+
+### 2. **Auto Calculation Logic**
+
+* **Sill (bottom)** → width of door/window
+* **Jambs (sides)** → 2 × height of door/window
+* **Head (top lintel, optional)** → width of opening
+
+So, for **each door/window**:
+
+$$
+\text{Perimeter (Sill + Jambs)} = (2 \times \text{Height}) + (1 \times \text{Width})
+$$
+
+$$
+\text{Granite Area} = \text{Perimeter} \times \text{Thickness}
+$$
+
+---
+
+### 3. **Excel Table Layout**
+
+For **doors** (at row 180 onwards):
+
+| Door | Width | Height | Perimeter | Granite Area (Perimeter × thickness) |
+| ---- | ----- | ------ | --------- | ------------------------------------ |
+
+For **windows** (at row 200 onwards):
+
+\| Window | Width | Height | Perimeter | Granite Area |
+
+---
+
+### 4. **VBA Additions**
+
+In `btnSubmit_Click`, extend after windows section:
+
+```vba
+' --- Door Granite ---
+startRow = 180
+ws.Cells(startRow, 1).Value = "Door Granite Table"
+ws.Cells(startRow, 2).Value = "Width"
+ws.Cells(startRow, 3).Value = "Height"
+ws.Cells(startRow, 4).Value = "Perimeter"
+ws.Cells(startRow, 5).Value = "Granite Area"
+
+For i = 1 To CLng(txtDoorCount.Value)
+    ws.Cells(startRow + i, 1).Value = "Door " & i
+    ws.Cells(startRow + i, 2).Value = ws.Cells(70 + i, 2).Value ' Width from door table
+    ws.Cells(startRow + i, 3).Value = ws.Cells(70 + i, 3).Value ' Height from door table
+    ws.Cells(startRow + i, 4).Formula = "=" & "C" & (startRow + i) & "*2 + B" & (startRow + i)
+    ws.Cells(startRow + i, 5).Formula = "=" & "D" & (startRow + i) & "*Inputs!B170" ' Granite thickness
+Next i
+
+' --- Window Granite ---
+startRow = 200
+ws.Cells(startRow, 1).Value = "Window Granite Table"
+ws.Cells(startRow, 2).Value = "Width"
+ws.Cells(startRow, 3).Value = "Height"
+ws.Cells(startRow, 4).Value = "Perimeter"
+ws.Cells(startRow, 5).Value = "Granite Area"
+
+For i = 1 To CLng(txtWindowCount.Value)
+    ws.Cells(startRow + i, 1).Value = "Window " & i
+    ws.Cells(startRow + i, 2).Value = ws.Cells(100 + i, 2).Value ' Width from window table
+    ws.Cells(startRow + i, 3).Value = ws.Cells(100 + i, 3).Value ' Height from window table
+    ws.Cells(startRow + i, 4).Formula = "=" & "C" & (startRow + i) & "*2 + B" & (startRow + i)
+    ws.Cells(startRow + i, 5).Formula = "=" & "D" & (startRow + i) & "*Inputs!B170"
+Next i
+```
+
+---
+
+### 5. **Supporting Input Cell**
+
+* In `Inputs` sheet → `B170` → “Granite thickness” (default 0.02 m i.e., 20 mm).
+* Tickbox `chkGranite` to enable/disable.
+
+---
+
+✅ This way, every **door & window** gets its sill + jamb granite quantity computed automatically (perimeter × thickness).
+
+---
+
+👉 Do you want me to **regenerate your Excel template** with all these plaster + terrace + plinth + granite extensions included, so you get a ready `.xlsx` with placeholders, and only need to paste VBA form code?
+
+Yes 👍 that’s the **classical centerline method** you are describing. Let’s formalize it:
+
+---
+
+## 🔹 Centerline Method Logic
+
+### 1. **Room Sizes Input**
+
+From your form → every room has **Length × Width**.
+
+### 2. **Wall Thickness Input**
+
+* Main wall thickness (already captured from PCC / superstructure width).
+* Partition wall thickness.
+
+### 3. **Total Centerline Length**
+
+$$
+\text{Total CL} = \sum \Big[ 2 \times (L + W) \Big] \;+\; \big(\text{Wall Thickness Adjustments}\big)
+$$
+
+But we must **avoid double-counting** at junctions and deduct partition overlaps.
+
+---
+
+### 4. **Practical Formula for Excel**
+
+For each room `i`:
+
+$$
+CL_i = 2 \times (L_i + W_i) - \text{Partition Wall Deductions}
+$$
+
+Total:
+
+$$
+CL_{main} = \sum CL_i - CL_{partition}
+$$
+
+Where:
+
+* `CL_partition` = Sum of partition wall lengths × (wall thickness adjustment).
+* This ensures **common walls are not counted twice**.
+
+---
+
+## 🔹 Implementation in Excel
+
+Let’s say:
+
+* Room table starts at row 41 (`C` = Length, `D` = Width).
+* Partition wall total length = `Inputs!B121`.
+
+We can compute **Main wall CL** at `Inputs!B123` with a formula like:
+
+```excel
+=SUMPRODUCT(2*(C41:C50 + D41:D50)) - B121
+```
+
+(where `C41:C50` are lengths of rooms, `D41:D50` are widths).
+
+---
+
+## 🔹 VBA Integration
+
+Add this inside `btnSubmit_Click` (after saving rooms):
+
+```vba
+' --- Compute Main Wall Centerline automatically ---
+Dim lastRoom As Long
+lastRoom = 40 + CLng(txtRoomCount.Value)
+
+ws.Range("B123").Formula = "=SUMPRODUCT(2*(C41:C" & lastRoom & " + D41:D" & lastRoom & ")) - B121"
+```
+
+---
+
+## 🔹 Result
+
+* **User enters room sizes** in table.
+* **Partition wall length** is given (or auto-calculated).
+* App **computes Main Wall Centerline** automatically.
+
+---
+
+✅ This way, the centerline is always consistent with room sizes and partition wall deductions.
+
+---
+
+👉 Do you want me to **build this directly into the Excel template** so that when you enter rooms + partition length, the *Main Wall CL cell auto-calculates* without extra user effort?
+
+
+Excellent 👌 — now we’re at the **detailed BOQ mapping stage**: converting **centerline + wall geometry** into plaster, shuttering, and RCC item quantities. Let’s structure this step by step so Excel can compute it directly once the UserForm feeds inputs.
+
+---
+
+# 🔹 PLASTERING
+
+### 1. **25 mm plaster (internal, main walls)**
+
+$$
+\text{Qty} = \text{Main Wall CL} \times \text{Room Height}
+$$
+
+* Formula in Excel:
+
+```excel
+=Inputs!B123 * Inputs!B7
+```
+
+---
+
+### 2. **25 mm plaster (external, main walls)**
+
+$$
+\text{Qty} = \text{Main Wall CL} \times (\text{Room Height} + \text{Plinth Height} + 0.15)
+$$
+
+* Formula:
+
+```excel
+=Inputs!B123 * (Inputs!B7 + Inputs!B11 + 0.15)
+```
+
+---
+
+### 3. **20 mm plaster (partition walls, both sides)**
+
+$$
+\text{Qty} = 2 \times \text{Partition CL} \times \text{Room Height}
+$$
+
+* Formula:
+
+```excel
+=2 * Inputs!B121 * Inputs!B7
+```
+
+---
+
+### 4. **Ceiling plaster**
+
+* Same as **floor area of each room**.
+
+$$
+\text{Qty} = \sum (\text{Length} \times \text{Width})
+$$
+
+* Formula:
+
+```excel
+=SUMPRODUCT(C41:C(40+RoomCount), D41:D(40+RoomCount))
+```
+
+---
+
+# 🔹 SHUTTERING
+
+We compute **surface areas** for each RCC component:
+
+### 1. **Columns**
+
+$$
+\text{Shuttering Area} = \text{Perimeter of Column} \times \text{Column Height}
+$$
+
+* For `n` columns:
+
+```excel
+=SUMPRODUCT(ColumnPerimeterRange, ColumnHeightRange)
+```
+
+---
+
+### 2. **Beams**
+
+$$
+\text{Shuttering Area} = 2 \times (\text{Beam Depth} + \text{Beam Width}) \times \text{Beam Length}
+$$
+
+---
+
+### 3. **Lintels**
+
+* Per opening (door/window):
+
+$$
+\text{Area} = \text{Width} \times \text{Thickness} \times 2 \; \text{(sides)}
+$$
+
+---
+
+### 4. **Sunshades (chajjas)**
+
+* Simple rectangle:
+
+$$
+\text{Area} = \text{Projection} \times \text{Width}
+$$
+
+---
+
+### 5. **Slab (staircase & floors)**
+
+* Slab shuttering area = **Plan area of slab**
+* Staircase shuttering = (Tread × Riser × Steps × Width)
+
+---
+
+# 🔹 RCC (Concrete + Steel)
+
+### 1. **Concrete Volume**
+
+* For each RCC component:
+
+  * **Column**: Base area × height
+  * **Beam**: Cross-section × length
+  * **Slab**: Thickness × slab area
+  * **Staircase**: Tread × rise × no. of steps × width
+
+---
+
+### 2. **Reinforcement Steel (Sariya)**
+
+* Typically taken as % of concrete volume (empirical, unless Struds table is read).
+* Eg:
+
+  * Columns → 2.5% of RCC volume
+  * Beams → 2%
+  * Slab → 1%
+  * Stairs → 1.5%
+
+---
+
+# 🔹 Excel Structure (new rows)
+
+In `Inputs` sheet (or BOQ sheet), we add:
+
+| Item                                        | Formula                        | Unit |
+| ------------------------------------------- | ------------------------------ | ---- |
+| 25 mm Plaster (Internal, Main Walls)        | `=B123*B7`                     | m²   |
+| 25 mm Plaster (External, Main Walls)        | `=B123*(B7+B11+0.15)`          | m²   |
+| 20 mm Plaster (Partition Walls, both sides) | `=2*B121*B7`                   | m²   |
+| Ceiling Plaster                             | `=SUMPRODUCT(C41:C50,D41:D50)` | m²   |
+| Column Shuttering                           | formula                        | m²   |
+| Beam Shuttering                             | formula                        | m²   |
+| Lintel Shuttering                           | formula                        | m²   |
+| Sunshade Shuttering                         | formula                        | m²   |
+| Slab Shuttering                             | formula                        | m²   |
+| Staircase Shuttering                        | formula                        | m²   |
+| RCC Volume (Columns)                        | formula                        | m³   |
+| RCC Volume (Beams)                          | formula                        | m³   |
+| RCC Volume (Slabs)                          | formula                        | m³   |
+| RCC Volume (Stairs)                         | formula                        | m³   |
+| Steel (Columns)                             | `=RCC_Col*0.025`               | t    |
+| Steel (Beams)                               | `=RCC_Beam*0.02`               | t    |
+| Steel (Slabs)                               | `=RCC_Slab*0.01`               | t    |
+| Steel (Stairs)                              | `=RCC_Stair*0.015`             | t    |
+
+---
+
+✅ This completes the BOQ logic chain:
+
+* **Inputs → Lengths/Areas/Volumes → BOQ Quantities → Item Mapping**
+
+---
+
+👉 Do you want me to **regenerate your Excel template file** with these plaster + shuttering + RCC rows already inserted (with placeholder formulas), so you get a ready-to-use calculation workbook?
+
+Got it ✅
+You’re basically asking:
+
+* What **app skeleton / framework** should be used so that your system can:
+
+  1. **Accumulate inputs** (wall sizes, plaster, shuttering, RCC, etc.)
+  2. **Analyse & compute quantities** (length, area, volume).
+  3. **Assemble results into BOQ items**.
+  4. **Map items with standard Schedule of Rates (SOR) numbers**.
+  5. **Arrange them in correct serial order** (e.g. Item *3.4.6* followed by *4.1.2*, skipping intermediate chapter items unless invoked).
+
+---
+
+# 🔹 Recommended App Skeleton
+
+### Option 1 – **Python (FastAPI + SQLite/Postgres + Pandas)**
+
+* **FastAPI** → backend (REST API) for inputs and processing.
+* **Pandas** → heavy-duty Excel-style calculations (length, area, volume, quantities).
+* **SQLite/Postgres** → database for storing:
+
+  * User projects
+  * Measurements
+  * Mapping table of *SOR item numbers → Description → Unit → Rate*.
+* **Jinja2 + PDFKit** → generate detailed BOQ in Excel/PDF format.
+
+👉 Best if you want **robust calculations** and later connect to Excel/Struds directly.
+
+---
+
+### Option 2 – **React + Vite (Frontend) + Python (Backend)**
+
+* **React + Vite** → sleek UI for:
+
+  * Room entry forms
+  * Drop-downs for wall/partition/floor options
+  * BOQ preview table
+* **FastAPI backend** → does the actual calculation & returns results.
+* **Postgres** → stores project + results.
+* User fills forms → API computes → React displays **SOR-ordered BOQ**.
+
+👉 Best if you want **modern web-app look** + flexibility.
+
+---
+
+### Option 3 – **Full Python Desktop App (PySide6/PyQt)**
+
+* **UI** → tree-like project navigator.
+* **Logic** → Python + Pandas.
+* **Outputs** → direct Excel/PDF BOQ with proper item sequencing.
+
+👉 Best if you want an **offline desktop tool** (like a Struds-style companion app).
+
+---
+
+# 🔹 BOQ Ordering Logic
+
+We need a **mapping + sorting system**:
+
+1. **SOR Master Table** (in DB or Excel)
+
+   | Chapter | Item No | Code  | Description    | Unit | Rate |
+   | ------- | ------- | ----- | -------------- | ---- | ---- |
+   | 3       | 4.6     | 3.4.6 | Earthwork…     | m³   | …    |
+   | 4       | 1.2     | 4.1.2 | Brick masonry… | m³   | …    |
+
+2. **App Flow**
+
+   * When computing, app collects all **raw quantities** (earthwork, plaster, RCC, flooring).
+   * Each raw quantity maps to a **SOR item code**.
+   * While assembling BOQ, system sorts by **(Chapter, Item No)**.
+   * If Chapter 3 is complete and no further Chapter 3 item is involved, next chapter (4.x.x) starts.
+
+3. **Result**
+
+   * Auto-generated **Measurement Sheet**
+   * Auto-generated **BOQ Sheet** (SOR ordered).
+
+---
+
+# 🔹 Skeleton Recommendation
+
+✅ For your need (engineering quantity + SOR ordering):
+
+* **Backend:** Python (FastAPI + Pandas + SQLAlchemy ORM).
+* **Frontend:** React + Vite (optional, if you want sleek UI).
+* **Storage:** SQLite (simple) or Postgres (scalable).
+* **Export:** Pandas → Excel (openpyxl), Pandas → PDF (ReportLab).
+
+This way:
+
+* Input flexibility (forms, excel upload, manual entry).
+* Processing power (Pandas math = perfect for quantity surveying).
+* BOQ sequencing (database-driven SOR mapping).
+
+---
+
+👉 Would you prefer this app to be **(A)** a desktop tool like Struds (no browser needed), or **(B)** a web-app (so you can use it on laptop + mobile, with React frontend)?
+
+Perfect 👍 then we’ll target **Option B → Web-app skeleton (React + Vite frontend, FastAPI + Pandas backend, Postgres/SQLite storage)**.
+This gives you a **modern browser-based BOQ system** that can:
+
+* Take building input data (walls, rooms, RCC members, plaster, etc.).
+* Compute lengths/areas/volumes.
+* Map quantities to **Schedule of Rates (SOR)** items.
+* Auto-generate **Measurement Sheets + BOQ**, in correct **SOR serial order**.
+
+---
+
+# 🔹 Web-App Skeleton (Option B)
+
+## 1. **Frontend (React + Vite)**
+
+* Framework: **React + Vite** (fast development + live reload).
+* UI: Form-based + Table-based.
+* Key components:
+
+  * **Project Form** (name, site, client).
+  * **Wall Entry Form** (main wall, partition wall, parapet, auto center-line calc).
+  * **RCC Entry Form** (columns, beams, slabs, stairs, shuttering).
+  * **Finishing Entry Form** (plaster, flooring, dado, skirting).
+  * **Doors/Windows Entry Form** (no, size, material).
+  * **Preview BOQ Table** (sortable, SOR mapped).
+
+👉 On submit → calls backend API with JSON payload.
+
+---
+
+## 2. **Backend (FastAPI + Pandas)**
+
+* Framework: **FastAPI** (lightweight, fast, async).
+* Database: **SQLite (dev)** → **Postgres (prod)**.
+* Core logic:
+
+  * **Quantity Engine (Pandas)** → takes input JSON, computes:
+
+    * Centerline lengths
+    * Plaster areas
+    * RCC shuttering areas
+    * RCC concrete volumes
+    * Steel tonnage (empirical % or Struds import)
+  * **SOR Mapper** → maps each computed item to **SOR Code** from master DB.
+  * **BOQ Sorter** → sorts all selected items **by (Chapter, Item Code)**.
+
+---
+
+## 3. **Database (Postgres/SQLite)**
+
+* **Tables**:
+
+  * `projects (id, name, client, date)`
+  * `inputs (project_id, param_name, value)`
+  * `measurements (project_id, item_code, description, qty, unit)`
+  * `sor_items (chapter, item_no, code, description, unit, rate)`
+  * `boq (project_id, item_code, qty, rate, amount)`
+
+---
+
+## 4. **Output (Excel/PDF BOQ)**
+
+* Generate **Measurement Sheet** (length/area/volume calcs).
+* Generate **BOQ Sheet** (SOR ordered, with Qty × Rate = Amount).
+* Export:
+
+  * Excel (via **openpyxl**)
+  * PDF (via **ReportLab / WeasyPrint**).
+
+---
+
+# 🔹 Example Flow
+
+1. User opens app in browser → fills **Room Dimensions, Walls, RCC**.
+2. React sends JSON →
+
+```json
+{
+  "project": "School Building",
+  "walls": [
+    {"type": "main", "length": 20, "thickness": 0.23, "height": 3.2},
+    {"type": "partition", "length": 10, "thickness": 0.115, "height": 3.2}
+  ],
+  "plaster": {"internal": true, "external": true, "ceiling": true},
+  "doors": [{"count": 6, "width": 1.0, "height": 2.1}],
+  "windows": [{"count": 9, "width": 1.2, "height": 1.5}]
+}
+```
+
+3. FastAPI computes:
+
+   * Main wall CL length = 20
+   * Internal plaster area = 64 m²
+   * External plaster area = 72 m²
+   * Ceiling plaster area = 200 m²
+   * RCC Volumes, etc.
+
+4. Backend maps to SOR:
+
+   * Internal plaster → Item `13.11`
+   * External plaster → Item `13.12`
+   * RCC slab → Item `5.3.1`
+
+5. BOQ sorted →
+
+| Item Code | Description  | Qty | Unit | Rate | Amount |
+| --------- | ------------ | --- | ---- | ---- | ------ |
+| 3.4.6     | Earthwork…   | 15  | m³   | 120  | 1800   |
+| 4.1.2     | Brickwork…   | 12  | m³   | 5500 | 66000  |
+| 5.3.1     | RCC Slab…    | 10  | m³   | 7500 | 75000  |
+| 13.11     | 12mm Plaster | 64  | m²   | 160  | 10240  |
+
+6. User downloads **Excel / PDF BOQ**.
+
+---
+
+# 🔹 Deployment
+
+* **Dev:** Run React (Vite) on port 3000, FastAPI on port 8000.
+* **Prod:** Deploy with **Docker Compose** → Nginx (reverse proxy) → Gunicorn (FastAPI) → Postgres DB.
+
+---
+
+✅ This skeleton is scalable: later you can add
+
+* **Rate analysis** (material, labour, machinery split).
+* **Integration with Struds ETABS outputs**.
+* **Multi-user projects with login/roles**.
+
+---
+
+Would you like me to **draft the initial folder structure (React + Vite + FastAPI)** with stub code, so you can directly start development?
+
+Got it 👍 — I’ll prepare a **single markdown prompt** that you can give directly to your **AI coder agent**.
+It will **convey all our deliberations** from this morning in one structured brief.
+
+---
+
+# 🏗️ Building Measurement & BOQ Web-App — AI Coder Prompt
+
+```markdown
+# Project: Building Measurement & BOQ Generator (Web-App)
+
+## Objective
+Develop a **web application** to capture civil engineering project inputs, compute **lengths, areas, volumes**, map them to **Schedule of Rates (SOR) item codes**, and finally assemble a **Measurement Sheet + BOQ** in correct SOR serial order.
+
+---
+
+## Tech Stack (Skeleton)
+- **Frontend**: React + Vite
+  - UI: Forms & Tables
+  - Components: Project Form, Walls, RCC Members, Plastering, Doors/Windows, Flooring, Finishes, BOQ Preview
+- **Backend**: FastAPI (Python)
+  - Libraries: Pandas (computations), SQLAlchemy (ORM), Pydantic (schemas)
+- **Database**: SQLite (dev) → Postgres (prod)
+- **Exports**: Excel (openpyxl), PDF (WeasyPrint/ReportLab)
+
+---
+
+## Input Requirements
+
+### A. Walls & Foundations
+- Main wall: Yes/No  
+- Foundation: PCC width × thickness  
+- Number of footing steps (3 default) → open table for width & thickness of each step  
+- Superstructure wall: width × height  
+- Partition wall: same inputs as main wall  
+- Plinth beam thickness
+
+### B. Room Data
+- Number of rooms  
+- For each: Name × Length × Width  
+- Auto compute: centerline length (room size + wall thickness, minus partition length)
+
+### C. Floors & Finishes
+- Kharanja thickness  
+- Floor PCC thickness  
+- Flooring options (3–4 types, user ticks applicable per room)  
+- Skirting height = 0.1 m (default)  
+- Dado height = 2.1 m (default)  
+
+### D. Doors & Windows
+- Input number of doors/windows  
+- For each: count × width × height  
+- Distribution between main wall & partition wall  
+- Material options: Steel / Aluminium / Collapsible shutters / Wooden frames  
+- Auto compute sill/jamb granite if `Yes` (perimeter × wall thickness)
+
+### E. RCC Elements
+- Lintel thickness  
+- Beam, column, slab schedules (read from Struds table if available)  
+- Staircase (concrete + reinforcement)
+
+### F. Plastering
+- 25 mm plaster → main wall centre line length × room height (internal)  
+- External plaster → main wall centre line length × (room height + plinth height + 0.15)  
+- 20 mm plaster → twice partition length × room height  
+- Ceiling plaster = same as floor area  
+
+### G. Other Items
+- Shuttering (columns, beams, lintels, sunshades)  
+- RCC reinforcement (steel % or Struds import)  
+- Plinth filling depth (volume = terrace area × depth)  
+- Terrace area = cumulative sum of room areas + wall thickness adjustments  
+
+---
+
+## Computation Rules
+- All lengths, areas, and volumes are auto-computed from inputs.
+- Deduct partition wall lengths when calculating main wall centerline length.
+- Quantities → mapped to SOR items via a **master table**.
+
+---
+
+## BOQ Assembly
+- Store a master SOR table in DB:
+  | Chapter | Item No | Code | Description | Unit | Rate |
+- Every computed measurement → maps to SOR code.
+- BOQ sorted by **(Chapter, Item No)**, e.g.:
+  - Item 3.4.6 Earthwork
+  - Item 4.1.2 Brickwork
+  - Item 5.3.1 RCC Slab
+  - Item 13.11 Internal Plaster
+- If a chapter is completed, and no further items belong to it, app proceeds to next chapter.
+
+---
+
+## Outputs
+1. **Measurement Sheet** (with length × breadth × height = quantity)  
+2. **BOQ Sheet** (SOR ordered, Qty × Rate = Amount)  
+3. Export as **Excel** and **PDF**  
+
+---
+
+## Deployment
+- Dev: React (3000), FastAPI (8000), SQLite
+- Prod: Docker Compose → Nginx (reverse proxy) → Gunicorn (FastAPI) → Postgres DB
+
+---
+
+## Future Extensions
+- Rate Analysis (Material + Labour + Machinery split)
+- Integration with Struds/ETABS outputs
+- Multi-user login & roles
+```
+
+---
+
+✅ This markdown prompt summarizes **all discussions** (inputs, plastering, RCC, item mapping, BOQ ordering, tech stack).
+You can drop it straight into your AI coder agent and it will know **what skeleton to generate**.
+
+Do you also want me to **embed an example JSON input & BOQ output** in the prompt, so your agent has a ready test case?
+
+
+Great 👍 — here’s the **updated markdown coder prompt** with a **sample JSON input** and a **sample BOQ output** embedded at the end.
+This way, your AI coder agent will have both **specifications + test case** in one document.
+
+---
+
+# 🏗️ Building Measurement & BOQ Web-App — AI Coder Prompt
+
+````markdown
+# Project: Building Measurement & BOQ Generator (Web-App)
+
+## Objective
+Develop a **web application** to capture civil engineering project inputs, compute **lengths, areas, volumes**, map them to **Schedule of Rates (SOR) item codes**, and finally assemble a **Measurement Sheet + BOQ** in correct SOR serial order.
+
+---
+
+## Tech Stack (Skeleton)
+- **Frontend**: React + Vite
+  - UI: Forms & Tables
+  - Components: Project Form, Walls, RCC Members, Plastering, Doors/Windows, Flooring, Finishes, BOQ Preview
+- **Backend**: FastAPI (Python)
+  - Libraries: Pandas (computations), SQLAlchemy (ORM), Pydantic (schemas)
+- **Database**: SQLite (dev) → Postgres (prod)
+- **Exports**: Excel (openpyxl), PDF (WeasyPrint/ReportLab)
+
+---
+
+## Input Requirements
+
+### A. Walls & Foundations
+- Main wall: Yes/No  
+- Foundation: PCC width × thickness  
+- Number of footing steps (3 default) → open table for width & thickness of each step  
+- Superstructure wall: width × height  
+- Partition wall: same inputs as main wall  
+- Plinth beam thickness
+
+### B. Room Data
+- Number of rooms  
+- For each: Name × Length × Width  
+- Auto compute: centerline length (room size + wall thickness, minus partition length)
+
+### C. Floors & Finishes
+- Kharanja thickness  
+- Floor PCC thickness  
+- Flooring options (3–4 types, user ticks applicable per room)  
+- Skirting height = 0.1 m (default)  
+- Dado height = 2.1 m (default)  
+
+### D. Doors & Windows
+- Input number of doors/windows  
+- For each: count × width × height  
+- Distribution between main wall & partition wall  
+- Material options: Steel / Aluminium / Collapsible shutters / Wooden frames  
+- Auto compute sill/jamb granite if `Yes` (perimeter × wall thickness)
+
+### E. RCC Elements
+- Lintel thickness  
+- Beam, column, slab schedules (read from Struds table if available)  
+- Staircase (concrete + reinforcement)
+
+### F. Plastering
+- 25 mm plaster → main wall centre line length × room height (internal)  
+- External plaster → main wall centre line length × (room height + plinth height + 0.15)  
+- 20 mm plaster → twice partition length × room height  
+- Ceiling plaster = same as floor area  
+
+### G. Other Items
+- Shuttering (columns, beams, lintels, sunshades)  
+- RCC reinforcement (steel % or Struds import)  
+- Plinth filling depth (volume = terrace area × depth)  
+- Terrace area = cumulative sum of room areas + wall thickness adjustments  
+
+---
+
+## Computation Rules
+- All lengths, areas, and volumes are auto-computed from inputs.
+- Deduct partition wall lengths when calculating main wall centerline length.
+- Quantities → mapped to SOR items via a **master table**.
+
+---
+
+## BOQ Assembly
+- Store a master SOR table in DB:
+  | Chapter | Item No | Code | Description | Unit | Rate |
+- Every computed measurement → maps to SOR code.
+- BOQ sorted by **(Chapter, Item No)**, e.g.:
+  - Item 3.4.6 Earthwork
+  - Item 4.1.2 Brickwork
+  - Item 5.3.1 RCC Slab
+  - Item 13.11 Internal Plaster
+- If a chapter is completed, and no further items belong to it, app proceeds to next chapter.
+
+---
+
+## Outputs
+1. **Measurement Sheet** (with length × breadth × height = quantity)  
+2. **BOQ Sheet** (SOR ordered, Qty × Rate = Amount)  
+3. Export as **Excel** and **PDF**  
+
+---
+
+## Deployment
+- Dev: React (3000), FastAPI (8000), SQLite
+- Prod: Docker Compose → Nginx (reverse proxy) → Gunicorn (FastAPI) → Postgres DB
+
+---
+
+## Future Extensions
+- Rate Analysis (Material + Labour + Machinery split)
+- Integration with Struds/ETABS outputs
+- Multi-user login & roles
+
+---
+
+## 🔹 Example JSON Input
+```json
+{
+  "project": "School Building",
+  "foundation": {
+    "pcc": {"width": 1.0, "thickness": 0.1},
+    "footing_steps": [
+      {"width": 1.2, "thickness": 0.3},
+      {"width": 1.0, "thickness": 0.25},
+      {"width": 0.8, "thickness": 0.2}
+    ]
+  },
+  "walls": [
+    {"type": "main", "length": 20, "thickness": 0.23, "height": 3.2},
+    {"type": "partition", "length": 10, "thickness": 0.115, "height": 3.2}
+  ],
+  "rooms": [
+    {"name": "Classroom1", "length": 6, "width": 5},
+    {"name": "Classroom2", "length": 6, "width": 5}
+  ],
+  "plaster": {"internal": true, "external": true, "ceiling": true},
+  "doors": [{"count": 6, "width": 1.0, "height": 2.1}],
+  "windows": [{"count": 9, "width": 1.2, "height": 1.5}],
+  "flooring": {
+    "kharanja_thickness": 0.1,
+    "floor_pcc_thickness": 0.075,
+    "types": ["Mosaic", "Ceramic Tile", "Granite"]
+  }
+}
+````
+
+---
+
+## 🔹 Example BOQ Output (Sorted by SOR Code)
+
+| Item Code | Description            | Qty | Unit | Rate | Amount |
+| --------- | ---------------------- | --- | ---- | ---- | ------ |
+| 3.4.6     | Earthwork excavation   | 15  | m³   | 120  | 1800   |
+| 4.1.2     | Brickwork in CM 1:6    | 12  | m³   | 5500 | 66000  |
+| 5.3.1     | RCC slab (M20)         | 10  | m³   | 7500 | 75000  |
+| 13.11     | 12 mm internal plaster | 64  | m²   | 160  | 10240  |
+| 13.12     | 15 mm external plaster | 72  | m²   | 180  | 12960  |
+| 14.1.5    | Ceramic tile flooring  | 50  | m²   | 600  | 30000  |
+
+---
+
+```
+
+---
+
+✅ Now your coder agent has:  
+1. **System architecture**  
+2. **All measurement rules**  
+3. **Input/Output structure**  
+4. **Sample test data**  
+
+Would you like me to also add **logic formulas (in pseudocode)** for plastering, centerline method, shuttering, etc., so your agent implements them directly?
+```
+
+
+Perfect point 👍 — you’re absolutely right.
+
+In **statutory measurement books (MB)** under **PWD / CPWD / HSR**, every quantity must be shown in **detailed measurement lines** (Length × Breadth × Height = Quantity), and only then summed up into the **abstract total**.
+
+So instead of writing:
+
+```
+Earthwork in excavation = 15 cum
+```
+
+We must show something like:
+
+```
+Earthwork in excavation in foundation trenches  
+1.   5.0 × 0.6 × 1.0 = 3.00 cum  
+2.   5.0 × 0.6 × 1.0 = 3.00 cum  
+3.   4.0 × 0.6 × 1.0 = 2.40 cum  
+4.   4.0 × 0.6 × 1.0 = 2.40 cum  
+5.   2.0 × 0.6 × 1.0 = 1.20 cum  
+6.   2.0 × 0.6 × 1.0 = 1.20 cum  
+7.   2.0 × 0.6 × 1.0 = 1.20 cum  
+Total = 14.40 cum (say 14.40 cum)
+```
+
+This applies to **all HSR items** — brickwork, RCC, plaster, flooring, shuttering, etc.
+
+---
+
+✅ So, in our **App skeleton + BOQ logic**, we must add:
+
+### 1. **Detailed Measurement Sheet (MSR / MB style)**
+
+* Each wall/room/footing generates its own row:
+
+  ```
+  Wall-1: (Length × Thickness × Height) = Volume
+  Wall-2: (Length × Thickness × Height) = Volume
+  ```
+* Each row tagged with **Item Code** (e.g., 4.1.2 Brickwork).
+* Sub-total per item code.
+
+### 2. **Abstract of Cost**
+
+* Sum of all rows with same Item Code.
+* Sorted by SOR order.
+* Multiplied by rate → Amount.
+
+---
+
+### 🔹 Example Output Format (for Item 4.1.2 Brickwork in CM 1:6)
+
+**Detailed Measurement Sheet**
+
+| S.No      | Description     | L (m) | B (m) | H (m) | Qty (m³)  | Item Code |
+| --------- | --------------- | ----- | ----- | ----- | --------- | --------- |
+| 1         | Wall-1 (Room-1) | 6.0   | 0.23  | 3.2   | 4.42      | 4.1.2     |
+| 2         | Wall-2 (Room-1) | 5.0   | 0.23  | 3.2   | 3.68      | 4.1.2     |
+| 3         | Wall-1 (Room-2) | 6.0   | 0.23  | 3.2   | 4.42      | 4.1.2     |
+| 4         | Wall-2 (Room-2) | 5.0   | 0.23  | 3.2   | 3.68      | 4.1.2     |
+| **Total** |                 |       |       |       | **16.20** |           |
+
+**Abstract BOQ**
+
+| Item Code | Description           | Qty   | Unit | Rate | Amount |
+| --------- | --------------------- | ----- | ---- | ---- | ------ |
+| 4.1.2     | Brickwork in CM (1:6) | 16.20 | m³   | 5500 | 89100  |
+
+---
+
+👉 This way the **Measurement Book (MB)** style is preserved, and the BOQ follows naturally.
+
+---
+
+Would you like me to **update your coder prompt** to explicitly enforce this rule (i.e., every SOR item output must include:
+
+1. Detailed measurements (row-by-row, MB style)
+2. Abstract summary (per item, ordered by SOR))?
+
+Great ✅ — here’s the **updated Markdown Prompt** for your AI coder agent, now enforcing the **statutory measurement book (MB) style** requirement we discussed.
+
+---
+
+# 🏗️ Building Measurement & BOQ Web-App — AI Coder Prompt (Finalized)
+
+```markdown
+# Project: Building Measurement & BOQ Generator (Web-App)
+
+## Objective
+Develop a **web application** to capture civil engineering project inputs, compute **lengths, areas, volumes**, map them to **Schedule of Rates (SOR/HSR item codes)**, and finally assemble a **Measurement Sheet + BOQ** in correct statutory format.  
+
+⚠️ Requirement: Every item must show **detailed measurements (MB style)** first, then an **abstract total**, then appear in the **BOQ in SOR order**.
+
+---
+
+## Tech Stack
+- **Frontend**: React + Vite
+- **Backend**: FastAPI (Python)
+- **Database**: SQLite (dev) → Postgres (prod)
+- **Libraries**: Pandas (computations), Openpyxl (Excel export), ReportLab/WeasyPrint (PDF export)
+
+---
+
+## Input Requirements
+
+### A. Walls & Foundations
+- Main wall: Yes/No  
+- Foundation: PCC width × thickness  
+- Number of footing steps (default = 3) → open table for width & thickness of each step  
+- Superstructure wall: width × height  
+- Partition wall: same inputs as main wall  
+- Plinth beam thickness  
+
+### B. Room Data
+- Number of rooms  
+- For each: Name × Length × Width  
+- Auto compute **centerline length** (room size + wall thickness − partition deduction)  
+
+### C. Floors & Finishes
+- Kharanja thickness  
+- Floor PCC thickness  
+- Flooring options (3–4 types, user ticks applicable per room)  
+- Skirting height = 0.1 m (default)  
+- Dado height = 2.1 m (default)  
+
+### D. Doors & Windows
+- Input number of doors/windows  
+- For each: count × width × height  
+- Distribution between main wall & partition wall  
+- Materials: Steel / Aluminium / Collapsible shutters / Wooden frames  
+- Auto compute sill/jamb granite if `Yes` (perimeter × wall thickness)  
+
+### E. RCC Elements
+- Lintel thickness  
+- Beam, column, slab schedules (from Struds import if available)  
+- Staircase (concrete + reinforcement)  
+
+### F. Plastering
+- 25 mm plaster → main wall centre line length × room height (internal)  
+- External plaster → main wall centre line length × (room height + plinth height + 0.15)  
+- 20 mm plaster → twice partition length × room height  
+- Ceiling plaster = same as floor area  
+
+### G. Other Items
+- Shuttering (columns, beams, lintels, sunshades)  
+- RCC reinforcement (steel % or Struds import)  
+- Plinth filling depth (volume = terrace area × depth)  
+- Terrace area = cumulative sum of room areas + wall thickness adjustments  
+
+---
+
+## Computation Rules
+1. All **lengths, areas, volumes** computed automatically.  
+2. Deduct partition wall lengths when calculating main wall centreline.  
+3. Plastering, flooring, shuttering quantities follow measurement book (MB) logic.  
+4. Quantities mapped to **SOR/HSR item codes** via master table.  
+
+---
+
+## Output Rules (Statutory MB Style)
+For each item (e.g., 4.1.2 Brickwork):
+
+### 1. **Detailed Measurement Sheet**
+Every component must be shown separately:
+```
+
+Wall-1: 6.0 × 0.23 × 3.2 = 4.42 m³
+Wall-2: 5.0 × 0.23 × 3.2 = 3.68 m³
+Wall-3: 6.0 × 0.23 × 3.2 = 4.42 m³
+Wall-4: 5.0 × 0.23 × 3.2 = 3.68 m³
+----------------------------------
+
+Total = 16.20 m³
+
+````
+
+Or in tabular form:
+
+| S.No | Description   | L (m) | B/Thk (m) | H (m) | Qty (m³) | Item Code |
+|------|---------------|-------|-----------|-------|----------|-----------|
+| 1    | Wall-1 (Room) | 6.0   | 0.23      | 3.2   | 4.42     | 4.1.2     |
+| 2    | Wall-2 (Room) | 5.0   | 0.23      | 3.2   | 3.68     | 4.1.2     |
+| …    | …             | …     | …         | …     | …        | …         |
+| **Total** |           |       |           |       | **16.20**|           |
+
+### 2. **Abstract of Quantities**
+Summarize per item code:
+
+| Item Code | Description            | Qty   | Unit | Rate | Amount |
+|-----------|------------------------|-------|------|------|--------|
+| 4.1.2     | Brickwork in CM (1:6)  | 16.20 | m³   | 5500 | 89,100 |
+
+### 3. **BOQ Ordering**
+- BOQ sorted by **(Chapter, Item No)** sequence, e.g.:  
+  - 3.4.6 Earthwork  
+  - 4.1.2 Brickwork  
+  - 5.3.1 RCC Slab  
+  - 13.11 Internal Plaster  
+- No skipping or misordering.  
+
+---
+
+## Deliverables
+- **Measurement Sheet (MSR/MB style)**  
+- **Abstract BOQ (SOR ordered)**  
+- Export to **Excel** and **PDF**  
+
+---
+
+## Deployment
+- Dev: React (3000), FastAPI (8000), SQLite  
+- Prod: Docker Compose → Nginx → Gunicorn (FastAPI) → Postgres  
+
+---
+
+## Test Case (Example Input → Output)
+### Input (JSON):
+```json
+{
+  "rooms": [
+    {"name": "Room1", "length": 6.0, "width": 5.0, "height": 3.2, "wall_thickness": 0.23},
+    {"name": "Room2", "length": 6.0, "width": 5.0, "height": 3.2, "wall_thickness": 0.23}
+  ],
+  "doors": [{"count": 6, "width": 1.0, "height": 2.1}],
+  "windows": [{"count": 4, "width": 1.5, "height": 1.2}],
+  "flooring": ["Tile", "Marble"],
+  "plaster": {"internal": 25, "external": 25, "partition": 20}
+}
+````
+
+### Output (Excel/PDF):
+
+**Measurement Sheet (MSR style)** with all L×B×H rows → totals → abstract BOQ in SOR order.
+
+```
+
+---
+
+✅ Now your coder agent has **clear, enforceable rules** for producing MB-style detailed measurement sheets + BOQ assembly.  
+
+Would you like me to also **attach a ready-made Excel template** (with MSR + Abstract tabs) so that your agent knows the exact output structure to code against?
+```
+
+If you're looking for existing open-source solutions on GitHub that focus on **building estimation**, **quantity surveying**, or related cost/quantity calculations, here are some relevant projects you might find useful:
+
+---
+
+## Noteworthy GitHub Repositories
+
+### 1. **GEstimator**
+
+A Python + GTK-based desktop tool tailored for civil estimators. It supports detailed measurement tracking, schedule items, rate analyses, and export to Excel formats. Includes a UI to input quantities and generate cost analysis.
+([GitHub][1])
+
+### 2. **Building Cost Estimator** *(Laravel + Bootstrap)*
+
+A web application skeleton for estimating building costs. Built using Laravel (PHP) and Bootstrap. Good for adapting web-based frontends, though specifics on quantity detailing are limited.
+([GitHub][2])
+
+### 3. **Budget - Civil Engineering Projects** *(Flutter)*
+
+A mobile/web app built with Flutter for budget estimation of civil engineering efforts. Allows multiple project tracking with saved budgets and Firebase storage. More oriented to cost rather than detailed quantity breakdown.
+([GitHub][3])
+
+### 4. **GEstimator (Topic listing)**
+
+GitHub topic aggregation highlights GEstimator among others—helpful for exploring similar Python-powered estimating apps with GUI, PDF/CSV export, and rate customization.
+([GitHub][4])
+
+### 5. **Civil Estimation Record System** *(Spring Boot)*
+
+A Java-based Spring MVC web app for on-site construction estimators to record project details, estimated materials, labor, etc., using a MySQL backend.
+([GitHub][5])
+
+### 6. **LaraEstimate** *(Laravel + Vue.js)*
+
+A dynamic quoting/estimate system using Laravel and Vue. While not construction-specific, it offers a robust structure for estimate generation—serving as a good template for building custom estimating tools.
+([GitHub][6])
+
+### 7. **BuildMetrics** *(C#)*
+
+A tool for quantity estimation, built for quantity surveyors and civil engineers. Offers customizable templates, material databases, and mobile support. A good foundation for precision measurement apps.
+([GitHub][7])
+
+---
+
+## Summary Table
+
+| Repository / Summary                                           | Stack / Platform    |
+| -------------------------------------------------------------- | ------------------- |
+| **GEstimator** – Detailed measurement and rate analysis tool   | Python + GTK        |
+| **Building Cost Estimator** – Web-based tool, costing-focused  | Laravel + Bootstrap |
+| **Budget Civil Projects** – Mobile/web budget tracker          | Flutter + Firebase  |
+| **Civil Estimation Record System** – On-site estimator web app | Java Spring MVC     |
+| **LaraEstimate** – Generic quote system, adaptable             | Laravel + Vue.js    |
+| **BuildMetrics** – Materials estimation for QS                 | C# (.NET)           |
+
+---
+
+## Recommended Starting Point: **GEstimator**
+
+* Offers measurement-led workflows with MB-style breakdowns.
+* Supports rate analysis and Excel exports—closely aligns with your MB + BOQ requirements.
+* Python-based, which is flexible and complements your preferred backend tech stack.
+
+If you’d like, I can help you explore its source code deeper, or assist in adapting any of these into your React + FastAPI solution.  Let me know what you’d like to check next!
+
+[1]: https://github.com/manuvarkey/GEstimator?utm_source=chatgpt.com "manuvarkey/GEstimator"
+[2]: https://github.com/nickwleo/building-cost-estimator?utm_source=chatgpt.com "nickwleo/building-cost-estimator: Source code for ..."
+[3]: https://github.com/manoellribeiro/budget-CivilEngineeringProjects?utm_source=chatgpt.com "A Flutter app to estimate the price of Civil Engineering ..."
+[4]: https://github.com/topics/construction-estimator?utm_source=chatgpt.com "construction-estimator"
+[5]: https://github.com/garytkchan/construction-estimation-system?utm_source=chatgpt.com "garytkchan/construction-estimation-system"
+[6]: https://github.com/TiagoSilvaPereira/laraestimate?utm_source=chatgpt.com "TiagoSilvaPereira/laraestimate"
+[7]: https://github.com/IzarchTech/BuildMetrics?utm_source=chatgpt.com "IzarchTech/BuildMetrics"
+
+
+Got it 👍 — let’s extend the **AI Coder Agent Prompt** so it not only builds your measurement + BOQ app skeleton, but also **integrates with an existing GitHub repo** (like **GEstimator**).
+
+Here’s the **updated Markdown command** 👇 — you can drop this directly to your AI Coder agent:
+
+---
+
+# 🚀 AI Coder Agent Prompt
+
+You are tasked to build a **Civil Engineering Estimation App** that:
+
+* Captures inputs (walls, rooms, plaster, doors/windows, flooring, RCC, shuttering, etc.)
+* Computes **length, area, volume** for each component (centerline method + plaster/flooring logics discussed above).
+* Produces **Measurement Book (MB) style outputs** (line-by-line quantities, then totals).
+* Maps computed quantities to **HSR/SOR item codes** in proper serial order.
+* Prepares **Abstract of Cost** by multiplying with item rates.
+
+---
+
+## 🔹 Architecture
+
+* **Backend**: Python (FastAPI)
+* **Frontend**: React + Vite (for interactive data entry)
+* **Database**: SQLite (simple) or PostgreSQL (scalable)
+* **Export**: Excel / PDF for Measurement Sheet + BOQ
+
+---
+
+## 🔹 GitHub Repo Integration
+
+1. **Clone Base Repo (GEstimator as reference)**
+
+```bash
+git clone https://github.com/manuvarkey/GEstimator.git
+cd GEstimator
+```
+
+2. **Create New Branch for Integration**
+
+```bash
+git checkout -b estimation_app_integration
+```
+
+3. **Integrate Your Modules**
+
+* Create a new **`/modules/boq_engine`** folder in the repo.
+* Add your computation logic (centerline, plaster, RCC, shuttering, flooring, etc.).
+* Connect input forms to computation engine.
+* Extend export functions to produce **MB sheet + Abstract**.
+
+4. **Example FastAPI Hookup**
+   In `app/main.py` (or create new `api/boq.py`):
+
+```python
+from fastapi import APIRouter
+from modules.boq_engine import boq_calculator
+
+router = APIRouter()
+
+@router.post("/compute-boq")
+def compute_boq(data: dict):
+    result = boq_calculator.process(data)
+    return {"measurement_sheet": result["details"], "abstract": result["abstract"]}
+```
+
+5. **Push Code to Your Fork**
+
+```bash
+git add .
+git commit -m "Integrated BOQ computation engine with GEstimator"
+git push origin estimation_app_integration
+```
+
+---
+
+## 🔹 Output Specification
+
+1. **Detailed Measurement Sheet (per HSR item)**
+
+   * Wall-wise, footing-wise, room-wise rows.
+   * Each row → `Length × Breadth × Height = Qty`.
+   * Subtotal at bottom.
+
+2. **Abstract BOQ (item-wise summary)**
+
+   * Ordered by HSR chapter and serial number.
+   * Total quantity × Rate = Amount.
+
+---
+
+✅ This ensures:
+
+* Your custom app inherits proven features of GEstimator (UI, exports).
+* New modules handle **statutory MB-style detailed measurements**.
+* Easy GitHub version control (branch-based).
+
+---
+
+👉 Do you want me to **prepare the folder + file structure tree** (showing where to add plaster, flooring, RCC, shuttering, etc.) so your coder can plug things in directly inside the cloned repo?
+
+Perfect 👍 Let’s lay out a **ready-to-use folder & file structure tree** for your **Estimation App integration with GEstimator (or any base repo)**.
+
+This skeleton shows **exactly where plaster, flooring, RCC, shuttering, walls, etc. will go** — so your coder can plug in computations immediately.
+
+---
+
+# 📂 Project Structure
+
+```plaintext
+civil-estimator-app/
+│
+├── app/                          # Backend (FastAPI)
+│   ├── main.py                   # FastAPI entry
+│   ├── api/                      # API routes
+│   │   ├── __init__.py
+│   │   ├── boq.py                # Routes for BOQ calculations
+│   │   └── items.py              # Routes for item master (HSR/SOR)
+│   │
+│   ├── modules/                  # Core computation engine
+│   │   ├── __init__.py
+│   │   ├── walls.py              # Wall volumes, plastering
+│   │   ├── flooring.py           # Floor PCC, tiles, skirting, dado
+│   │   ├── rcc.py                # RCC: slab, beam, column, lintel
+│   │   ├── shuttering.py         # Shuttering for RCC, staircase, sunshades
+│   │   ├── masonry.py            # Foundation, footing, superstructure
+│   │   ├── openings.py           # Doors, windows, frames, grills
+│   │   ├── finishes.py           # Paint, plaster (internal/external/ceiling)
+│   │   ├── boq_calculator.py     # Central orchestrator (imports all above)
+│   │   └── utils.py              # Shared formulas: centerline, area, volume
+│   │
+│   ├── data/
+│   │   ├── hsr_items.json        # HSR/SOR master list with serial numbers
+│   │   ├── rates.json            # Rate list for materials/labor
+│   │   └── defaults.json         # Defaults (plinth height, dado, skirting, etc.)
+│   │
+│   ├── services/
+│   │   ├── export_excel.py       # Export MB + Abstract to Excel
+│   │   ├── export_pdf.py         # Export BOQ reports to PDF
+│   │   └── validation.py         # Input checks
+│   │
+│   └── tests/                    # Unit tests for all computations
+│
+├── frontend/                     # React + Vite app
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── RoomForm.jsx
+│   │   │   ├── WallForm.jsx
+│   │   │   ├── RCCForm.jsx
+│   │   │   ├── FlooringForm.jsx
+│   │   │   └── BOQTable.jsx      # Display computed MB + Abstract
+│   │   ├── pages/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── InputForm.jsx
+│   │   │   └── Results.jsx
+│   │   └── api.js                # Axios calls to FastAPI backend
+│   │
+│   └── package.json
+│
+├── docs/                         # Documentation
+│   ├── requirements.md           # Project requirements
+│   ├── api_docs.md               # API endpoints
+│   └── boq_logic.md              # Measurement & MB logic
+│
+├── .gitignore
+├── requirements.txt              # Python dependencies
+├── package.json                  # Frontend dependencies
+└── README.md
+```
+
+---
+
+# 🔹 Workflow Inside This Skeleton
+
+1. **User Input (Frontend)**
+
+   * Rooms, walls, doors/windows, plaster, RCC, flooring → entered via React forms.
+   * Sent to FastAPI `/compute-boq` route.
+
+2. **Computation (Backend)**
+
+   * `boq_calculator.py` imports wall, plaster, RCC, flooring modules.
+   * Each module computes **line-by-line MB quantities**.
+   * Results are combined, grouped by **HSR/SOR code**, then sent back.
+
+3. **Output (Reports)**
+
+   * **Measurement Book (MB)**: line-by-line (10–15 rows per item → subtotal).
+   * **Abstract BOQ**: grouped by HSR code, in correct serial order.
+   * Export options: Excel & PDF.
+
+---
+
+# 🔹 Example Code Stub (walls.py)
+
+```python
+# app/modules/walls.py
+def compute_main_walls(centerline, thickness, height, plaster=True):
+    masonry_vol = centerline * thickness * height
+    plaster_area_in = centerline * height  # internal face
+    plaster_area_out = centerline * (height + 0.45)  # external with plinth
+    return {
+        "masonry_volume": masonry_vol,
+        "plaster_in": plaster_area_in if plaster else 0,
+        "plaster_out": plaster_area_out if plaster else 0
+    }
+```
+
+---
+
+✅ This skeleton ensures:
+
+* Statutory requirement met (MB rows, then totals).
+* Modular structure (easy to add/remove elements like RCC, flooring, plaster).
+* GitHub-friendly (branchable, testable, export-ready).
+
+---
+
+👉 Do you want me to also **map a sample HSR item code table (`hsr_items.json`)** showing how, say, *3.4.6 Brick Masonry* and *4.1.2 Plastering* would be linked with these computations?
+
+
+Excellent question 👷‍♂️—these **levels** form the backbone of building estimation and measurement (also crucial in your app’s logic). Let me explain each one systematically, as a civil engineer would document it in a **Measurement Book (MB)** or a **Schedule of Rates (SOR/HSR)** context:
+
+---
+
+# 📏 Key Building Levels (Concepts & Use in Estimation)
+
+### 1. **Average Ground Level (AGL / GL)**
+
+* **Definition**:
+  The **mean level of the natural ground surface** around the proposed building, before any excavation or filling is carried out.
+  Measured by taking reduced levels at several points around the plot and averaging them.
+* **Purpose**:
+
+  * Serves as the **reference zero** for foundation depth calculation.
+  * Earthwork quantities (excavation, filling) are computed with respect to this level.
+* **Estimation Role**:
+
+  * Excavation depth = **(Founding Level – AGL)**
+  * Filling quantity = (Plinth Level – AGL) × Area
+
+---
+
+### 2. **Founding Level (Foundation Level)**
+
+* **Definition**:
+  The level at which the **bottom of the foundation** rests.
+  Usually taken **below AGL** depending on soil strata and structural design.
+* **Purpose**:
+
+  * To transfer load safely to the bearing strata.
+  * To avoid soil settlement and ensure stability.
+* **Estimation Role**:
+
+  * Excavation depth = **(Founding Level – AGL)**
+  * Foundation concrete (PCC, footing, etc.) quantities measured from this level upward.
+
+---
+
+### 3. **Plinth Level**
+
+* **Definition**:
+  The finished floor level of the ground floor, **above ground level**.
+  Generally **0.45 m to 0.60 m above GL** in residential buildings.
+* **Purpose**:
+
+  * Protects building from rainwater ingress, dampness, flooding.
+  * Defines the **datum for superstructure measurements** (walls, flooring, doors, windows).
+* **Estimation Role**:
+
+  * Plinth filling = (Plinth Level – AGL) × Floor Area
+  * Superstructure wall height measured from Plinth Level to First Floor Level.
+
+---
+
+### 4. **Floor Levels**
+
+* **Ground Floor Level (GFL)**:
+  Coincides with Plinth Level (finished floor inside building).
+
+* **First Floor Level (FFL)**:
+  Height measured from Plinth Level to the **top surface of first floor slab**.
+  Typical storey height = **3.0 m – 3.6 m (residential), 4.0 m+ (public buildings)**.
+
+* **Successive Floor Levels**:
+  Repeated storey heights stacked above FFL.
+
+* **Estimation Role**:
+
+  * Wall height = Floor-to-floor level – Slab thickness.
+  * RCC beams/columns/slabs computed between floor levels.
+  * Plastering and painting areas depend on floor heights.
+
+---
+
+### 5. **Parapet Level**
+
+* **Definition**:
+  The level up to the top of the **parapet wall** above the terrace.
+* **Purpose**:
+
+  * Provides safety, architectural finish.
+* **Estimation Role**:
+
+  * Parapet wall masonry = Parapet length × thickness × height
+  * Plastering (internal & external) computed separately above terrace.
+
+---
+
+### 🔹 Example in MB (Measurement Book)
+
+Suppose:
+
+* AGL = 100.00 m
+* Founding Level = 98.50 m (i.e., 1.50 m below AGL)
+* Plinth Level = 100.45 m (i.e., 0.45 m above AGL)
+* First Floor Level = 104.65 m (i.e., 4.20 m above Plinth)
+
+Then:
+
+* **Excavation depth** = 1.50 m
+* **Plinth filling depth** = 0.45 m
+* **Wall height (Plinth → First floor)** = 4.20 m
+
+All these will be **coded row-wise** in the Measurement Book before totals are written.
+
+---
+
+✅ In your **app skeleton**, these levels should be stored in `defaults.json` or taken as **user inputs** at project start.
+✅ All computations (excavation, filling, wall height, plaster areas, RCC column lengths) should reference these levels.
+
+---
+
+👉 Do you want me to also prepare a **formula map table** (like: *Excavation Depth = FL–AGL; Superstructure Wall Height = FFL–PL; Plinth Filling = (PL–AGL)×Area*) so it can directly plug into your `utils.py`?
+
+Excellent question 👷‍♂️—these **levels** form the backbone of building estimation and measurement (also crucial in your app’s logic). Let me explain each one systematically, as a civil engineer would document it in a **Measurement Book (MB)** or a **Schedule of Rates (SOR/HSR)** context:
+
+---
+
+# 📏 Key Building Levels (Concepts & Use in Estimation)
+
+### 1. **Average Ground Level (AGL / GL)**
+
+* **Definition**:
+  The **mean level of the natural ground surface** around the proposed building, before any excavation or filling is carried out.
+  Measured by taking reduced levels at several points around the plot and averaging them.
+* **Purpose**:
+
+  * Serves as the **reference zero** for foundation depth calculation.
+  * Earthwork quantities (excavation, filling) are computed with respect to this level.
+* **Estimation Role**:
+
+  * Excavation depth = **(Founding Level – AGL)**
+  * Filling quantity = (Plinth Level – AGL) × Area
+
+---
+
+### 2. **Founding Level (Foundation Level)**
+
+* **Definition**:
+  The level at which the **bottom of the foundation** rests.
+  Usually taken **below AGL** depending on soil strata and structural design.
+* **Purpose**:
+
+  * To transfer load safely to the bearing strata.
+  * To avoid soil settlement and ensure stability.
+* **Estimation Role**:
+
+  * Excavation depth = **(Founding Level – AGL)**
+  * Foundation concrete (PCC, footing, etc.) quantities measured from this level upward.
+
+---
+
+### 3. **Plinth Level**
+
+* **Definition**:
+  The finished floor level of the ground floor, **above ground level**.
+  Generally **0.45 m to 0.60 m above GL** in residential buildings.
+* **Purpose**:
+
+  * Protects building from rainwater ingress, dampness, flooding.
+  * Defines the **datum for superstructure measurements** (walls, flooring, doors, windows).
+* **Estimation Role**:
+
+  * Plinth filling = (Plinth Level – AGL) × Floor Area
+  * Superstructure wall height measured from Plinth Level to First Floor Level.
+
+---
+
+### 4. **Floor Levels**
+
+* **Ground Floor Level (GFL)**:
+  Coincides with Plinth Level (finished floor inside building).
+
+* **First Floor Level (FFL)**:
+  Height measured from Plinth Level to the **top surface of first floor slab**.
+  Typical storey height = **3.0 m – 3.6 m (residential), 4.0 m+ (public buildings)**.
+
+* **Successive Floor Levels**:
+  Repeated storey heights stacked above FFL.
+
+* **Estimation Role**:
+
+  * Wall height = Floor-to-floor level – Slab thickness.
+  * RCC beams/columns/slabs computed between floor levels.
+  * Plastering and painting areas depend on floor heights.
+
+---
+
+### 5. **Parapet Level**
+
+* **Definition**:
+  The level up to the top of the **parapet wall** above the terrace.
+* **Purpose**:
+
+  * Provides safety, architectural finish.
+* **Estimation Role**:
+
+  * Parapet wall masonry = Parapet length × thickness × height
+  * Plastering (internal & external) computed separately above terrace.
+
+---
+
+### 🔹 Example in MB (Measurement Book)
+
+Suppose:
+
+* AGL = 100.00 m
+* Founding Level = 98.50 m (i.e., 1.50 m below AGL)
+* Plinth Level = 100.45 m (i.e., 0.45 m above AGL)
+* First Floor Level = 104.65 m (i.e., 4.20 m above Plinth)
+
+Then:
+
+* **Excavation depth** = 1.50 m
+* **Plinth filling depth** = 0.45 m
+* **Wall height (Plinth → First floor)** = 4.20 m
+
+All these will be **coded row-wise** in the Measurement Book before totals are written.
+
+---
+
+✅ In your **app skeleton**, these levels should be stored in `defaults.json` or taken as **user inputs** at project start.
+✅ All computations (excavation, filling, wall height, plaster areas, RCC column lengths) should reference these levels.
+
+---
+
+👉 Do you want me to also prepare a **formula map table** (like: *Excavation Depth = FL–AGL; Superstructure Wall Height = FFL–PL; Plinth Filling = (PL–AGL)×Area*) so it can directly plug into your `utils.py`?
+
+Perfect 👌 Let’s build a **Formula Map Table** for your estimator app. This will be the **master reference sheet** for your `utils.py` functions and for MB entry logic.
+
+---
+
+# 📐 Formula Map Table for Building Estimation
+
+| **Element**                       | **Formula**                                              | **Depends on**             | **Output (Unit)** |
+| --------------------------------- | -------------------------------------------------------- | -------------------------- | ----------------- |
+| **Excavation Depth**              | `Founding Level – Average Ground Level (AGL)`            | FL, AGL                    | m                 |
+| **Excavation Volume**             | `Excavation Depth × Foundation Area`                     | FL, AGL, footing area      | m³                |
+| **Foundation PCC**                | `Σ (Step Width × Step Thickness × Step Length)`          | User inputs (steps)        | m³                |
+| **Footing Masonry/Concrete**      | `Σ (Length × Width × Height)` per footing                | Dimensions                 | m³                |
+| **Plinth Filling Volume**         | `(Plinth Level – AGL) × Plinth Area`                     | PL, AGL, area              | m³                |
+| **Plinth Beam Volume**            | `Plinth Beam Cross-section × Beam Length`                | Width, depth, length       | m³                |
+| **Superstructure Wall Volume**    | `Wall Centerline × Thickness × Height`                   | CL length, t, h            | m³                |
+| **Internal Plaster Area**         | `Main Wall CL × Room Height`                             | CL length, h               | m²                |
+| **External Plaster Area**         | `Main Wall CL × (Room Height + Plinth Height + 0.15)`    | CL, h, plinth              | m²                |
+| **Partition Wall Volume**         | `Partition CL × Thickness × Height`                      | CL, t, h                   | m³                |
+| **Partition Plaster Area**        | `2 × (Partition CL × Height)`                            | CL, h                      | m²                |
+| **Ceiling Plaster**               | `Σ(Room Floor Area)`                                     | Length × width per room    | m²                |
+| **Floor PCC Volume**              | `Σ(Room Floor Area × Thickness)`                         | Area, t                    | m³                |
+| **Flooring**                      | `Σ(Room Floor Area)` per flooring type                   | Area                       | m²                |
+| **Skirting**                      | `Σ(Room Perimeter × Skirting Height)`                    | Perimeter, default h=0.1 m | m²                |
+| **Dado**                          | `Σ(Room Wet Wall Length × Dado Height)`                  | Length, default h=2.1 m    | m²                |
+| **Doors (per row)**               | `No. × Width × Height`                                   | n, w, h                    | m²                |
+| **Windows (per row)**             | `No. × Width × Height`                                   | n, w, h                    | m²                |
+| **Door/Window Masonry Deduction** | `(Opening Width × Opening Height × Thickness)`           | Opening size, wall t       | m³                |
+| **Granite Jambs/Sills**           | `Perimeter × Thickness`                                  | per opening                | m² / m³           |
+| **RCC Columns**                   | `Σ(Col. Cross-section × Height)`                         | b, d, h                    | m³                |
+| **RCC Beams**                     | `Σ(Beam Cross-section × Length)`                         | b, d, l                    | m³                |
+| **RCC Slab**                      | `Slab Thickness × Slab Area`                             | t, area                    | m³                |
+| **RCC Stairs**                    | `Σ(Tread × Riser × Width)` per flight                    | steps, width               | m³                |
+| **Shuttering (Columns)**          | `Perimeter × Height`                                     | per column                 | m²                |
+| **Shuttering (Beams)**            | `2 × Depth × Length` (sides) + `Width × Length` (bottom) | d, w, l                    | m²                |
+| **Shuttering (Slabs)**            | `Slab Area`                                              | area                       | m²                |
+| **Shuttering (Stairs)**           | `Flight Area + Riser Area`                               | geometry                   | m²                |
+| **Parapet Wall Volume**           | `Parapet Length × Thickness × Height`                    | l, t, h                    | m³                |
+| **Terrace Area**                  | `Σ(Room Sizes) + Σ(Wall Thickness additions)`            | room sizes, walls          | m²                |
+| **Terrace Plaster**               | `Terrace Area × Thickness`                               | area, t                    | m³                |
+| **Paint/Finish Area**             | Same as plaster areas (internal/external/ceiling)        | plaster area               | m²                |
+
+---
+
+# 🔹 How It Fits in the App
+
+* Each of these formulas becomes a **function** in `utils.py` (Python).
+* The **Measurement Book (MB)** is built row-by-row from these formulas.
+* The **Abstract BOQ** groups them under **HSR/SOR item codes**.
+
+Example:
+
+```python
+def excavation_volume(agl, fl, foundation_area):
+    depth = fl - agl
+    return depth * foundation_area
+```
+
+```python
+def plaster_area_main(cl_length, height, plinth_height=0.45):
+    internal = cl_length * height
+    external = cl_length * (height + plinth_height + 0.15)
+    return {"internal": internal, "external": external}
+```
+
+---
+
+⚡ Now, when user enters **AGL = 100.00, FL = 98.50, PL = 100.45, FFL = 104.65**,
+the app will auto-calc:
+
+* Excavation depth = 1.50 m
+* Plinth filling depth = 0.45 m
+* Superstructure wall height = 4.20 m
+
+---
+
+👉 Do you want me to now **map these formulas directly to HSR item codes (like 3.4.6 Brickwork, 4.1.2 Plaster, 5.2.3 RCC)** so that your app automatically knows **which formula belongs to which BOQ item**?
+
+
+Perfect 👌 Let’s build a **Formula Map Table** for your estimator app. This will be the **master reference sheet** for your `utils.py` functions and for MB entry logic.
+
+---
+
+# 📐 Formula Map Table for Building Estimation
+
+| **Element**                       | **Formula**                                              | **Depends on**             | **Output (Unit)** |
+| --------------------------------- | -------------------------------------------------------- | -------------------------- | ----------------- |
+| **Excavation Depth**              | `Founding Level – Average Ground Level (AGL)`            | FL, AGL                    | m                 |
+| **Excavation Volume**             | `Excavation Depth × Foundation Area`                     | FL, AGL, footing area      | m³                |
+| **Foundation PCC**                | `Σ (Step Width × Step Thickness × Step Length)`          | User inputs (steps)        | m³                |
+| **Footing Masonry/Concrete**      | `Σ (Length × Width × Height)` per footing                | Dimensions                 | m³                |
+| **Plinth Filling Volume**         | `(Plinth Level – AGL) × Plinth Area`                     | PL, AGL, area              | m³                |
+| **Plinth Beam Volume**            | `Plinth Beam Cross-section × Beam Length`                | Width, depth, length       | m³                |
+| **Superstructure Wall Volume**    | `Wall Centerline × Thickness × Height`                   | CL length, t, h            | m³                |
+| **Internal Plaster Area**         | `Main Wall CL × Room Height`                             | CL length, h               | m²                |
+| **External Plaster Area**         | `Main Wall CL × (Room Height + Plinth Height + 0.15)`    | CL, h, plinth              | m²                |
+| **Partition Wall Volume**         | `Partition CL × Thickness × Height`                      | CL, t, h                   | m³                |
+| **Partition Plaster Area**        | `2 × (Partition CL × Height)`                            | CL, h                      | m²                |
+| **Ceiling Plaster**               | `Σ(Room Floor Area)`                                     | Length × width per room    | m²                |
+| **Floor PCC Volume**              | `Σ(Room Floor Area × Thickness)`                         | Area, t                    | m³                |
+| **Flooring**                      | `Σ(Room Floor Area)` per flooring type                   | Area                       | m²                |
+| **Skirting**                      | `Σ(Room Perimeter × Skirting Height)`                    | Perimeter, default h=0.1 m | m²                |
+| **Dado**                          | `Σ(Room Wet Wall Length × Dado Height)`                  | Length, default h=2.1 m    | m²                |
+| **Doors (per row)**               | `No. × Width × Height`                                   | n, w, h                    | m²                |
+| **Windows (per row)**             | `No. × Width × Height`                                   | n, w, h                    | m²                |
+| **Door/Window Masonry Deduction** | `(Opening Width × Opening Height × Thickness)`           | Opening size, wall t       | m³                |
+| **Granite Jambs/Sills**           | `Perimeter × Thickness`                                  | per opening                | m² / m³           |
+| **RCC Columns**                   | `Σ(Col. Cross-section × Height)`                         | b, d, h                    | m³                |
+| **RCC Beams**                     | `Σ(Beam Cross-section × Length)`                         | b, d, l                    | m³                |
+| **RCC Slab**                      | `Slab Thickness × Slab Area`                             | t, area                    | m³                |
+| **RCC Stairs**                    | `Σ(Tread × Riser × Width)` per flight                    | steps, width               | m³                |
+| **Shuttering (Columns)**          | `Perimeter × Height`                                     | per column                 | m²                |
+| **Shuttering (Beams)**            | `2 × Depth × Length` (sides) + `Width × Length` (bottom) | d, w, l                    | m²                |
+| **Shuttering (Slabs)**            | `Slab Area`                                              | area                       | m²                |
+| **Shuttering (Stairs)**           | `Flight Area + Riser Area`                               | geometry                   | m²                |
+| **Parapet Wall Volume**           | `Parapet Length × Thickness × Height`                    | l, t, h                    | m³                |
+| **Terrace Area**                  | `Σ(Room Sizes) + Σ(Wall Thickness additions)`            | room sizes, walls          | m²                |
+| **Terrace Plaster**               | `Terrace Area × Thickness`                               | area, t                    | m³                |
+| **Paint/Finish Area**             | Same as plaster areas (internal/external/ceiling)        | plaster area               | m²                |
+
+---
+
+# 🔹 How It Fits in the App
+
+* Each of these formulas becomes a **function** in `utils.py` (Python).
+* The **Measurement Book (MB)** is built row-by-row from these formulas.
+* The **Abstract BOQ** groups them under **HSR/SOR item codes**.
+
+Example:
+
+```python
+def excavation_volume(agl, fl, foundation_area):
+    depth = fl - agl
+    return depth * foundation_area
+```
+
+```python
+def plaster_area_main(cl_length, height, plinth_height=0.45):
+    internal = cl_length * height
+    external = cl_length * (height + plinth_height + 0.15)
+    return {"internal": internal, "external": external}
+```
+
+---
+
+⚡ Now, when user enters **AGL = 100.00, FL = 98.50, PL = 100.45, FFL = 104.65**,
+the app will auto-calc:
+
+* Excavation depth = 1.50 m
+* Plinth filling depth = 0.45 m
+* Superstructure wall height = 4.20 m
+
+---
+
+👉 Do you want me to now **map these formulas directly to HSR item codes (like 3.4.6 Brickwork, 4.1.2 Plaster, 5.2.3 RCC)** so that your app automatically knows **which formula belongs to which BOQ item**?
+
+Excellent ✅ — now let’s extend the **Formula Map Table** into a **BOQ + HSR Integration Map**.
+This way your estimator app will know **which formula → which HSR code** and build the Measurement Book + Abstract automatically.
+
+---
+
+# 📑 Formula ↔ HSR/SOR Item Mapping
+
+| **Work Item**                | **Formula (from earlier)**                     | **HSR/SOR Ref.** | **MB Output** Example                                |
+| ---------------------------- | ---------------------------------------------- | ---------------- | ---------------------------------------------------- |
+| **Earthwork in Excavation**  | `(Founding Level – AGL) × Foundation Area`     | *HSR 3.1.1*      | Excavation for footing: 1.50 × 2.00 × 1.20 = 3.60 m³ |
+| **Filling in Plinth**        | `(Plinth Level – AGL) × Plinth Area`           | *HSR 3.2.2*      | Plinth filling: 6.00 × 4.00 × 0.45 = 10.8 m³         |
+| **PCC under Foundation**     | `Σ(Step Width × Step Thickness × Step Length)` | *HSR 4.1.1*      | PCC (1:4:8): 2.20 × 2.20 × 0.10 = 0.48 m³            |
+| **Brickwork in Foundation**  | `Σ(L × B × H)`                                 | *HSR 6.1.2*      | Brick masonry: 2.00 × 0.23 × 0.80 = 0.368 m³         |
+| **Plinth Beam (RCC)**        | `Σ(b × d × l)`                                 | *HSR 5.3.2*      | RCC plinth beam: 0.23 × 0.30 × 6.00 = 0.414 m³       |
+| **Superstructure Brickwork** | `CL × Thickness × Height`                      | *HSR 6.2.1*      | Brick wall: 12.00 × 0.23 × 3.00 = 8.28 m³            |
+| **Partition Brickwork**      | `Partition CL × Thickness × Height`            | *HSR 6.2.2*      | Partition wall: 4.00 × 0.115 × 3.00 = 1.38 m³        |
+| **Internal Plaster**         | `MWCL × Room Height`                           | *HSR 11.1.1*     | Plaster 12 mm: 12.00 × 3.00 = 36.0 m²                |
+| **External Plaster**         | `MWCL × (Room Height + Plinth Height + 0.15)`  | *HSR 11.1.2*     | Plaster 15 mm: 12.00 × 3.45 = 41.4 m²                |
+| **Partition Plaster**        | `2 × (Partition CL × Height)`                  | *HSR 11.1.2*     | Plaster 15 mm: 8.00 × 3.00 = 24.0 m²                 |
+| **Ceiling Plaster**          | `Σ(Room Floor Area)`                           | *HSR 11.2.1*     | Ceiling plaster: 4.00 × 3.00 = 12.0 m²               |
+| **Floor PCC**                | `Σ(Room Area × Thickness)`                     | *HSR 4.1.4*      | PCC flooring: 4.00 × 3.00 × 0.075 = 0.90 m³          |
+| **Flooring (Tiles/Marble)**  | `Σ(Room Floor Area)`                           | *HSR 14.1.1*     | Vitrified tiles: 4.00 × 3.00 = 12.0 m²               |
+| **Skirting**                 | `Room Perimeter × 0.1`                         | *HSR 14.4.2*     | Skirting: (2×(4+3)) × 0.10 = 1.4 m²                  |
+| **Dado (Wet Areas)**         | `Wet Wall Length × 2.1`                        | *HSR 14.4.3*     | Dado in kitchen: 2.50 × 2.10 = 5.25 m²               |
+| **Doors**                    | `No. × W × H`                                  | *HSR 17.1.1*     | Door shutter: 1.00 × 2.10 = 2.10 m²                  |
+| **Windows**                  | `No. × W × H`                                  | *HSR 17.2.1*     | Window shutter: 1.20 × 1.20 = 1.44 m²                |
+| **Granite Sills/Jambs**      | `Perimeter × Thickness`                        | *HSR 14.7.3*     | Granite sill: 4.80 × 0.025 = 0.12 m²                 |
+| **RCC Columns**              | `Σ(b × d × h)`                                 | *HSR 5.2.1*      | RCC column: 0.23 × 0.45 × 3.00 = 0.31 m³             |
+| **RCC Beams**                | `Σ(b × d × l)`                                 | *HSR 5.2.2*      | RCC beam: 0.23 × 0.30 × 4.00 = 0.276 m³              |
+| **RCC Slabs**                | `t × Area`                                     | *HSR 5.2.3*      | RCC slab: 0.125 × 12.0 = 1.50 m³                     |
+| **RCC Stairs**               | `Σ(Tread × Riser × Width)`                     | *HSR 5.2.4*      | RCC stair: 0.30 × 0.15 × 1.20 × 15 = 0.81 m³         |
+| **Shuttering (Columns)**     | `Perimeter × Height`                           | *HSR 5.9.1*      | Shuttering column: (2×(0.23+0.45)) × 3.00 = 4.08 m²  |
+| **Shuttering (Beams)**       | `2 × Depth × Length + Width × Length`          | *HSR 5.9.2*      | Shuttering beam: (2×0.30×4 + 0.23×4) = 2.92 m²       |
+| **Shuttering (Slabs)**       | `Slab Area`                                    | *HSR 5.9.3*      | Slab shuttering: 12.0 m²                             |
+| **Shuttering (Stairs)**      | `Flight Area + Riser Area`                     | *HSR 5.9.4*      | Stair shuttering: 10.5 m²                            |
+| **Parapet Wall**             | `Length × Thickness × Height`                  | *HSR 6.3.1*      | Parapet: 12.00 × 0.115 × 1.05 = 1.45 m³              |
+| **Terrace Plastering**       | `Terrace Area × Thickness`                     | *HSR 11.2.3*     | Terrace plaster: 42.0 × 0.012 = 0.50 m³              |
+| **Painting**                 | `Same as plaster areas`                        | *HSR 30.1.1*     | Whitewash: 120.0 m²                                  |
+
+---
+
+# 🔹 How Your App Will Work
+
+1. **User Inputs** → Room sizes, wall thickness, levels, openings, RCC members, plaster thickness etc.
+2. **Formula Engine** → Uses this **Formula Map Table**.
+3. **HSR Mapper** → Each formula is tagged to an **HSR code**.
+4. **Measurement Book (MB)** → App lists detailed rows.
+5. **Abstract of Cost** → Quantities grouped by **HSR code** with rate lookup.
+
+---
+
+✅ This satisfies your statutory requirement: *each BOQ item’s total comes from detailed MB rows, not direct entry.*
+
+---
+
+👉 Do you want me to now **write the actual `hsr_map.json` file** (a structured dictionary mapping formula IDs → HSR codes + descriptions), so your coder can plug it directly into the repo?
+
+Perfect ✅
+Let’s create the **`hsr_map.json`** file that your estimator app can use.
+This file will:
+
+* Store **formulas → HSR codes → item names**
+* Allow coder to map **MB rows → Abstract → Rates**
+* Be easily extendable with more items
+
+---
+
+# 📂 `hsr_map.json`
+
+```json
+{
+  "earthwork_excavation": {
+    "hsr_code": "3.1.1",
+    "description": "Earthwork in excavation in foundation trenches",
+    "formula": "(FoundingLevel - AGL) * FoundationArea",
+    "unit": "cum"
+  },
+  "plinth_filling": {
+    "hsr_code": "3.2.2",
+    "description": "Filling in plinth with sand/earth",
+    "formula": "(PlinthLevel - AGL) * PlinthArea",
+    "unit": "cum"
+  },
+  "pcc_foundation": {
+    "hsr_code": "4.1.1",
+    "description": "Plain cement concrete 1:4:8 under foundations",
+    "formula": "Σ(StepWidth * StepThickness * StepLength)",
+    "unit": "cum"
+  },
+  "brickwork_foundation": {
+    "hsr_code": "6.1.2",
+    "description": "Brickwork with FPS bricks in foundation",
+    "formula": "Σ(L * B * H)",
+    "unit": "cum"
+  },
+  "plinth_beam_rcc": {
+    "hsr_code": "5.3.2",
+    "description": "RCC plinth beam including shuttering",
+    "formula": "Σ(b * d * l)",
+    "unit": "cum"
+  },
+  "superstructure_brickwork": {
+    "hsr_code": "6.2.1",
+    "description": "Brickwork with FPS bricks in superstructure",
+    "formula": "MWCL * Thickness * Height",
+    "unit": "cum"
+  },
+  "partition_brickwork": {
+    "hsr_code": "6.2.2",
+    "description": "Half-brick partition wall",
+    "formula": "PartitionCL * Thickness * Height",
+    "unit": "cum"
+  },
+  "internal_plaster": {
+    "hsr_code": "11.1.1",
+    "description": "12 mm thick cement plaster on internal walls",
+    "formula": "MWCL * RoomHeight",
+    "unit": "sqm"
+  },
+  "external_plaster": {
+    "hsr_code": "11.1.2",
+    "description": "15 mm thick cement plaster on external walls",
+    "formula": "MWCL * (RoomHeight + PlinthHeight + 0.15)",
+    "unit": "sqm"
+  },
+  "partition_plaster": {
+    "hsr_code": "11.1.2",
+    "description": "15 mm thick plaster on both sides of partitions",
+    "formula": "2 * (PartitionCL * RoomHeight)",
+    "unit": "sqm"
+  },
+  "ceiling_plaster": {
+    "hsr_code": "11.2.1",
+    "description": "Cement plaster on ceiling",
+    "formula": "Σ(RoomFloorArea)",
+    "unit": "sqm"
+  },
+  "floor_pcc": {
+    "hsr_code": "4.1.4",
+    "description": "PCC flooring 1:4:8",
+    "formula": "Σ(RoomArea * Thickness)",
+    "unit": "cum"
+  },
+  "flooring_tiles": {
+    "hsr_code": "14.1.1",
+    "description": "Providing and laying vitrified tiles",
+    "formula": "Σ(RoomFloorArea)",
+    "unit": "sqm"
+  },
+  "skirting": {
+    "hsr_code": "14.4.2",
+    "description": "Skirting with tiles/marble",
+    "formula": "RoomPerimeter * 0.1",
+    "unit": "sqm"
+  },
+  "dado": {
+    "hsr_code": "14.4.3",
+    "description": "Dado in kitchen/bath up to 2.1m height",
+    "formula": "WetWallLength * 2.1",
+    "unit": "sqm"
+  },
+  "doors": {
+    "hsr_code": "17.1.1",
+    "description": "Supplying and fixing door shutters",
+    "formula": "No * Width * Height",
+    "unit": "sqm"
+  },
+  "windows": {
+    "hsr_code": "17.2.1",
+    "description": "Supplying and fixing window shutters",
+    "formula": "No * Width * Height",
+    "unit": "sqm"
+  },
+  "granite_sills": {
+    "hsr_code": "14.7.3",
+    "description": "Granite stone for sills, jambs and coping",
+    "formula": "Perimeter * Thickness",
+    "unit": "sqm"
+  },
+  "rcc_columns": {
+    "hsr_code": "5.2.1",
+    "description": "RCC work in columns",
+    "formula": "Σ(b * d * h)",
+    "unit": "cum"
+  },
+  "rcc_beams": {
+    "hsr_code": "5.2.2",
+    "description": "RCC work in beams",
+    "formula": "Σ(b * d * l)",
+    "unit": "cum"
+  },
+  "rcc_slabs": {
+    "hsr_code": "5.2.3",
+    "description": "RCC work in slabs",
+    "formula": "t * Area",
+    "unit": "cum"
+  },
+  "rcc_stairs": {
+    "hsr_code": "5.2.4",
+    "description": "RCC work in stairs",
+    "formula": "Σ(Tread * Riser * Width)",
+    "unit": "cum"
+  },
+  "shuttering_columns": {
+    "hsr_code": "5.9.1",
+    "description": "Shuttering for columns",
+    "formula": "Perimeter * Height",
+    "unit": "sqm"
+  },
+  "shuttering_beams": {
+    "hsr_code": "5.9.2",
+    "description": "Shuttering for beams",
+    "formula": "2 * Depth * Length + Width * Length",
+    "unit": "sqm"
+  },
+  "shuttering_slabs": {
+    "hsr_code": "5.9.3",
+    "description": "Shuttering for slabs",
+    "formula": "SlabArea",
+    "unit": "sqm"
+  },
+  "shuttering_stairs": {
+    "hsr_code": "5.9.4",
+    "description": "Shuttering for stairs",
+    "formula": "FlightArea + RiserArea",
+    "unit": "sqm"
+  },
+  "parapet_wall": {
+    "hsr_code": "6.3.1",
+    "description": "Brick masonry in parapet wall",
+    "formula": "Length * Thickness * Height",
+    "unit": "cum"
+  },
+  "terrace_plaster": {
+    "hsr_code": "11.2.3",
+    "description": "Plastering on terrace slab",
+    "formula": "TerraceArea * Thickness",
+    "unit": "sqm"
+  },
+  "painting": {
+    "hsr_code": "30.1.1",
+    "description": "Whitewash/painting on wall surfaces",
+    "formula": "Same as plaster areas",
+    "unit": "sqm"
+  }
+}
+```
+
+---
+
+# 🔹 How to Use
+
+* Place this file in your repo:
+  📂 `config/hsr_map.json`
+* App loads it into memory.
+* Each **user input** → runs formula → saves MB row.
+* Then groups by `hsr_code` → prepares **Abstract of Cost**.
+
+---
+
+👉 Do you want me to also prepare a **Python parser function** that:
+
+1. Reads `hsr_map.json`
+2. Runs formulas with given inputs
+3. Outputs a **Measurement Book table + Abstract table**?

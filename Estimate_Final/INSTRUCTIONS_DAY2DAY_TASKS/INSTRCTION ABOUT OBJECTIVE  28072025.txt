@@ -1,0 +1,17 @@
+Subject: Week-01 POC – FastAPI Backend for Tender App (Deadline 7 days)
+Hi <Engineer-Name>,
+We’re migrating the current Streamlit  tool to a modern stack.
+Your first deliverable is a Week-01 POC: a standalone FastAPI backend that replicates the existing Excel-upload & template-download features.
+Scope & Schedule
+Day 1 (today) – Refactor excel_parser.py into async service, unit tests green
+Day 2 – POST /api/v1/upload (validation + JSON preview)
+Day 3 – GET /api/v1/download/{template} (serve single/multi NIT templates)
+Day 4 – Dockerfile + docker-compose hot-reload
+Day 5 – pytest + GitHub Action CI
+Day 6 – Deploy to Render (free tier)
+Day 7 – README & hand-off notes, PR tagged week-01-poc
+Branch: week01-poc-fastapi
+Swagger must show all endpoints live by D7.
+Start with the Day-1 snippet I just shared, push early & often.
+Ping me if any blocker.
+Thanks!

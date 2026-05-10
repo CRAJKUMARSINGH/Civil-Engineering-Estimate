@@ -1,0 +1,794 @@
+[
+  {
+    "id": "5.25.1",
+    "serial": "5.25.1",
+    "description": "Barricading with Sal ballies as per design ... (Subsequent per day: 25.00)",
+    "unit": "rmt",
+    "rate": 30.0,
+    "depth": 2
+  },
+  {
+    "id": "5.25.2",
+    "serial": "5.25.2",
+    "description": "Barricading with M.S. Pipe as per design ... (rate shown below, first day value missing in snippet)",
+    "unit": "rmt",
+    "rate": 25.0,
+    "depth": 2
+  },
+  {
+    "id": "5.26",
+    "serial": "5.26",
+    "description": "Add extra for 5.25.1 & 5.25.2 for each subsequent day after 3 days",
+    "unit": "rmt",
+    "rate": 1.8,
+    "depth": 1
+  },
+  {
+    "id": "5.27",
+    "serial": "5.27",
+    "description": "Making of holes in cement concrete/ bituminous road by power driven hammer for barricading",
+    "unit": "each",
+    "rate": 170.0,
+    "depth": 1
+  },
+  {
+    "id": "5.28",
+    "serial": "5.28",
+    "description": "Hire charges for folded type two seater sofa set (cum bed) with good quality white cloth cover (Subsequent: 80.00)",
+    "unit": "each",
+    "rate": 240.0,
+    "depth": 1
+  },
+  {
+    "id": "5.29",
+    "serial": "5.29",
+    "description": "VIP Chair with cushion (Subsequent: 40.00)",
+    "unit": "each",
+    "rate": 100.0,
+    "depth": 1
+  },
+  {
+    "id": "5.30",
+    "serial": "5.30",
+    "description": "Add extra for hire charge for providing welded mesh size 25x25 mm (16SWG) over barricading (excluding hire of barricading) (Subsequent: 6.00)",
+    "unit": "sqm",
+    "rate": 30.0,
+    "depth": 1
+  },
+  {
+    "id": "5.31",
+    "serial": "5.31",
+    "description": "Water Proof Tent with pipe pandal supported with Bamboo/Balli/MS Pipe frame (Subsequent: 30.00)",
+    "unit": "sqm",
+    "rate": 90.0,
+    "depth": 1
+  },
+  {
+    "id": "5.32.1",
+    "serial": "5.32.1",
+    "description": "Water proofing canopy with ornamental frill, inner ceiling & curtains (Upto size 20x20) (Subsequent: 50.00)",
+    "unit": "sqm",
+    "rate": 175.0,
+    "depth": 2
+  },
+  {
+    "id": "5.32.2",
+    "serial": "5.32.2",
+    "description": "Water proofing canopy with ornamental frill, inner ceiling & curtains (Above size 20x20) (Subsequent: 80.00)",
+    "unit": "sqm",
+    "rate": 250.0,
+    "depth": 2
+  },
+  {
+    "id": "47",
+    "serial": "47",
+    "description": "cement Stone blocks pipes and other heavy MT 25.00 3.50 56.00 66.00 | 8.40 98.00 8.40 | 138.00 7.00 207.00 | 4.20 4.8 Steel, Tar bitumen , Timber and steam coal MT 23.00 3.00 50.00 59.00 | 13.00 110.00 13.00 _| 173.00 12.00 288.00 4.80 4.9 Empty bitumen drums 10 Nos 38.00 3.00 65.00 77.00 4.80 95.00 4.20 | 115.00 3.50 150.00 2.40",
+    "unit": "nos",
+    "rate": 20.0,
+    "depth": 0
+  },
+  {
+    "id": "40",
+    "serial": "40",
+    "description": "mm thick Page 69 of 243 Kg.",
+    "unit": "kg",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "1501",
+    "serial": "1501",
+    "description": "Cm? to 3600 Cm\u2019 Tiles Above 3601 Cm? Slabs Page 78 of 243 Sqm.",
+    "unit": "sqm",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "30",
+    "serial": "30",
+    "description": "mm thick Page 83 of 243 Cum",
+    "unit": "cum",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "32",
+    "serial": "32",
+    "description": "mm long 40 mm long Page 87 of 243 Sqm.",
+    "unit": "sqm",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "10.1.2",
+    "serial": "10.1.2",
+    "description": "0.80 mm thick with zinc coating not less than 275 gm/m? 10.1.3 0.63 mm thick with zinc coating not less than 275 gm/m? 10.2",
+    "unit": "m",
+    "rate": 10.2,
+    "depth": 2
+  },
+  {
+    "id": "10.1.3",
+    "serial": "10.1.3",
+    "description": "0.63 mm thick with zinc coating not less than 275 gm/m? 10.2",
+    "unit": "m",
+    "rate": 10.2,
+    "depth": 2
+  },
+  {
+    "id": "10.23",
+    "serial": "10.23",
+    "description": "Making khurras 450 x 450mm with average minimum thickness Each 10.24",
+    "unit": "each",
+    "rate": 10.24,
+    "depth": 1
+  },
+  {
+    "id": "10.29",
+    "serial": "10.29",
+    "description": "Providing & fixing 12 mm thick tegular edge Glass Fibre Reinforced Sqm 10.30",
+    "unit": "sqm",
+    "rate": 10.3,
+    "depth": 1
+  },
+  {
+    "id": "10.32",
+    "serial": "10.32",
+    "description": ".1 Gypsum False ceiling tiles of size 595 x 595 mm in true horizontal level suspended on inter locking metal grid of hot dipped galvanised steel sections ( galvanized @ 170 gsm/sqm.) consisting of main \u201cT\u201d",
+    "unit": "sqm",
+    "rate": 32.1,
+    "depth": 1
+  },
+  {
+    "id": "595",
+    "serial": "595",
+    "description": "mm in true horizontal level suspended on inter locking metal grid of hot dipped galvanised steel sections ( galvanized @ 170 gsm/sqm.) consisting of main \u201cT\u201d runner with suitably spaced joints to",
+    "unit": "sqm",
+    "rate": 170.0,
+    "depth": 0
+  },
+  {
+    "id": "11.1",
+    "serial": "11.1",
+    "description": ". Brick on edge flooring with bricks of class designation 75 including cement slurry & pointing in CM (1 : 3) etc. complete laid on 20 mm thick bed of : 11.1.1 Cement Sand Mortar 1: 4 Sqm 464.00",
+    "unit": "sqm",
+    "rate": 75.0,
+    "depth": 1
+  },
+  {
+    "id": "11.1.1",
+    "serial": "11.1.1",
+    "description": "Cement Sand Mortar 1: 4 Sqm 464.00",
+    "unit": "sqm",
+    "rate": 464.0,
+    "depth": 2
+  },
+  {
+    "id": "11.1.2",
+    "serial": "11.1.2",
+    "description": "Cement Sand Mortar 1:6 Sqm 443.00",
+    "unit": "sqm",
+    "rate": 443.0,
+    "depth": 2
+  },
+  {
+    "id": "11.2",
+    "serial": "11.2",
+    "description": "Dry brick on edge flooring in required pattern with bricks of Sqm 409.00",
+    "unit": "sqm",
+    "rate": 409.0,
+    "depth": 1
+  },
+  {
+    "id": "11.3.1",
+    "serial": "11.3.1",
+    "description": "40mm thick with 20mm thick nominal size aggregate. Sqm 252.00",
+    "unit": "sqm",
+    "rate": 252.0,
+    "depth": 2
+  },
+  {
+    "id": "11.3.2",
+    "serial": "11.3.2",
+    "description": ". 75mm thick with 20mm thick nominal size aggregate. Sqm 416.00",
+    "unit": "sqm",
+    "rate": 416.0,
+    "depth": 2
+  },
+  {
+    "id": "11.4",
+    "serial": "11.4",
+    "description": "Providing and fixing 50mm thick cement concrete flooring with Sqm 412.00",
+    "unit": "sqm",
+    "rate": 412.0,
+    "depth": 1
+  },
+  {
+    "id": "11.5",
+    "serial": "11.5",
+    "description": "Cement plaster in skirting and/dado 18 mm thick with cement Sqm 258.00",
+    "unit": "sqm",
+    "rate": 258.0,
+    "depth": 1
+  },
+  {
+    "id": "11",
+    "serial": "11",
+    "description": ".23 11.23.1 11.23.2 For area of each slab from 901 to 2000 Sq.Cm:",
+    "unit": "each",
+    "rate": 11.23,
+    "depth": 0
+  },
+  {
+    "id": "11.23",
+    "serial": "11.23",
+    "description": ".1 11.23.2 For area of each slab from 901 to 2000 Sq.Cm:",
+    "unit": "each",
+    "rate": 23.1,
+    "depth": 1
+  },
+  {
+    "id": "M-30",
+    "serial": "M-30",
+    "description": ", 60 mm thick to be used in non traffic areas like building premises, monument premises, land scapes, public gardens/ park, domestic drives, paths and patios, Embankment slopes, sand stabilization Area etc.( As per table 1 of IS 15658:2006",
+    "unit": "m",
+    "rate": 2006.0,
+    "depth": 0
+  },
+  {
+    "id": "12.1",
+    "serial": "12.1",
+    "description": ". Plaster on new surface on wall in cement sand mortar 1:3 including racking of joints etc. complete fine finish : 12.1.1 25 mm thick Sqm. 202.00",
+    "unit": "sqm",
+    "rate": 202.0,
+    "depth": 1
+  },
+  {
+    "id": "12.1.1",
+    "serial": "12.1.1",
+    "description": "25 mm thick Sqm. 202.00",
+    "unit": "sqm",
+    "rate": 202.0,
+    "depth": 2
+  },
+  {
+    "id": "12.1.2",
+    "serial": "12.1.2",
+    "description": "20mm thick Sqm 176.00",
+    "unit": "sqm",
+    "rate": 176.0,
+    "depth": 2
+  },
+  {
+    "id": "12.1.3",
+    "serial": "12.1.3",
+    "description": ". 12mm thick Sqm 137.00",
+    "unit": "sqm",
+    "rate": 137.0,
+    "depth": 2
+  },
+  {
+    "id": "12.2",
+    "serial": "12.2",
+    "description": "Plaster on new surface on walls in cement sand mortar 1:4 including racking of joints etc. complete fine finish : 12.2.1. 25 mm thick. Sqm 189.00",
+    "unit": "sqm",
+    "rate": 189.0,
+    "depth": 1
+  },
+  {
+    "id": "12.2.1",
+    "serial": "12.2.1",
+    "description": ". 25 mm thick. Sqm 189.00",
+    "unit": "sqm",
+    "rate": 189.0,
+    "depth": 2
+  },
+  {
+    "id": "12.2.2",
+    "serial": "12.2.2",
+    "description": "20mm thick . Sqm 168.00",
+    "unit": "sqm",
+    "rate": 168.0,
+    "depth": 2
+  },
+  {
+    "id": "12.2.3",
+    "serial": "12.2.3",
+    "description": "12mm thick . Sqm 136.00",
+    "unit": "sqm",
+    "rate": 136.0,
+    "depth": 2
+  },
+  {
+    "id": "12.3",
+    "serial": "12.3",
+    "description": ". Plaster on new surface on walls in cement sand mortar 1:6 including racking of joint etc. complete fine finish : 12.3.1 25 mm thick Sqm 176.00",
+    "unit": "sqm",
+    "rate": 176.0,
+    "depth": 1
+  },
+  {
+    "id": "12.3.1",
+    "serial": "12.3.1",
+    "description": "25 mm thick Sqm 176.00",
+    "unit": "sqm",
+    "rate": 176.0,
+    "depth": 2
+  },
+  {
+    "id": "12.3.2",
+    "serial": "12.3.2",
+    "description": "20mm thick. Sqm 158.00",
+    "unit": "sqm",
+    "rate": 158.0,
+    "depth": 2
+  },
+  {
+    "id": "12.3.3",
+    "serial": "12.3.3",
+    "description": ". 12mm thick. Sqm 133.00",
+    "unit": "sqm",
+    "rate": 133.0,
+    "depth": 2
+  },
+  {
+    "id": "12.4",
+    "serial": "12.4",
+    "description": "Plaster on new surface on walls in cement sand mortar 1:8 including racking of joint etc. complete fine finish : 12.4.1 25mm thick. Sqm 147.00",
+    "unit": "sqm",
+    "rate": 147.0,
+    "depth": 1
+  },
+  {
+    "id": "12.4.1",
+    "serial": "12.4.1",
+    "description": "25mm thick. Sqm 147.00",
+    "unit": "sqm",
+    "rate": 147.0,
+    "depth": 2
+  },
+  {
+    "id": "12.4.2",
+    "serial": "12.4.2",
+    "description": "20mm thick. Sqm 137.00",
+    "unit": "sqm",
+    "rate": 137.0,
+    "depth": 2
+  },
+  {
+    "id": "10",
+    "serial": "10",
+    "description": "% finely grounded hydrated lime by volume of cement Page 124 of 243 Sqm",
+    "unit": "sqm",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "12.17",
+    "serial": "12.17",
+    "description": ".3 12.18 Washed stone grit plaster on exterior walls of height upto 10 M. above level in two layers, under layer 12mm cement",
+    "unit": "m",
+    "rate": 17.3,
+    "depth": 1
+  },
+  {
+    "id": "12",
+    "serial": "12",
+    "description": ".18 Washed stone grit plaster on exterior walls of height upto 10 M. above level in two layers, under layer 12mm cement",
+    "unit": "m",
+    "rate": 12.18,
+    "depth": 0
+  },
+  {
+    "id": "13.30.1",
+    "serial": "13.30.1",
+    "description": "Add Extra for each additional floor Page 137 of 243",
+    "unit": "each",
+    "rate": 243.0,
+    "depth": 2
+  },
+  {
+    "id": "13.34",
+    "serial": "13.34",
+    "description": "Making of hole in R.C.C. slab/wall/beams and masonary wall (width up to 450 mm) by core cutting machine complete as per direction of El 13.34.1 From diameter 100mm to 150mm Nos 1027.00",
+    "unit": "nos",
+    "rate": 1027.0,
+    "depth": 1
+  },
+  {
+    "id": "13.34.1",
+    "serial": "13.34.1",
+    "description": "From diameter 100mm to 150mm Nos 1027.00",
+    "unit": "nos",
+    "rate": 1027.0,
+    "depth": 2
+  },
+  {
+    "id": "13.34.2",
+    "serial": "13.34.2",
+    "description": "Diameter above 150mm Nos 1544.00",
+    "unit": "nos",
+    "rate": 1544.0,
+    "depth": 2
+  },
+  {
+    "id": "15",
+    "serial": "15",
+    "description": ".11 Providing and laying four courses water proofing treatment with bitumen felt over roofs consisting of first and third courses of blown bitumen 85/25 or 90/15 conforming to IS : 702 applied hot 1.45Kg. per square meter of area for each course, second course of",
+    "unit": "each",
+    "rate": 15.11,
+    "depth": 0
+  },
+  {
+    "id": "16.1.1",
+    "serial": "16.1.1",
+    "description": "For fixed portion 16.1.1.1 Anodised aluminum (anodised transparent 81 dyed to required shade according to IS: Kg. 296.00",
+    "unit": "kg",
+    "rate": 296.0,
+    "depth": 2
+  },
+  {
+    "id": "16.1.1.1",
+    "serial": "16.1.1.1",
+    "description": "Anodised aluminum (anodised transparent 81 dyed to required shade according to IS: Kg. 296.00",
+    "unit": "kg",
+    "rate": 296.0,
+    "depth": 3
+  },
+  {
+    "id": "1868",
+    "serial": "1868",
+    "description": ". (Minimum anodic coating of grade AC 15, Anodizing to be got done from approved Anodizer) 16.1.1.2 Powder coating aluminum ( minimum thickness of powder coating 50 micron) Kg. 319.00",
+    "unit": "kg",
+    "rate": 319.0,
+    "depth": 0
+  },
+  {
+    "id": "16.1.1.2",
+    "serial": "16.1.1.2",
+    "description": "Powder coating aluminum ( minimum thickness of powder coating 50 micron) Kg. 319.00",
+    "unit": "kg",
+    "rate": 319.0,
+    "depth": 3
+  },
+  {
+    "id": "16.1.1.3",
+    "serial": "16.1.1.3",
+    "description": "Polyester Powder coating aluminum ( minimum thickness of powder coating 50 micron) Kg. 331.00",
+    "unit": "kg",
+    "rate": 331.0,
+    "depth": 3
+  },
+  {
+    "id": "16.1.2",
+    "serial": "16.1.2",
+    "description": "For shutters builtup standard tubular sections of openable doors ,windows & ventilators including providing & fixing hinges / rollers etc. and making provision for fixing of fittings wherever required (lockes shall be paid for separately). 16.1.2.1 Anodised aluminum (anodised transparent 81 dyed to required shade according to IS: Kg. 323.00",
+    "unit": "kg",
+    "rate": 323.0,
+    "depth": 2
+  },
+  {
+    "id": "16.1.2.1",
+    "serial": "16.1.2.1",
+    "description": "Anodised aluminum (anodised transparent 81 dyed to required shade according to IS: Kg. 323.00",
+    "unit": "kg",
+    "rate": 323.0,
+    "depth": 3
+  },
+  {
+    "id": "16.1.2.2",
+    "serial": "16.1.2.2",
+    "description": "Powder coating aluminum ( minimum thickness of powder coating 50 micron) Kg. 346.00",
+    "unit": "kg",
+    "rate": 346.0,
+    "depth": 3
+  },
+  {
+    "id": "16.1.2.3",
+    "serial": "16.1.2.3",
+    "description": "Polyester Powder coating aluminum ( minimum thickness of powder coating 50 micron) Kg. 358.00",
+    "unit": "kg",
+    "rate": 358.0,
+    "depth": 3
+  },
+  {
+    "id": "16.4.1",
+    "serial": "16.4.1",
+    "description": ". Pre-laminated particle board with decorative lamination on one side and balancing Sqm 936.00",
+    "unit": "sqm",
+    "rate": 936.0,
+    "depth": 2
+  },
+  {
+    "id": "16.4.2",
+    "serial": "16.4.2",
+    "description": "| Prelaminated particle board with decorative lamination on both sides. Sqm 993.00",
+    "unit": "sqm",
+    "rate": 993.0,
+    "depth": 2
+  },
+  {
+    "id": "16.5.1",
+    "serial": "16.5.1",
+    "description": "With glass panes of 4.0 mm thickness ( weight not less than 10.0 kg/sqm) as per IS : Sqm 719.00",
+    "unit": "kg",
+    "rate": 719.0,
+    "depth": 2
+  },
+  {
+    "id": "2835",
+    "serial": "2835",
+    "description": ". 16.5.2 With float glass panes of 5.0 mm thickness ( weight not less than 13.50 kg/sqm) Sqm 820.00",
+    "unit": "kg",
+    "rate": 820.0,
+    "depth": 0
+  },
+  {
+    "id": "16.5.2",
+    "serial": "16.5.2",
+    "description": "With float glass panes of 5.0 mm thickness ( weight not less than 13.50 kg/sqm) Sqm 820.00",
+    "unit": "kg",
+    "rate": 820.0,
+    "depth": 2
+  },
+  {
+    "id": "16.5.3",
+    "serial": "16.5.3",
+    "description": "With float glass panes of 8 mm thickness Sqm 1123.00",
+    "unit": "sqm",
+    "rate": 1123.0,
+    "depth": 2
+  },
+  {
+    "id": "16",
+    "serial": "16",
+    "description": ".13 Providing and fixing double action hydraulic floor spring of approved brand and manufacture IS : 6315 marked, for doors including cost of cutting floors as required, embedding in floors and cover plates with brass pivot and single piece M.S.",
+    "unit": "m",
+    "rate": 16.13,
+    "depth": 0
+  },
+  {
+    "id": "16.21",
+    "serial": "16.21",
+    "description": "Providing and fixing of false ceiling with grid of M.S.tube section of size 19mm X 19mm Sqm 905.00",
+    "unit": "m",
+    "rate": 905.0,
+    "depth": 1
+  },
+  {
+    "id": "16.22",
+    "serial": "16.22",
+    "description": "Providing and fixing of wall paneling on grid made out of PVC profile section of size Sqm 1267.00",
+    "unit": "sqm",
+    "rate": 1267.0,
+    "depth": 1
+  },
+  {
+    "id": "16.23",
+    "serial": "16.23",
+    "description": ". Supply of \u201c Computer Table\u201d of Modular nature having all the necessary arrangement for Each 7392.00",
+    "unit": "each",
+    "rate": 7392.0,
+    "depth": 1
+  },
+  {
+    "id": "17.12",
+    "serial": "17.12",
+    "description": "Supply and fixing of Bath room / Toilet door shutter with 16mm Factory Laminated Sqm 2188.00",
+    "unit": "sqm",
+    "rate": 2188.0,
+    "depth": 1
+  },
+  {
+    "id": "17.13",
+    "serial": "17.13",
+    "description": "Solid Rectangular Block (400x200x200, 400x200x100, 400x200x150 225x200x100) Providing and fixing up to floor five level of cement concrete solid blocks (M-20 Cum 9370.00",
+    "unit": "m",
+    "rate": 150.0,
+    "depth": 1
+  },
+  {
+    "id": "17.14",
+    "serial": "17.14",
+    "description": "Hollow Rectangular Block (400x200x200, 400x200x100) Providing and fixing up to floor five level of cement concrete Hollow Rectangular Cum 6675.00",
+    "unit": "cum",
+    "rate": 6675.0,
+    "depth": 1
+  },
+  {
+    "id": "17.15",
+    "serial": "17.15",
+    "description": "Insulated Rectangular Block (400x200x200 mm) Providing and fixing up to floor five level of cement concrete insulated blocks of Cum 9920",
+    "unit": "cum",
+    "rate": 9920.0,
+    "depth": 1
+  },
+  {
+    "id": "17.16",
+    "serial": "17.16",
+    "description": "Interlocking Paver Blocks having 80 mm thickness in M-40 grade concrete Page 169 of 243",
+    "unit": "m",
+    "rate": 243.0,
+    "depth": 1
+  },
+  {
+    "id": "17",
+    "serial": "17",
+    "description": ".17 17.18 17.19 Providing and Laying 80 mm thick cement concrete blocks of M-40 Grade",
+    "unit": "m",
+    "rate": 17.17,
+    "depth": 0
+  },
+  {
+    "id": "602",
+    "serial": "602",
+    "description": ". Interlocking Paver Blocks having 100 mm thickness in M-50 grade concrete Providing and Laying 100 mm _ thick cement concrete blocks of M-50",
+    "unit": "m",
+    "rate": 50.0,
+    "depth": 0
+  },
+  {
+    "id": "17.23",
+    "serial": "17.23",
+    "description": "Cellular Concrete Block for Pitching and garden paths (600x400x80) in M-30",
+    "unit": "m",
+    "rate": 30.0,
+    "depth": 1
+  },
+  {
+    "id": "17.24",
+    "serial": "17.24",
+    "description": "Pre Cast Concrete Flooring (Slab 600x600x100, 1000x650x100) Providing and fixing Precast concrete flooring slabs (M-30 Grade) of different Sqm. 894.00",
+    "unit": "m",
+    "rate": 894.0,
+    "depth": 1
+  },
+  {
+    "id": "17.25",
+    "serial": "17.25",
+    "description": "Pre Cast U/Semi circular Drains (Outer size 600x400 mm, wall thickness 80 mm) Providing and fixing Precast concreteUdrains (M-30 Grade) of different sizes R.M. 417.00",
+    "unit": "m",
+    "rate": 417.0,
+    "depth": 1
+  },
+  {
+    "id": "600",
+    "serial": "600",
+    "description": "x 450 x 250mm. Page 179 of 243 Pair",
+    "unit": "pair",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "750",
+    "serial": "750",
+    "description": "(-do-) 1000 (-do-) Page 194 of 243 Each",
+    "unit": "each",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "1000",
+    "serial": "1000",
+    "description": "(-do-) Page 194 of 243 Each",
+    "unit": "each",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "3000",
+    "serial": "3000",
+    "description": "(-do-) 5000(-do-) Hoisting Charges for each floor : For items 2.26.1 to 2.26.4",
+    "unit": "each",
+    "rate": 26.4,
+    "depth": 0
+  },
+  {
+    "id": "5000",
+    "serial": "5000",
+    "description": "(-do-) Hoisting Charges for each floor : For items 2.26.1 to 2.26.4",
+    "unit": "each",
+    "rate": 26.4,
+    "depth": 0
+  },
+  {
+    "id": "2532",
+    "serial": "2532",
+    "description": "(32mm OD) pipe 3240 (40mm OD) pipe Page 195 of 243 Each",
+    "unit": "each",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "3240",
+    "serial": "3240",
+    "description": "(40mm OD) pipe Page 195 of 243 Each",
+    "unit": "each",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "25",
+    "serial": "25",
+    "description": "mm nominal outer dia pipes 32mm nominal outer dia pipes Page 199 of 243 Rm",
+    "unit": "rm",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "300",
+    "serial": "300",
+    "description": "Lt. capacity Page 200 of 243 Rm",
+    "unit": "rm",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "160",
+    "serial": "160",
+    "description": "mm dia Page 206 of 243 Each",
+    "unit": "each",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "230",
+    "serial": "230",
+    "description": "mm thick in place of 300 mm thick stone masonry Page 209 of 243 Each",
+    "unit": "each",
+    "rate": 243.0,
+    "depth": 0
+  },
+  {
+    "id": "124",
+    "serial": "124",
+    "description": ", the testing shall be performed in fully equipped and NABL certified test lab with random batch test (2% of lot size) as per testing procedure stated in EN-124 standard including fixing with M-20 concrete etc.",
+    "unit": "m",
+    "rate": 124.0,
+    "depth": 0
+  },
+  {
+    "id": "14",
+    "serial": "14",
+    "description": "Supply of dry manure including loading : unloading,transportation & stacking at site. 1.1.1. Farm yard manure(organic) Cum. 720.00",
+    "unit": "cum",
+    "rate": 720.0,
+    "depth": 0
+  },
+  {
+    "id": "13",
+    "serial": "13",
+    "description": "Supply & Stacking good soil of earth at site complete : including loading unloading & Transportation etc. 1.3.1. Good soil of earth Cum. 240.00",
+    "unit": "cum",
+    "rate": 240.0,
+    "depth": 0
+  },
+  {
+    "id": "218",
+    "serial": "218",
+    "description": "Maintenance /fitting of permanent ornamental pots/ a seasonal pots (a) Mixing earth and manure in per portion as specified or cum 42.00",
+    "unit": "cum",
+    "rate": 42.0,
+    "depth": 0
+  }
+]

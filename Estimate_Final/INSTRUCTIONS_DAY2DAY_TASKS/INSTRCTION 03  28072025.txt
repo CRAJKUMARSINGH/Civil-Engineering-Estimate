@@ -1,0 +1,70 @@
+Next Batch – Week-02 “Frontend Kick-off & Backend Polish”
+A. 30-Minute Render Deploy Checklist
+1.  Push main → GitHub (already green ✅).
+2.  Render.com → New → Web Service → connect repo.
+•  Environment: Docker
+•  Branch: main
+•  Plan: Starter (free)
+•  Add env vars from .env.example
+3.  Hit “Deploy” – smoke-test:
+curl https://<render-host>/api/v1/health
+
+----
+B. React-Vite Scaffold (Week-02 Day 1–2)
+git checkout -b week02-frontend
+npm create vite@latest tender-frontend --template react-ts
+cd tender-frontend
+npm i axios react-hook-form @tanstack/react-query recharts
+
+Pages / Components
+•  UploadPage – drag-drop Excel → preview grid
+•  DownloadPage – buttons for single & multi templates
+•  Layout – sidebar nav, toast notifications (React-Hot-Toast)
+Shared
+•  lib/api.ts – auto-generated via npx openapi-typescript …
+•  lib/queryClient.ts – TanStack Query config
+----
+C. API Contract Update (Backend)
+Add CORS & prefix in app/main.py:
+from fastapi.middleware.cors import CORSMiddleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173", "https://*.vercel.app"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+----
+D. Dev Workflow Script
+package.json in root:
+"scripts": {
+  "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+  "dev:backend": "docker compose up --build",
+  "dev:frontend": "cd tender-frontend && npm run dev"
+}
+
+Install: npm i -D concurrently.
+----
+E. Live Demo Milestone (Week-02 Day 5)
+•  Storybook for UI components (optional).
+•  Vercel Preview on every PR: push tender-frontend folder.
+----
+F. Security & Monitoring (Week-02 Day 6–7)
+Backend:
+•  Rate-limit via slowapi.
+•  Add /metrics with prometheus-fastapi-instrumentator.
+Frontend:
+•  .env for API base URL → VITE_API_URL.
+----
+G. Week-02 Deliverables Checklist
+Task	Owner	Status
+Render deploy live	Dev	✅
+React-Vite scaffold + routing	Dev	Day 1
+`UploadPage` wired to `/upload`	Dev	Day 2
+`DownloadPage` wired to `/download/{template}`	Dev	Day 3
+Storybook / Vercel preview	Dev	Day 4
+CORS & rate-limit in backend	Dev	Day 5
+README updated with dev script	Dev	Day 6
+PR `week02-frontend` merged	Dev	Day 7
+Push early, tag me on PR reviews.

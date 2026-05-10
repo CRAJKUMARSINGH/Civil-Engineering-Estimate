@@ -1,0 +1,160 @@
+Week-02 Master Pack – React-Vite Frontend + Backend Polish
+(ready-to-copy snippets & hourly checklist)
+────────────────────────────────────────
+0️⃣  Guardrails
+• Branch: week02-frontend from main
+• Time-box: 5 working days (Mon-Fri)
+• Daily PRs + end-of-day demo link (Vercel)
+────────────────────────────────────────
+1️⃣  Project Bootstrap  (Mon 09:00-10:00)
+# root
+npm create vite@latest tender-frontend --template react-ts
+cd tender-frontend
+npm i axios react-hook-form @tanstack/react-query recharts react-hot-toast
+npm i -D @types/react @types/react-dom autoprefixer tailwindcss postcss
+npx tailwindcss init -p
+
+tailwind.config.js
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: { extend: {} },
+  plugins: [],
+}
+
+src/index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+────────────────────────────────────────
+2️⃣  Shared API Layer  (Mon 10:00-11:00)
+src/lib/api.ts
+import axios from 'axios';
+export const api = axios.create({
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000/api/v1',
+});
+
+Generate typed SDK
+npx openapi-typescript http://localhost:8000/openapi.json --output src/types/api.d.ts
+
+────────────────────────────────────────
+3️⃣  Query Client & Router  (Mon 11:00-12:00)
+src/lib/queryClient.ts
+import { QueryClient } from '@tanstack/react-query';
+export const queryClient = new QueryClient({
+  defaultOptions: { queries: { staleTime: 5 * 60 * 1000 } },
+});
+
+src/App.tsx
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClient } from './lib/queryClient';
+import UploadPage from './pages/UploadPage';
+import DownloadPage from './pages/DownloadPage';
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<UploadPage />} />
+          <Route path="/download" element={<DownloadPage />} />
+        </Routes>
+      </BrowserRouter>
+    </QueryClientProvider>
+  );
+}
+export default App;
+
+────────────────────────────────────────
+4️⃣  Upload Page  (Mon 13:00-Tue 12:00)
+src/pages/UploadPage.tsx
+import { useForm } from 'react-hook-form';
+import { toast } from 'react-hot-toast';
+import { api } from '../lib/api';
+
+type Form = { file: FileList };
+
+export default function UploadPage() {
+  const { register, handleSubmit } = useForm<Form>();
+
+  const onSubmit = async ({ file }: Form) => {
+    const form = new FormData();
+    form.append('file', file[0]);
+    try {
+      const { data } = await api.post('/upload', form);
+      toast.success(`Parsed ${data.rows.length} rows`);
+    } catch (e: any) {
+      toast.error(e.response?.data?.detail || 'Upload failed');
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)} className="p-8 space-y-4 max-w-md mx-auto">
+      <input type="file" accept=".xlsx,.xls" {...register('file', { required: true })} />
+      <button className="btn btn-primary">Upload & Preview</button>
+    </form>
+  );
+}
+
+────────────────────────────────────────
+5️⃣  Download Page  (Tue 13:00-Wed 12:00)
+src/pages/DownloadPage.tsx
+import { api } from '../lib/api';
+export default function DownloadPage() {
+  return (
+    <div className="p-8 space-x-4 text-center">
+      <a href={`${api.defaults.baseURL}/download/single_work_nit.xlsx`} download
+         className="btn btn-outline">Single-Work NIT</a>
+      <a href={`${api.defaults.baseURL}/download/multi_work_nit.xlsx`} download
+         className="btn btn-outline">Multi-Work NIT</a>
+    </div>
+  );
+}
+
+────────────────────────────────────────
+6️⃣  Backend Polish  (Tue 13:00-Wed 17:00)
+app/main.py
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi_limiter import FastAPILimiter
+from fastapi_limiter.depends import RateLimiter
+import aioredis
+
+@app.on_event("startup")
+async def startup():
+    redis = await aioredis.create_redis_pool("redis://localhost")
+    await FastAPILimiter.init(redis)
+
+@app.post("/upload", dependencies=[Depends(RateLimiter(times=10, seconds=60))])
+
+.env.example
+REDIS_URL=redis://localhost:6379
+
+────────────────────────────────────────
+7️⃣  Dev & Build Scripts  (Wed 18:00)
+Root package.json
+"scripts": {
+  "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+  "dev:backend": "docker compose up --build",
+  "dev:frontend": "cd tender-frontend && npm run dev",
+  "build": "cd tender-frontend && npm run build && cp -r dist ../backend/static"
+}
+
+────────────────────────────────────────
+8️⃣  Vercel Auto-Deploy  (Thu 09:00-10:00)
+tender-frontend/vercel.json
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "devCommand": "npm run dev",
+  "installCommand": "npm ci"
+}
+
+Push → Vercel picks branch → preview link auto-posted on PR.
+────────────────────────────────────────
+9️⃣  Week-02 Done Definition
+•  All routes reachable via React UI
+•  Rate-limit + CORS + .env fix merged
+•  Vercel preview URL shared daily
+•  PR week02-frontend approved & merged by Fri 18:00
+Happy coding!

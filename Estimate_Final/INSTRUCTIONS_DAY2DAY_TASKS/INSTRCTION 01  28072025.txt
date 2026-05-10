@@ -1,0 +1,47 @@
+Week-01 POC – FastAPI Backend Only
+Goal: expose today’s Streamlit features as a REST service (no UI yet).
+----
+1. Branch & Skeleton
+git checkout -b week01-poc-fastapi
+mkdir backend
+cd backend
+python -m venv venv && source venv/bin/activate
+pip install fastapi uvicorn python-multipart pandas openpyxl sqlalchemy aiosqlite
+
+----
+2. File Layout
+backend/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── api/
+│   │   ├── __init__.py
+│   │   └── uploads.py
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── excel_parser.py      # copy & refactor
+│   │   └── report_generator.py  # copy & refactor
+│   └── models.py
+└── tests/
+
+----
+3. Core Endpoints (Week-01 scope)
+Method	Endpoint	Purpose
+POST	`/api/v1/upload`	Accept Excel (single or 2-15 works) → JSON preview
+GET	`/api/v1/download/{template}`	Serve `single_work_nit.xlsx` or `multi_work_nit.xlsx`
+GET	`/api/v1/health`	`{"status":"ok"}`
+----
+4. Day-by-Day Tasks
+Day	Task	Owner	Deliverable
+D1	Copy `excel_parser.py` → `services/excel_parser.py`; wrap in `parse_excel(file: UploadFile) -> dict`	Dev	Unit test passes
+D2	Add `/api/v1/upload` route; validate file type & size ≤ 5 MB	Dev	Swagger doc shows 200/422
+D3	Add `/api/v1/download/{template}`; static file serving	Dev	curl 200
+D4	Dockerize backend (`Dockerfile` + `docker-compose.yml` with hot-reload)	Dev	`docker compose up` exposes `localhost:8000`
+D5	Add pytest + GitHub Action: `pytest tests/` on PR	Dev	Green check on PR
+D6	Deploy POC to Render (free tier)	Dev	`https://tender-poc.onrender.com/docs` live
+D7	Hand-off notes + README update (env vars, run locally)	Dev	README.md merged to `week01-poc-fastapi`
+----
+5. Definition of Done
+•  Swagger UI (/docs) shows all three endpoints.
+•  curl -F "file=@sample_single.xlsx" https://tender-poc.onrender.com/api/v1/upload returns JSON payload identical to Streamlit preview.
+•  PR passes CI and is tagged week-01-poc.

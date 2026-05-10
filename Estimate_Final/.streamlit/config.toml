@@ -1,0 +1,52 @@
+[global]
+# Streamlit configuration for optimal performance
+
+# Development settings
+developmentMode = false
+logLevel = "info"
+
+[server]
+# Server configuration for deployment
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+maxUploadSize = 200
+maxMessageSize = 200
+
+# Performance settings
+runOnSave = false
+allowRunOnSave = false
+
+[browser]
+# Browser settings
+gatherUsageStats = false
+showErrorDetails = false
+
+[theme]
+# Professional PWD Estimator Theme (inspired by estimate folder)
+# Light Blue professional theme matching PySimpleGUI 'LightBlue2'
+primaryColor = "#4A90E2"  # Professional blue
+backgroundColor = "#FFFFFF"  # Clean white
+secondaryBackgroundColor = "#E8F4F8"  # Light blue tint
+textColor = "#1A1A1A"  # Dark text for readability
+font = "sans serif"
+base = "light"
+
+[client]
+# Client-side settings
+caching = true
+displayEnabled = true
+showErrorDetails = false
+
+[runner]
+# Runner configuration for better performance
+magicEnabled = true
+installTracer = false
+fixMatplotlib = true
+postScriptGC = true
+fastReruns = true
+
+[logger]
+# Logging configuration
+level = "info"
+messageFormat = "%(asctime)s %(message)s"

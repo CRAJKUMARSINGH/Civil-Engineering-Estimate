@@ -1,0 +1,22 @@
+# Construction Estimation System - Optimized Dependencies
+# Minimal dependencies for faster deployment and better performance
+
+# Core Streamlit framework
+streamlit>=1.28.0,<2.0.0
+
+# Data processing (optimized versions)
+pandas>=2.0.0,<3.0.0
+numpy>=1.24.0,<2.0.0
+
+# Excel file handling (only if needed)
+openpyxl>=3.1.0,<4.0.0
+
+# Performance and testing (development only)
+pytest>=7.0.0
+psutil>=5.9.0
+memory-profiler>=0.60.0
+
+# Optional: For advanced features (uncomment if needed)
+# plotly>=5.15.0  # For advanced charts
+# streamlit-aggrid>=0.3.4  # For enhanced data grids
+# streamlit-option-menu>=0.3.6  # For better navigation

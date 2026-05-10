@@ -1,0 +1,54 @@
+Prompt for Software Engineer :
+NO ADITIONAL FEATURE BE ADDED WITHOUT MY REQUEST OR CONSENT>>>>
+You are tasked with enhancing an existing estimation app for construction/civil engineering projects. The app is hosted in a public GitHub repository (search or reference it as needed for context). It manages project estimates using Excel files as the core format.
+
+Key Excel Template Structure (Estimate_Template):
+The primary template Excel file (Estimate_Template.xlsx or similar) contains these mandatory sheets:
+
+Project info: General project details.
+Assemblies: Pre-assembled components.
+Materials: List of materials.
+Bow: Bill of Quantities (BoQ) or similar breakdown.
+GENERAL ABSTRACT: High-level cost summary.
+ABSTRACT OF COST "PART-X": Detailed cost abstract for each part (where X = 1 to any number, e.g., PART-1, PART-2). Dynamically add sheets as needed for multiple parts.
+MEASUREMENTS "PART-X": Measurement details corresponding to each PART-X (e.g., MEASUREMENT PART-1). Blank rows must be pre-allocated for new entries.
+TECHNICAL REPORT: Final technical summary report.
+Critical Formatting Rule: All generated templates MUST adopt exact column widths, row heights, fonts, colors, borders, and ALL formatting from any uploaded Excel sheet. If formatting is not preserved identically, the templates are USELESS for printing/export. Use libraries like openpyxl (Python) or SheetJS (JS) to copy styles precisely.
+
+Core Features to Implement/Preserve:
+Preserve Previous Project Estimates:
+Store all past estimates from the public repo or app database as reusable templates.
+Users can load any old estimate via the app (routed/selected from a list).
+Load & Route Old Estimates:
+App must route old estimates (display in UI for selection).
+Save as new estimate with or without:
+Action	Description
+Editing	Modify existing items (rates, quantities).
+Addition	Insert new items/parts dynamically.
+Deletion	Remove items/parts.
+No changes	Duplicate as-is.
+Insert New SSR Items (Standard Schedule of Rates):
+When adding a new SSR item to any ABSTRACT OF COST "PART-X" sheet:
+Step	Action
+1	Import FULL description from SSR database/source into the cost abstract row.
+2	Auto-insert SAME description into relevant serial in MEASUREMENTS "PART-X" sheet.
+3	Add blank rows below in measurements sheet to accommodate new measurements (e.g., length, breadth, height).
+Ensure serial numbering updates automatically across sheets.
+Link cost and measurement sheets bidirectionally (changes propagate).
+App Workflow:
+Upload Excel: User uploads any estimate Excel → App parses, preserves ALL formatting.
+Edit/Load: Route to editor UI for changes.
+Generate Template: Output new Excel with identical formatting + updates.
+Save New: Store as savable project estimate (local/DB/repo).
+Support multiple PART-X dynamically (user adds PART-3 → auto-create sheets).
+Technical Constraints:
+No breaking changes to existing repo code.
+Handle large Excels (1000+ rows) efficiently.
+SSR Integration: Assume SSR data in app DB/JSON/CSV – fetch full item details (description, rate, unit).
+Validation: Ensure new inserts don't break formulas/totals in ABSTRACT sheets.
+Export: Downloadable Excel matching government/print-ready standards (e.g., Indian PWD/SSR formats).
+Deliverables:
+Update app to handle above flows.
+Test with sample Estimate_Template (create if missing).
+Document UI flows for loading old → editing → saving new.
+Priority: Formatting preservation > Functionality. Review repo, implement iteratively. Questions? Ask for clarification.
